@@ -1,0 +1,3 @@
+# another client's confidential document: never commit
+assets/references/*.pdf
+.DS_Store

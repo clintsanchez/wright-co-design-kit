@@ -1,0 +1,273 @@
+{
+ "version": "0.1",
+ "date": "2026-10-15",
+ "client": "Wright Co.",
+ "prepared_by": "BlakSheep Creative",
+ "status": "Input package prepared for Claude Design. Not yet run. Nothing in it is approved by the owner, Cody Wright. The name, the emblem, the colours sampled from it, the phone, the business email and the web address are the client's own. The tagline, the three offer names and the button pair are BlakSheep Creative decisions, usable now. The position, values, voice, colour roles, typefaces and every layout rule are BlakSheep Creative proposals awaiting sign-off. There are zero photographs.",
+ "note": "Files 2 to 6, 8, assets/logos, assets/photos/PHOTO-MANIFEST.md and tokens/css-tokens.css were written first. Files 0, 1, 7, README.md, assets/references/social-prompt-universal-section-map.md and this manifest were written on 2026-10-15 from them and the sources below. Bytes and sha256 were taken from disk when this manifest was written, for every file in the folder except this manifest. Source paths are relative to the client repository.",
+ "model": "Structure follows the Ronin District design kit of 2026-10-13/14 and the Load and Geaux Portable Storage kit of 2026-10-11, and the two generic agency templates in assets/references. File 1 covers every section of master-brand-kit-template_REFERENCE-ONLY.md (its section 1.5); file 7 accounts for all 43 sections of universal-social-template-system_REFERENCE-ONLY.md (recorded in assets/references/social-prompt-universal-section-map.md). Nothing of another client's brand, facts or wording is carried over.",
+ "source_priority": [
+  "brand/context.md and design-kit/6 - Brand Context and Prices.md govern facts and the claims lists",
+  "design-kit/assets/logos/README.md governs which logo file exists and where it may be placed",
+  "brand/guidelines.md (v2.0, 2026-10-14) and brand-style-guide.md are the guideline of record; brand/guidelines.md section 8 is the owner sign-off list (W-01 to W-28)",
+  "website/css-tokens.css governs every hex, font, size, space and radius value; design-kit/tokens/css-tokens.css is an identical copy"
+ ],
+ "not_in_version_control": [
+  "assets/references/reference-kit-format_REFERENCE-ONLY.pdf (another client's kit, uploaded to Claude Design by hand)"
+ ],
+ "sources": {
+  "0 - READ ME FIRST.md": [
+   "brand/guidelines.md (section 8)",
+   "brand/context.md",
+   "HANDOFF.md",
+   "design-kit files 2 to 6 and 8",
+   "design-kit/assets/logos/README.md"
+  ],
+  "1 - MASTER PROMPT.md": [
+   "assets/references/master-brand-kit-template_REFERENCE-ONLY.md",
+   "design-kit files 2 to 6 and 8",
+   "design-kit/assets/logos/README.md",
+   "design-kit/assets/photos/PHOTO-MANIFEST.md",
+   "tokens/css-tokens.css",
+   "seo/03-site-architecture.md (home, /land-clearing/, /homeplace-package/ briefs; outline content copied in)",
+   "seo/05-offer-plan.md",
+   "brand/guidelines.md (section 8)",
+   "/Users/clintsanchez/Documents/Claude/Projects/Ronin-District/design-kit/1 - MASTER PROMPT.md (structure)",
+   "/Users/clintsanchez/Documents/Claude/Projects/Load-and-Geaux-Portable-Storage/design-kit/1 - MASTER PROMPT.md (structure)"
+  ],
+  "2 - Brand Guidelines.md": [
+   "brand/guidelines.md",
+   "brand/positioning.md",
+   "brand/strategy.md",
+   "brand/audience.md",
+   "brand/story.md"
+  ],
+  "3 - Visual Identity.md": [
+   "brand-style-guide.md",
+   "brand/identity.md",
+   "DESIGN.md",
+   "website/css-tokens.css"
+  ],
+  "4 - Brand Voice.md": [
+   "brand/voice.md",
+   "brand/messaging.md"
+  ],
+  "5 - Messaging.md": [
+   "brand/messaging.md",
+   "brand/positioning.md",
+   "seo/03-site-architecture.md"
+  ],
+  "6 - Brand Context and Prices.md": [
+   "brand/context.md",
+   "brand/competitor-branding.md",
+   "seo/05-offer-plan.md"
+  ],
+  "7 - SOCIAL TEMPLATE SYSTEM PROMPT.md": [
+   "assets/references/universal-social-template-system_REFERENCE-ONLY.md",
+   "design-kit files 2 to 6 and 8",
+   "seo/05-offer-plan.md (seasonal message, honest version)",
+   "/Users/clintsanchez/Documents/Claude/Projects/Ronin-District/design-kit/7 - SOCIAL TEMPLATE SYSTEM PROMPT.md (structure)",
+   "/Users/clintsanchez/Documents/Claude/Projects/Load-and-Geaux-Portable-Storage/design-kit/7 - SOCIAL TEMPLATE SYSTEM PROMPT.md (structure)"
+  ],
+  "8 - Asset Manifest and Production Rules.md": [
+   "brand-style-guide.md",
+   "brand/identity.md",
+   "brand/context.md",
+   "seo/03-site-architecture.md",
+   "seo/05-offer-plan.md"
+  ],
+  "README.md": [
+   "design-kit contents (enumerated 2026-10-15)",
+   "/Users/clintsanchez/Documents/Claude/Projects/Ronin-District/design-kit/README.md (structure)"
+  ],
+  "assets/logos/": [
+   "brand/assets/wright-co-llc-logo.png (supplied by the client)",
+   "https://wrightco.llc/logo.jpg (downloaded 2026-10-15, reference only)",
+   "brand/tools/build_logo_variants.py (trim, resample, centre only)"
+  ],
+  "assets/photos/PHOTO-MANIFEST.md": [
+   "brand/identity.md (section 05)"
+  ],
+  "assets/references/master-brand-kit-template_REFERENCE-ONLY.md": [
+   "BlakSheep Creative generic template (copied in 2026-10-15)"
+  ],
+  "assets/references/universal-social-template-system_REFERENCE-ONLY.md": [
+   "BlakSheep Creative generic template (copied in 2026-10-15)"
+  ],
+  "assets/references/social-prompt-universal-section-map.md": [
+   "7 - SOCIAL TEMPLATE SYSTEM PROMPT.md",
+   "assets/references/universal-social-template-system_REFERENCE-ONLY.md",
+   "/Users/clintsanchez/Documents/Claude/Projects/Ronin-District/design-kit/assets/references/social-prompt-universal-section-map.md (model)"
+  ],
+  "tokens/css-tokens.css": [
+   "website/css-tokens.css"
+  ]
+ },
+ "sharing": "No repository has been created. Options: a separate kit-only repository (proposed name clintsanchez/wright-co-design-kit), or the whole client repository made public for the import and set back to private after. Whether either is created, and whether it is public, is Clint's decision.",
+ "still_missing": [
+  "The owner's approval of everything",
+  "A vector master of the emblem, and who made it",
+  "The no-phone emblem, flat wordmark, drawn small mark and one-colour versions",
+  "Any photograph of a Louisiana Wright Co. job",
+  "Free Lot Walk terms, Homeplace Package scope, culvert and hauling answers, callback standard, service radius, hours, cost ranges",
+  "A Google Business Profile; a Facebook page fit to link",
+  "A chosen and recorded icon set; font files",
+  "Print colour references",
+  "Verification of the parish culvert source and NOAA rainfall normals"
+ ],
+ "file_count": 38,
+ "files": {
+  "0 - READ ME FIRST.md": {
+   "bytes": 15494,
+   "sha256": "d0b41782d2c800aae666d95a17c2f78f3b97c9a94eec1b7e9eb44e505ae637b3"
+  },
+  "1 - MASTER PROMPT.md": {
+   "bytes": 150877,
+   "sha256": "77b003fca9dff88b2d34ddc5e1b11ee8f0a910a2a26133da1177e4b813f8d180"
+  },
+  "2 - Brand Guidelines.md": {
+   "bytes": 18203,
+   "sha256": "765ad7ee69838c8b71b9c26789fc57ae8d86900c05ba0f8efddc4764f3d484ed"
+  },
+  "3 - Visual Identity.md": {
+   "bytes": 37334,
+   "sha256": "60bb01c2ae4676e9c90864b8e3bf595a6545947dab31c61c8dd4c88b1d40f144"
+  },
+  "4 - Brand Voice.md": {
+   "bytes": 26851,
+   "sha256": "5728a847ecfdbbf5603e74d3eaf58e6f80d84d77e1256457bb60af423a65358c"
+  },
+  "5 - Messaging.md": {
+   "bytes": 24050,
+   "sha256": "0441c727e67170b0ec5264e4d0171f5e4b31aa82f2a18adb8eb0d9a581a83085"
+  },
+  "6 - Brand Context and Prices.md": {
+   "bytes": 28523,
+   "sha256": "4f419f3063b0176e11902d55f0871f52bddea50a19ff2e02c79dfa610828f735"
+  },
+  "7 - SOCIAL TEMPLATE SYSTEM PROMPT.md": {
+   "bytes": 75753,
+   "sha256": "e703b07835c0c3263433e80746e85bcda42da3e6b03124d72d82669aac55c1ef"
+  },
+  "8 - Asset Manifest and Production Rules.md": {
+   "bytes": 27487,
+   "sha256": "e690f6b799e8985a744a7361f78e7ee49d68d3f6bfea6d0178a94b7c1d86a562"
+  },
+  "README.md": {
+   "bytes": 16748,
+   "sha256": "6c149b2014097f27980f2339025265904f1cf4e429c3fc02940bf34c1ec9a5a9"
+  },
+  "assets/logos/README.md": {
+   "bytes": 7647,
+   "sha256": "06e699109b9b45eb6be3b32f40c4e934d566d4bd9e41bcec08c75ee160a0cfa6"
+  },
+  "assets/logos/avatar/wright-co-avatar-emblem-on-soil-1024.png": {
+   "bytes": 668636,
+   "sha256": "d0035a8ebf0a099de5e6ab4a943f21a1890c3d0574ba390b7cf23fa0ff09bee6"
+  },
+  "assets/logos/avatar/wright-co-avatar-emblem-on-soil-180.png": {
+   "bytes": 24689,
+   "sha256": "f0def6229441431c838538efe330bb85e7dc2f337aa4ca9b0a8c0da4c754cb6a"
+  },
+  "assets/logos/avatar/wright-co-avatar-emblem-on-soil-320.png": {
+   "bytes": 71451,
+   "sha256": "48d338cd1b76c943b5c5ea305d8570031f820d9c9bab1354c8874f2aac479aa1"
+  },
+  "assets/logos/avatar/wright-co-avatar-emblem-on-soil-400.png": {
+   "bytes": 109547,
+   "sha256": "0a79a91bddb2474a2fcf58b1e41e2f2f24da753167be481acc197a9bc76fe9ce"
+  },
+  "assets/logos/avatar/wright-co-avatar-emblem-on-soil-512.png": {
+   "bytes": 175615,
+   "sha256": "050659e84e173ec3292f7cbb79a0b870c3bae17ee486b18656438b9b36eea2f2"
+  },
+  "assets/logos/emblem/wright-co-emblem-on-soil-landscape-1200x628.png": {
+   "bytes": 563998,
+   "sha256": "0ba7305c7bba98d5207fa2a9a6fbb117bd601e2f4f1a95cdbd45bfac55ff0233"
+  },
+  "assets/logos/emblem/wright-co-emblem-on-soil-landscape-2400x1257.png": {
+   "bytes": 2060262,
+   "sha256": "5630d0d2f59b7f2e760b376338e32036cdc7cbaaac97b4ce2de8f15d2d85b0a1"
+  },
+  "assets/logos/emblem/wright-co-emblem-on-soil-square-1200.png": {
+   "bytes": 1256860,
+   "sha256": "bebb225ea590fd399b502253238eff3a8a4dd2cf540d1841adec0e1193fff202"
+  },
+  "assets/logos/emblem/wright-co-emblem-on-soil-square-2400.png": {
+   "bytes": 4122430,
+   "sha256": "18870e9562a80399ac1c2592b2137aa566e39a37955beebe59bd572b1479f64e"
+  },
+  "assets/logos/emblem/wright-co-emblem-transparent-1200w.png": {
+   "bytes": 2155146,
+   "sha256": "7940666507e07874922ef1771964412c304a21af8217f7c767815ff629884ccf"
+  },
+  "assets/logos/emblem/wright-co-emblem-transparent-2400w-upscaled.png": {
+   "bytes": 6705552,
+   "sha256": "fcadd968dd1cb06581a42fac8f608326d95044b792e0bf7724a01b021f3a1fd5"
+  },
+  "assets/logos/emblem/wright-co-emblem-transparent-native-1263w.png": {
+   "bytes": 2532617,
+   "sha256": "3739faf2e29f2be922715520fd348113f5657ad2326f4a20a978e321e5a8ec28"
+  },
+  "assets/logos/favicon/favicon-16.png": {
+   "bytes": 672,
+   "sha256": "542481e324f2a6e7590c00a2e716d6c680ca0bf2869e56319935d16c271fc99b"
+  },
+  "assets/logos/favicon/favicon-32.png": {
+   "bytes": 1860,
+   "sha256": "d2debb2533a85dad422b4b3794604e85597f02210ae5fcaa89bb19888d17fcae"
+  },
+  "assets/logos/favicon/favicon-48.png": {
+   "bytes": 3723,
+   "sha256": "4d9bbfd53f50108ed68a784a0df5e48d8ddf4077035e856483e0bb3304bc2792"
+  },
+  "assets/logos/favicon/favicon-64.png": {
+   "bytes": 6156,
+   "sha256": "84a65fa51b1d18dba208e9768645e2d5a5b8fcc06b49f4f2255b637b6af614d6"
+  },
+  "assets/logos/favicon/favicon-W-crop-master.png": {
+   "bytes": 166408,
+   "sha256": "1b6735aba0f1099a60ba87f75c866383a713f96692b5667dafbeb9f04a4245bd"
+  },
+  "assets/logos/favicon/favicon.ico": {
+   "bytes": 12535,
+   "sha256": "6eca5dbb147dcd1d7f497c0a7ac90572f81a42315ab3f1c2d49c61de06690cf4"
+  },
+  "assets/logos/source/wright-co-llc-logo_on-transparent_1536x1024.png": {
+   "bytes": 2869114,
+   "sha256": "0d7ae038e073e2a266c05a01a82f49161a0fa746fb43c94a4fef8a142e7ad255"
+  },
+  "assets/logos/source/wright-co-logo-white-bg_wrightco-llc-site_1536x1024.jpg": {
+   "bytes": 677787,
+   "sha256": "f5a4492430c91d644e92904fa9843c8d79a8dae9fe5f152396e3a389d2e8c063"
+  },
+  "assets/photos/PHOTO-MANIFEST.md": {
+   "bytes": 4154,
+   "sha256": "5221b5a1a44cd828a74817701ad48ddbf4b1d8727542ae9ae5c8bc6755ef72bc"
+  },
+  "assets/references/.gitignore": {
+   "bytes": 92,
+   "sha256": "908f0b1e2b6148d468fec82044f6581b96b1c7b32cc721268ad4b5d012992a0e"
+  },
+  "assets/references/master-brand-kit-template_REFERENCE-ONLY.md": {
+   "bytes": 17065,
+   "sha256": "522b9e770fed19996f254031f25b7e98eb49c998cc5f21cfc808613cc4c53c92"
+  },
+  "assets/references/reference-kit-format_REFERENCE-ONLY.pdf": {
+   "bytes": 3970292,
+   "sha256": "5ab91e816b24a5fbe85408baa0a5adc58d82c2926386c5bbcdfb98dc871260e8"
+  },
+  "assets/references/social-prompt-universal-section-map.md": {
+   "bytes": 9860,
+   "sha256": "05c24c21cea80af1bb7104d7cdabe5d3cd8337c90154b0e596667ea0ba1a791c"
+  },
+  "assets/references/universal-social-template-system_REFERENCE-ONLY.md": {
+   "bytes": 23171,
+   "sha256": "5ec1ecbf779ca6aed7d59eed2e05b429d9e8388df9ea082c5d08654f92d11205"
+  },
+  "tokens/css-tokens.css": {
+   "bytes": 2317,
+   "sha256": "62c60c58ec54bbb56520a930069d1743662f88d9741ebe81558d32717ce35d6f"
+  }
+ }
+}
