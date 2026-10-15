@@ -133,7 +133,7 @@ Read `7 - SOCIAL TEMPLATE SYSTEM PROMPT.md` in the attached folder in full and c
 
 **Nothing has been created for sharing yet, and the choice is Clint's.** Two options have been used for earlier clients:
 
-1. **A separate kit-only repository**, proposed name `clintsanchez/wright-co-design-kit`, holding just this folder, so Claude Design can read it through "Create here". **It does not exist yet.** Whether it is public or private, and whether it is created at all, is Clint's decision; a public repository exposes everything in it while it is public.
+1. **A separate kit-only repository: `clintsanchez/wright-co-design-kit`** (created 2026-10-15, **public for the Claude Design import**; local clone `~/Documents/Claude/Projects/Wright-Co-Design-Kit`). This folder is the master: edit here, re-copy and push. Scanned before publishing: only the public phone, business email and website. **Set it back to private once the import is done.** This is the option in use.
 2. **The whole client repository made public for the import**, as was done for one recent client, with Claude Design told to read `design-kit/` only, then set back to private once the import is done. This exposes the rest of the repository (research, records and working files) for that window.
 
 Uploading the `design-kit` folder (or a ZIP of it) by hand avoids needing any repository to be public.
