@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>07 Unconfirmed facts</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;font-synthesis:none}
+.pg{width:816px;height:1056px;box-sizing:border-box;position:relative;overflow:hidden;background:#F9F7F4;color:#120C06;font-family:'Source Sans 3',system-ui,sans-serif;font-size:12px;line-height:1.3}
+.rh,.rf{position:absolute;left:72px;right:72px;display:flex;justify-content:space-between;font-size:12px;color:#5C5048}
+.rh{top:28px}.rf{bottom:24px;border-top:1px solid rgba(18,12,6,.12);padding-top:8px}
+.bd{position:absolute;left:72px;right:72px;top:58px;bottom:56px;display:flex;flex-direction:column;gap:8px}
+.h2{margin:0;font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;font-size:15px;line-height:1.15}
+p{margin:0}
+.t{width:100%;border-collapse:collapse;font-size:12px;line-height:1.25}
+.t th{background:#120C06;color:#F9F7F4;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12px;text-align:left;padding:4px 8px}
+.t td{padding:3px 8px;border-bottom:1px solid rgba(18,12,6,.12);vertical-align:top}
+.cf{border-left:4px solid #E8A33D;background:#2E1D10;color:#E8A33D;padding:8px 12px;font-weight:600}
+</style>
+</helmet>
+<div class="pg">
+  <div class="rh"><span>Wright Co. · Comprehensive brand kit</span><span>07 Unconfirmed facts</span></div>
+  <div class="bd">
+    <div class="h2">Facts that render as Confirm before publishing</div>
+    <div class="cf">Each is a visible, editable field with the badge and this note. None may be filled with a guess.</div>
+    <table class="t">
+      <thead><tr><th style="width: 64px">ID</th><th>Field</th><th style="width: 210px">What is needed</th></tr></thead>
+      <tbody>
+        <sc-for list="{{ rows }}" as="r" hint-placeholder-count="30">
+          <tr><td style="font-weight: 700">{{ r.id }}</td><td>{{ r.f }}</td><td style="color: #5C5048">{{ r.n }}</td></tr>
+        </sc-for>
+      </tbody>
+    </table>
+    <p style="font-size: 12px; color: #5C5048">W-01, W-02, W-04 and W-06 are business and legal questions handled outside this kit; nothing in the kit states anything about them.</p>
+  </div>
+  <div class="rf"><span>Proposal v0.1 · Not yet approved by the owner</span><span>21</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":816,"height":1056}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { rows: [
+      { id: 'W-03', f: 'The phone long term: keep 360-957-5865 or add a local number', n: 'His decision. A change makes every emblem file wrong' },
+      { id: 'W-05', f: 'Facebook page rename, website link and address removal', n: 'His permission' },
+      { id: 'W-07', f: 'Free Lot Walk terms and descriptor: in person, how far, one-page plan, the Flag Walk', n: 'The owner’s commitment' },
+      { id: 'W-07', f: 'Service radius beyond Hammond and Ponchatoula', n: 'The owner’s radius' },
+      { id: 'W-08', f: 'Homeplace Package scope: dig, culvert install, fill, haul-off', n: 'The owner’s scope answer' },
+      { id: 'W-09', f: '“Firm price”, “written scope”, “no surprises”; change-order rule', n: 'His commitment and a rule' },
+      { id: 'W-10', f: 'Callback standard; text-back; “Texts welcome”; rained-out texts', n: 'A real window, text-back live' },
+      { id: 'W-11', f: 'Hauling: own fill and gravel; standalone delivery', n: 'The owner’s answer' },
+      { id: 'W-12', f: 'Builder terms: address and survey by text; one invoice; holding dates', n: 'The owner’s terms' },
+      { id: 'W-13', f: 'That he builds pads to the survey and never sets heights', n: 'His confirmation' },
+      { id: 'W-14', f: 'Debris method: burn, haul off or mulch', n: 'The owner’s method' },
+      { id: 'W-15', f: 'Cost ranges', n: 'The owner’s approval of numbers' },
+      { id: 'W-16', f: 'Retaining walls, shop dig-outs, utility taps, trenching, grading', n: 'Whether offered in Louisiana' },
+      { id: 'W-17', f: 'Apparel: real and stocked; its name', n: 'The owner’s answer' },
+      { id: 'W-18, W-24', f: 'Story detail: where he worked before, when he came, crew size, equipment, first Louisiana job', n: 'His own words' },
+      { id: 'W-19', f: 'Cody’s first-person voice; his byline on The Dirt Order', n: 'His approval' },
+      { id: 'W-20', f: 'Lead location wording: “a Hammond-area crew” or “serving Hammond”', n: 'His choice (both safe)' },
+      { id: 'W-21', f: '“Ready to build. The Wright way.”', n: 'That it is his line; one use' },
+      { id: 'W-22', f: 'Any Facebook review or Facebook photo', n: 'Louisiana, with permission' },
+      { id: 'W-25', f: 'Tagline, offer names, promise, purpose, mission, vision, values, position', n: 'His approval' },
+      { id: 'W-26', f: 'Graduate and Source Sans 3; colour roles; the logo-system brief', n: 'His approval' },
+      { id: 'W-27', f: 'Who made the emblem; whether a vector or layered original exists', n: 'His answer' },
+      { id: 'W-28', f: 'The voice: phone script and texts read aloud by Cody', n: 'His read-aloud test' },
+      { id: '—', f: 'Compaction method; density testing', n: 'The owner’s method' },
+      { id: '—', f: '“We’re booking winter lots now”', n: 'True at the time of posting' },
+      { id: '—', f: '“October and November are usually the driest months around Hammond”', n: 'NOAA station normals' },
+      { id: '—', f: 'Parish culvert source link and date; land-clearing thresholds', n: 'Re-verify quarterly' },
+      { id: '—', f: 'Hours', n: 'The owner’s hours' },
+      { id: '—', f: '“Every job gets photographed start to finish and posted”', n: 'His commitment' },
+      { id: '—', f: 'Navigation labels', n: 'Confirm at build' }
+    ] };
+  }
+}
+</script>
+</body>
+</html>

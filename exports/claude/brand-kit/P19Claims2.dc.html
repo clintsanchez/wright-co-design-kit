@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>07 Prohibited claims, part 2</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;font-synthesis:none}
+.pg{width:816px;height:1056px;box-sizing:border-box;position:relative;overflow:hidden;background:#F9F7F4;color:#120C06;font-family:'Source Sans 3',system-ui,sans-serif;font-size:12.5px;line-height:1.4}
+.rh,.rf{position:absolute;left:72px;right:72px;display:flex;justify-content:space-between;font-size:12px;color:#5C5048}
+.rh{top:28px}.rf{bottom:24px;border-top:1px solid rgba(18,12,6,.12);padding-top:8px}
+.bd{position:absolute;left:72px;right:72px;top:62px;bottom:58px;display:flex;flex-direction:column;gap:10px}
+p{margin:0}
+.t{width:100%;border-collapse:collapse;font-size:12px;line-height:1.35}
+.t th{background:#120C06;color:#F9F7F4;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12px;text-align:left;padding:5px 8px}
+.t td{padding:4px 8px;border-bottom:1px solid rgba(18,12,6,.12);vertical-align:top}
+</style>
+</helmet>
+<div class="pg">
+  <div class="rh"><span>Wright Co. · Comprehensive brand kit</span><span>07 Prohibited claims (continued)</span></div>
+  <div class="bd">
+    <table class="t">
+      <thead><tr><th style="width: 250px">Never</th><th style="width: 150px">Why</th><th>Say instead</th></tr></thead>
+      <tbody>
+        <sc-for list="{{ rows }}" as="r" hint-placeholder-count="18">
+          <tr><td style="font-weight: 600">{{ r.n }}</td><td style="color: #5C5048">{{ r.w }}</td><td>{{ r.s }}</td></tr>
+        </sc-for>
+      </tbody>
+    </table>
+  </div>
+  <div class="rf"><span>Proposal v0.1 · Not yet approved by the owner</span><span>20</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":816,"height":1056}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { rows: [
+      { n: 'Any competitor’s name; “unlike”, “the other guys”, “most contractors”, “other companies”', w: 'The brand describes only itself', s: 'Nothing' },
+      { n: 'Pad heights, elevations, BFE figures, “you’ll never flood”, “high and dry guaranteed”, flood-zone compliance', w: 'The surveyor and the parish set these', s: '“Your surveyor and the parish set the height. We build to it.”' },
+      { n: '“We handle your permits”, “permits included”, surveys or elevation certificates “done for you”', w: 'Not offered', s: '“We’ll tell you what comes first. The application is yours to file.”' },
+      { n: '“Guaranteed” timelines, “pad ready by spring”, “your pad settles over winter”, “settled by spring”, “rain or shine”, “we’ll never be late”', w: 'Weather, permits and culvert timing are outside the owner’s control', s: '“If rain moves it, we’ll tell you.”' },
+      { n: '“Same-day response”, a callback time, “within the hour”, “firm price”, “no surprises”, “written scope”, “texts welcome”', w: 'Waiting on the owner (W-09, W-10)', s: '“Straight answers, in plain words. Call or text Cody.”' },
+      { n: 'Concrete, fencing, decking, tree care, commercial or subdivision work as services', w: 'Not offered', s: '“We stop where your builder starts.”' },
+      { n: '“Louisiana born and raised”, local roots of any kind', w: 'Not on record', s: 'Nothing. The emblem carries Louisiana' },
+      { n: 'Countdowns, “limited time”, “only 2 spots left”, “book before prices go up”', w: 'False urgency', s: 'Real facts only' },
+      { n: 'A review incentive or discount for reviews', w: 'Breaks review-platform rules', s: 'Ask, with no incentive' },
+      { n: '“TM” or “R” on any name', w: 'Nothing is registered', s: 'The plain name' },
+      { n: 'More than one “Wright” pun; any before the owner confirms it; “Work Done the Wright Way” as a heading', w: 'One use, his line only (W-21)', s: 'Nothing' },
+      { n: '“Trucking” as a headline category', w: 'Reads as freight', s: '“Hauling & Material Delivery”, once confirmed' },
+      { n: 'A stock photo; any AI-generated or illustrated lot, machine, truck, crew, landowner, house or scene; an equipment render; another company’s equipment or logo; a mock-up on a generated truck, sign, shirt or hat', w: 'Real photos only; a generated lot would be a fabricated job', s: 'A labelled PhotoSlot' },
+      { n: 'A redrawn, re-lettered, recoloured, traced, generated or retyped logo; “WRIGHT CO” set in type as the logo', w: 'Composite the supplied files only', s: 'The supplied emblem file, or a LogoSlot' },
+      { n: 'Green, safety yellow or blue as a brand colour; pill buttons; gradients; shields; arched badges', w: 'Off-brand, and other companies’ looks', s: 'The token palette, square buttons, flat fills' },
+      { n: 'Cajun or bayou costume: gators, crawfish, “cher”, fake dialect', w: 'Costume', s: 'Plain words' },
+      { n: 'A Facebook link on any piece', w: 'The page still shows “LLC”, the wrong website and a placeholder address', s: 'Nothing, until it is renamed and repointed (W-05)' }
+    ] };
+  }
+}
+</script>
+</body>
+</html>

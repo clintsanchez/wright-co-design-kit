@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Homeplace Package, Wright Co.</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;font-synthesis:none;background:#120C06}
+.wc{background:#120C06;color:#F9F7F4;font-family:'Source Sans 3',system-ui,sans-serif;font-size:18px;line-height:1.6}
+.in{max-width:1200px;margin:0 auto;padding:0 16px;box-sizing:border-box}
+@media(min-width:640px){.in{padding:0 32px}}
+.sec{padding:64px 0;position:relative;overflow:hidden}
+@media(min-width:1024px){.sec{padding:96px 0}}
+.soil{background:#120C06}.surf{background:#20150C}.bone{background:#F9F7F4;color:#120C06}
+.G{font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;font-synthesis:none}
+.eb{font-size:14px;letter-spacing:.08em;line-height:1.3;color:#C8783A}
+.bone .eb{color:#6F482A}
+.disp{font-size:clamp(2rem,6vw,3.25rem);line-height:1.1;margin:0}
+.h2{font-size:clamp(1.375rem,3vw,1.875rem);line-height:1.1;letter-spacing:.01em;margin:0}
+.rule{width:96px;height:4px;background:#A15C27;margin:16px 0 24px}
+.lead{font-size:20px;color:#BFA89B;max-width:65ch;margin:0}
+.bone .lead,.bone .mut{color:#5C5048}
+.mut{color:#BFA89B}
+p{margin:0}
+.cta{display:flex;flex-direction:column;gap:16px;max-width:520px}
+@media(min-width:640px){.cta{flex-direction:row}.cta>*{flex:1 1 0}}
+.btn{min-height:52px;box-sizing:border-box;padding:16px 20px;border-radius:2px;font-weight:700;font-size:16px;line-height:1.2;letter-spacing:.06em;text-transform:uppercase;text-align:center;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;transition:background-color 150ms ease-out,color 150ms ease-out}
+.pri{background:#A15C27;color:#F9F7F4}.pri:hover{background:#6F482A}
+.ph{color:#F9F7F4;box-shadow:inset 0 0 0 2px #C8783A}.ph:hover{background:#C8783A;color:#120C06}
+.bone .ph{color:#120C06;box-shadow:inset 0 0 0 2px #120C06}
+a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid #C8783A;outline-offset:2px}
+a.tl{color:#C8783A;text-decoration:underline;font-weight:700}
+.bone a.tl{color:#A15C27}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:#20150C;border:1px solid rgba(212,184,160,.16);border-radius:4px;padding:32px;display:flex;flex-direction:column;gap:8px}
+.surf .card{background:#2E1D10}
+.chamf{border-radius:0;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%)}
+.h3{font-size:24px;font-weight:700;line-height:1.25;margin:0}
+.cb{display:inline-flex;align-items:center;gap:6px;background:#2E1D10;color:#E8A33D;border:1px solid #E8A33D;border-radius:2px;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;line-height:1.4}
+.slot{background:#20150C;border:1px solid rgba(212,184,160,.16);border-radius:8px;aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:center;gap:8px;padding:24px;box-sizing:border-box;font-size:14px}
+.ann{background:#ECE1D8;color:#120C06;font-size:14px;line-height:1.5;padding:12px 16px;border-bottom:1px solid rgba(18,12,6,.1)}
+.hdr{background:#120C06;border-bottom:1px solid rgba(212,184,160,.16)}
+.hdr .in{display:flex;align-items:center;gap:24px;min-height:72px;flex-wrap:wrap}
+.nav{display:none;gap:24px;font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;flex:1}
+.nav a{color:#F9F7F4;text-decoration:none}
+@media(min-width:1024px){.nav{display:flex}.hbtn{display:flex!important}.menu{display:none!important}}
+.hbtn{display:none;gap:12px}
+.menu{margin-left:auto;color:#F9F7F4;background:transparent;border:1px solid rgba(212,184,160,.4);border-radius:2px;min-height:44px;padding:0 16px;font:700 15px/1 'Source Sans 3',sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.lslot{width:140px;height:40px;box-sizing:border-box;border:1px dashed rgba(212,184,160,.5);color:#BFA89B;font-size:12px;line-height:1.2;display:flex;align-items:center;padding:0 8px}
+.skip{position:absolute;left:8px;top:-60px;background:#F9F7F4;color:#120C06;padding:8px 12px;z-index:5}
+.skip:focus{top:8px}
+.hero-row{display:flex;flex-wrap:wrap;gap:32px;align-items:center}
+.hero-txt{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.hero-em{flex:1 1 260px;display:flex;justify-content:center}
+.hero-em img{width:min(440px,100%);min-width:240px;height:auto}
+.strip{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:16px;letter-spacing:.04em}
+.strip .n{color:#C8783A}
+details{border-bottom:1px solid rgba(18,12,6,.12);padding:16px 0}
+summary{cursor:pointer;font-size:20px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:16px;min-height:44px;align-items:center}
+summary::-webkit-details-marker{display:none}
+.pm{color:#A15C27;font-size:24px;line-height:1}
+.callbar{display:flex;position:sticky;bottom:0;gap:8px;padding:16px;background:#2E1D10;border-top:1px solid #D4B8A0;z-index:4}
+.callbar .btn{flex:1 1 0;padding:12px 8px;font-size:14px}
+@media(min-width:640px){.callbar{display:none}}
+.grain{position:absolute;inset:0;width:100%;height:100%;opacity:.05;pointer-events:none}
+@media (prefers-reduced-motion: reduce){.btn{transition:none}}
+</style>
+</helmet>
+<div class="wc">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="ann"><b>SEO, not on the page.</b> Title: Homeplace Package: Site Prep for a New Home | Wright Co. · Meta: Land clearing for a house, done in order: trees and stumps out, driveway cut in, house pad built. One Hammond-area crew, one scope. Book a free lot walk.</div>
+  <header class="hdr"><div class="in">
+    <div class="lslot">Wordmark (logo #3), not yet drawn</div>
+    <nav class="nav" aria-label="Main"><a href="#">Homeplace Package</a><a href="#">Services ▾</a><a href="#">Areas ▾</a><a href="#">The Dirt Order</a><a href="#">About</a></nav>
+    <div class="hbtn"><a class="btn ph" href="tel:+13609575865" aria-label="Call or Text 360-957-5865">Call or Text</a><a class="btn pri" href="#">Book a Free Lot Walk</a></div>
+    <button class="menu" type="button">Menu</button>
+  </div></header>
+  <main id="main">
+    <nav aria-label="Breadcrumb" class="in" style="padding-top: 16px; font-size: 14px; color: #BFA89B">Home › <span style="color: #F9F7F4">The Homeplace Package</span></nav>
+    <section class="sec soil">
+      <svg class="grain" aria-hidden="true"><filter id="gh"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="100%" height="100%" filter="url(#gh)"></rect></svg>
+      <div class="in" style="position: relative; display: flex; flex-direction: column; gap: 24px; max-width: 1200px">
+        <div style="align-self: flex-start; background: #6F482A; padding: 3px; clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)"><div style="background: #2E1D10; padding: 6px; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)"><div class="G" style="border: 2px dashed #6F482A; padding: 8px 16px; font-size: 16px; letter-spacing: .08em; color: #C8783A">The Homeplace Package</div></div></div>
+        <h1 class="G disp" style="font-size: clamp(1.75rem, 4.5vw, 2.5rem); max-width: 22ch">The Homeplace Package: land clearing, driveway and house pad for your new home</h1>
+        <p style="font-size: 22px; font-weight: 700">Clear · Driveway · House Pad. One crew, one scope, build-ready.</p>
+        <p class="lead">We clear it, cut in the driveway and build your pad, in that order. Ask what’s included for your lot.</p>
+        <div class="cta"><a class="btn pri" href="#">Book a Free Lot Walk</a><a class="btn ph" href="tel:+13609575865">Call or Text 360-957-5865</a></div>
+      </div>
+    </section>
+    <section class="sec surf"><div class="in">
+      <p style="font-size: 22px; max-width: 60ch">Your homeplace is the spot on your land where the house goes. This is the dirt work that gets it ready.</p>
+    </div></section>
+    <section class="sec soil"><div class="in" style="display: flex; flex-direction: column; gap: 24px">
+      <div><h2 class="G h2">What’s in it</h2><div class="rule"></div></div>
+      <div class="grid">
+        <div class="card chamf"><span class="G" style="font-size: 56px; line-height: 1; color: #C8783A">01</span><h3 class="h3">Clear</h3><p class="mut">Trees and stumps out.</p><a class="tl" href="#">Land clearing</a></div>
+        <div class="card chamf"><span class="G" style="font-size: 56px; line-height: 1; color: #C8783A">02</span><h3 class="h3">Driveway</h3><p class="mut">Cut in so trucks can get to your home site.</p><a class="tl" href="#">Driveways &amp; culverts</a></div>
+        <div class="card chamf"><span class="G" style="font-size: 56px; line-height: 1; color: #C8783A">03</span><h3 class="h3">Pad</h3><p class="mut">Your house pad, built up to the height on your survey.</p><a class="tl" href="#">House pads</a></div>
+        <div class="card chamf"><span class="G" style="font-size: 56px; line-height: 1; color: #C8783A">04</span><h3 class="h3">Foundation dig</h3><p class="mut">Dug the way your builder specifies, then handed off.</p><a class="tl" href="#">House pads &amp; foundation digs</a></div>
+      </div>
+      <div style="overflow-x: auto"><table style="border-collapse: collapse; min-width: 520px; width: 100%; font-size: 16px">
+        <thead><tr><th style="text-align: left; padding: 12px; background: #2E1D10; border-bottom: 1px solid rgba(212,184,160,.16)">Item</th><th style="text-align: left; padding: 12px; background: #2E1D10; border-bottom: 1px solid rgba(212,184,160,.16)">Included or quoted separately</th></tr></thead>
+        <tbody>
+          <tr><td style="padding: 12px; border-bottom: 1px solid rgba(212,184,160,.16)">Foundation dig</td><td style="padding: 12px; border-bottom: 1px solid rgba(212,184,160,.16)"><span class="cb">Confirm before publishing · W-08</span></td></tr>
+          <tr><td style="padding: 12px; border-bottom: 1px solid rgba(212,184,160,.16)">Culvert install</td><td style="padding: 12px; border-bottom: 1px solid rgba(212,184,160,.16)"><span class="cb">Confirm before publishing · W-08</span></td></tr>
+          <tr><td style="padding: 12px; border-bottom: 1px solid rgba(212,184,160,.16)">Fill material</td><td style="padding: 12px; border-bottom: 1px solid rgba(212,184,160,.16)"><span class="cb">Confirm before publishing · W-08</span></td></tr>
+          <tr><td style="padding: 12px; border-bottom: 1px solid rgba(212,184,160,.16)">Debris haul-off</td><td style="padding: 12px; border-bottom: 1px solid rgba(212,184,160,.16)"><span class="cb">Confirm before publishing · W-08</span></td></tr>
+        </tbody>
+      </table></div>
+    </div></section>
+    <section class="sec surf"><div class="in" style="display: flex; flex-direction: column; gap: 16px">
+      <div><h2 class="G h2">Why one crew</h2><div class="rule"></div></div>
+      <div class="grid">
+        <div class="card"><h3 class="h3">One call.</h3></div>
+        <div class="card"><h3 class="h3">One scope.</h3></div>
+        <div class="card"><h3 class="h3">No hand-offs between outfits.</h3></div>
+      </div>
+      <p style="max-width: 65ch">If something on the lot isn’t right, there’s no question whose job it was.</p>
+    </div></section>
+    <section class="sec bone"><div class="in" style="display: flex; flex-direction: column; gap: 16px">
+      <div><h2 class="G h2">How it runs</h2><div class="rule"></div></div>
+      <ol style="margin: 0; padding-left: 24px; display: flex; flex-direction: column; gap: 8px; font-size: 20px">
+        <li>The lot walk</li>
+        <li>A written scope <span class="cb">Confirm before publishing · W-09</span></li>
+        <li>Clear</li><li>Driveway</li><li>Pad</li><li>Hand-off to your builder</li>
+      </ol>
+      <p>What’s on you first: your 911 address, the culvert permit and the survey. <a class="tl" href="#">Read The Dirt Order</a></p>
+    </div></section>
+    <section class="sec soil"><div class="in" style="display: flex; flex-direction: column; gap: 16px">
+      <div><h2 class="G h2">What drives the price</h2><div class="rule"></div></div>
+      <ol style="margin: 0; padding-left: 24px; display: flex; flex-direction: column; gap: 8px; font-size: 20px"><li>Acreage</li><li>How thick the trees are</li><li>Stumps</li><li>How far the fill hauls</li><li>How high the pad needs to be</li></ol>
+      <p>We’ll walk it and put it in writing. <a class="tl" href="#">See what moves the price</a> · <a class="tl" href="#">House-pad cost</a></p>
+      <div class="cta" style="margin-top: 16px"><a class="btn pri" href="#">Book a Free Lot Walk</a><a class="btn ph" href="tel:+13609575865">Call or Text 360-957-5865</a></div>
+    </div></section>
+    <section class="sec surf"><div class="in">
+      <h2 class="G h2">Who it’s for</h2><div class="rule"></div>
+      <div class="grid">
+        <div class="card"><h3 class="h3">Just closed on land</h3><p class="mut">You bought the land and the site work is on you. Start with the lot walk.</p></div>
+        <div class="card"><h3 class="h3">Family land, next generation</h3><p class="mut">A homesite on the family tract, cleared and padded with care for the rest of it.</p></div>
+        <div class="card" style="border-style: dashed"><h3 class="h3">Builders</h3><p class="mut">Builder page after the first Louisiana lots.</p><p class="mut">Text us the address and the survey.</p><span class="cb" style="align-self: flex-start">Confirm before publishing · W-12</span></div>
+      </div>
+    </div></section>
+    <section class="sec bone"><div class="in" style="max-width: 860px">
+      <h2 class="G h2">Questions</h2><div class="rule"></div>
+      <details open=""><summary>How long does it take?<span class="pm" aria-hidden="true">−</span></summary><p style="padding-top: 8px">It depends on the acreage, the trees, the weather and the parish culvert timing. We’ll lay it out after we walk it.</p></details>
+      <details><summary>Can I do just clearing?<span class="pm" aria-hidden="true">+</span></summary><p style="padding-top: 8px">Yes. Book a lot walk and tell us what you need.</p></details>
+      <details><summary>Does my construction loan cover site work?<span class="pm" aria-hidden="true">+</span></summary><p style="padding-top: 8px">Ask your lender. We’ll give you a written scope they can use. <span class="cb">Confirm before publishing · W-09</span></p></details>
+      <details><summary>Is the foundation dig included?<span class="pm" aria-hidden="true">+</span></summary><p style="padding-top: 8px"><span class="cb">Confirm before publishing · W-08 scope</span></p></details>
+    </div></section>
+    <section class="sec soil" style="padding-top: 128px; padding-bottom: 128px">
+      <svg class="grain" aria-hidden="true"><filter id="gc"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="100%" height="100%" filter="url(#gc)"></rect></svg>
+      <div class="in" style="position: relative; display: flex; flex-direction: column; gap: 24px">
+        <img src="/_blob/29520cfad590205a95bc8aa6ee9c2651" alt="Wright Co." style="width: 280px; height: auto">
+        <h2 class="G h2">From the first tree to the house pad.</h2>
+        <div class="cta"><a class="btn pri" href="#">Book a Free Lot Walk</a><a class="btn ph" href="tel:+13609575865">Call or Text 360-957-5865</a></div>
+        <p class="mut" style="font-size: 14px">Free estimates.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer style="background: #120C06; border-top: 3px solid #A15C27"><div class="in" style="padding-top: 48px; padding-bottom: 48px; display: flex; flex-direction: column; gap: 16px">
+    <nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 16px"><a class="tl" href="#">Land Clearing</a><a class="tl" href="#">Driveways &amp; Culverts</a><a class="tl" href="#">House Pads</a><a class="tl" href="#">Ponds &amp; Drainage</a><a class="tl" href="#">The Dirt Order</a><a class="tl" href="#">What it costs to clear an acre</a><a class="tl" href="#">About</a><a class="tl" href="#">Privacy</a></nav>
+    <p style="font-size: 16px">© 2026 Wright Co. · Land clearing, driveways &amp; house pads · Serving Hammond, Tangipahoa Parish &amp; the Northshore · 360-957-5865 · wrightco504@gmail.com</p>
+    <p class="mut" style="font-size: 14px">Clearing and excavating since 2022.</p>
+    <p class="mut" style="font-size: 14px">Facebook link: off until the page is renamed and repointed <span class="cb">Confirm before publishing · W-05</span></p>
+  </div></footer>
+  <div class="callbar"><a class="btn pri" href="#">Book a Free Lot Walk</a><a class="btn ph" href="tel:+13609575865" aria-label="Call or Text 360-957-5865">Call or Text</a></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6400}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

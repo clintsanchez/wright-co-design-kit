@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Job photo slot, portrait</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; background: #120C06; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column">
+  <div style="flex: 1 1 auto; box-sizing: border-box; background: #20150C; border-bottom: 1px solid rgba(212,184,160,0.16); padding: 80px; display: flex; flex-direction: column; justify-content: center; gap: 24px">
+    <svg aria-hidden="true" width="64" height="64" viewBox="0 0 24 24"><path fill="#D4B8A0" d="M9 3 7.2 5H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-4.2L15 3H9zm3 5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path></svg>
+    <div style="font-size: 40px; line-height: 1.35; color: #F9F7F4">{{ label }}</div>
+    <div style="font-size: 30px; color: #BFA89B">4:5 · full bleed · alt text: say what is in the frame</div>
+    <div style="align-self: flex-start; display: flex; align-items: center; gap: 12px; padding: 8px 16px; background: #2E1D10; border: 1px solid #E8A33D; border-radius: 2px; color: #E8A33D; font-weight: 700; font-size: 28px; letter-spacing: 0.04em; text-transform: uppercase"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24"><path fill="#E8A33D" d="M12 2 1 21h22L12 2zm-1 7h2v6h-2V9zm0 8h2v2h-2v-2z"></path></svg>Confirm before publishing</div>
+    <div style="font-size: 30px; color: #BFA89B">Photograph needed from the first Louisiana job.</div>
+  </div>
+  <div style="flex: none; padding: 32px 80px 48px; display: flex; justify-content: space-between; align-items: center; gap: 32px">
+    <div style="font-size: 36px; font-weight: 700; color: #F9F7F4">[Town] · [the work]</div>
+    <div style="font-size: 30px; color: #BFA89B">wrightco.llc</div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"shot":{"editor":"enum","options":["01 Clear","02 Driveway","03 Pad","Lot walk"],"default":"01 Clear","section":"Content"},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const l = {
+      '01 Clear': 'Real job photo: 01 Clear, stumps coming out',
+      '02 Driveway': 'Real job photo: 02 Driveway, driveway cut in, culvert at the road',
+      '03 Pad': 'Real job photo: 03 Pad, finished pad with the builder’s stakes',
+      'Lot walk': 'Real job photo: Cody walking a lot with a landowner (with permission)'
+    };
+    return { label: l[this.props.shot] || l['01 Clear'] };
+  }
+}
+</script>
+</body>
+</html>

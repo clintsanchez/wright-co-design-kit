@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Story, step</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1080px; height: 1920px; box-sizing: border-box; position: relative; overflow: hidden; padding: 330px 80px 420px; background: #120C06; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; justify-content: center; gap: 48px">
+  <svg aria-hidden="true" width="1080" height="1920" style="position: absolute; left: 0; top: 0; opacity: 0.06; pointer-events: none"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="1080" height="1920" filter="url(#grain)"></rect></svg>
+  <div style="position: relative; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; font-size: 240px; line-height: 1; color: #C8783A">{{ num }}</div>
+  <h1 style="position: relative; margin: 0; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 88px; line-height: 1.1; color: #F9F7F4">{{ name }}</h1>
+  <p style="position: relative; margin: 0; font-size: 44px; line-height: 1.4; color: #F9F7F4">{{ line }}</p>
+  <div style="position: relative; display: flex; flex-direction: column; gap: 8px; padding-top: 32px; border-top: 1px solid rgba(212,184,160,0.16)">
+    <sc-for list="{{ strip }}" as="s" hint-placeholder-count="4">
+      <sc-if value="{{ s.on }}" hint-placeholder-val="{{ false }}"><span style="font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 30px; letter-spacing: 0.08em; line-height: 1.5; color: #F9F7F4; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 8px">{{ s.label }}</span></sc-if>
+      <sc-if value="{{ s.off }}" hint-placeholder-val="{{ true }}"><span style="font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 30px; letter-spacing: 0.08em; line-height: 1.5; color: #BFA89B">{{ s.label }}</span></sc-if>
+    </sc-for>
+  </div>
+  <div style="position: relative; font-size: 30px; color: #BFA89B">wrightco.llc</div>
+  <sc-if value="{{ safe }}" hint-placeholder-val="{{ false }}">
+    <div style="position: absolute; left: 0; top: 0; width: 1080px; height: 250px; box-sizing: border-box; background: rgba(232,163,61,0.18); border-bottom: 2px dashed #E8A33D; padding: 24px 40px; font-size: 28px; font-weight: 700; color: #E8A33D">Platform chrome, top 250 px: keep clear</div>
+    <div style="position: absolute; left: 0; bottom: 0; width: 1080px; height: 340px; box-sizing: border-box; background: rgba(232,163,61,0.18); border-top: 2px dashed #E8A33D; padding: 24px 40px; font-size: 28px; font-weight: 700; color: #E8A33D">Captions and controls, bottom 340 px: keep clear</div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"step":{"editor":"enum","options":["01","02","03","04"],"default":"01","section":"Content"},"safe":{"editor":"boolean","default":false,"section":"Guides"},"$preview":{"width":1080,"height":1920}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const data = {
+      '01': ['Clear', 'Trees and stumps out.'],
+      '02': ['Driveway', 'Cut in so trucks can get to your home site.'],
+      '03': ['Pad', 'Your house pad, built up to the height on your survey.'],
+      '04': ['Foundation dig', 'Dug the way your builder specifies, then handed off.']
+    };
+    const step = data[this.props.step] ? this.props.step : '01';
+    const cur = Number(step) - 1;
+    const steps = ['01 Clear', '02 Driveway', '03 Pad', '04 Foundation Dig'];
+    return {
+      num: step, name: data[step][0], line: data[step][1], safe: this.props.safe ?? false,
+      strip: steps.map((label, i) => ({ label, on: i === cur, off: i !== cur }))
+    };
+  }
+}
+</script>
+</body>
+</html>

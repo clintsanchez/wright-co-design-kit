@@ -1,0 +1,354 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-16T00:40:00Z"
+ },
+ "title": "Wright Co. Brand Kit",
+ "launch": {
+  "view": "canvas",
+  "page": "kit"
+ },
+ "pages": [
+  {
+   "id": "kit",
+   "name": "Brand kit (PDF pages)"
+  },
+  {
+   "id": "web",
+   "name": "Website mockups"
+  }
+ ],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "Cover"
+  },
+  "P02Record.dc.html": {
+   "x": 896,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "Record and about"
+  },
+  "P03Context.dc.html": {
+   "x": 1792,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "01 Context"
+  },
+  "P04Audience.dc.html": {
+   "x": 2688,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "01 Audience and position"
+  },
+  "P05Foundation.dc.html": {
+   "x": 3584,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "01 Foundation"
+  },
+  "P06Voice.dc.html": {
+   "x": 4480,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "02 Voice"
+  },
+  "P07VoiceExamples.dc.html": {
+   "x": 0,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "02 On brand and off brand"
+  },
+  "P08Messaging.dc.html": {
+   "x": 896,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "02 Messaging"
+  },
+  "P09Colour.dc.html": {
+   "x": 1792,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "03 Colour"
+  },
+  "P10Contrast.dc.html": {
+   "x": 2688,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "03 Contrast and colour rules"
+  },
+  "P11Type.dc.html": {
+   "x": 3584,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "03 Typography"
+  },
+  "P12Shape.dc.html": {
+   "x": 4480,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "03 Space, shape, motion"
+  },
+  "P13Devices.dc.html": {
+   "x": 0,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "04 Iconography and devices"
+  },
+  "P14Logo.dc.html": {
+   "x": 896,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "05 Logo grounds"
+  },
+  "P15LogoSizes.dc.html": {
+   "x": 1792,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "05 Sizes, avatar, favicon"
+  },
+  "P16LogoMissing.dc.html": {
+   "x": 2688,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "05 Forbidden uses and link preview"
+  },
+  "P16bAvatar.dc.html": {
+   "x": 3584,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "05 Avatar, favicon, still to be drawn"
+  },
+  "P17Photo.dc.html": {
+   "x": 4480,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "06 Photography and slots"
+  },
+  "P18Claims1.dc.html": {
+   "x": 0,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "07 Prohibited claims (1)"
+  },
+  "P19Claims2.dc.html": {
+   "x": 896,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "07 Prohibited claims (2)"
+  },
+  "P20Unconfirmed.dc.html": {
+   "x": 1792,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "07 Unconfirmed facts"
+  },
+  "P21Components1.dc.html": {
+   "x": 2688,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "08 Components: core"
+  },
+  "P22Components2.dc.html": {
+   "x": 3584,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "08 Components: content"
+  },
+  "P23Social.dc.html": {
+   "x": 4480,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "09 Social and content system"
+  },
+  "P24Slides.dc.html": {
+   "x": 0,
+   "y": 4704,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "10 Slide masters and website kit"
+  },
+  "P25Print1.dc.html": {
+   "x": 896,
+   "y": 4704,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "11 Print: card, sign, signature"
+  },
+  "P26Print2.dc.html": {
+   "x": 1792,
+   "y": 4704,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "11 Print: estimate, one-sheet, vehicle"
+  },
+  "P27Tokens.dc.html": {
+   "x": 2688,
+   "y": 4704,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "12 Token source"
+  },
+  "P28Files.dc.html": {
+   "x": 3584,
+   "y": 4704,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "13 File index"
+  },
+  "P29Open.dc.html": {
+   "x": 4480,
+   "y": 4704,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "14 Open questions and decisions"
+  },
+  "P30Maintenance.dc.html": {
+   "x": 0,
+   "y": 5880,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "14 Maintenance and checks"
+  },
+  "P31Closing.dc.html": {
+   "x": 896,
+   "y": 5880,
+   "w": 816,
+   "h": 1056,
+   "page": "kit",
+   "title": "Closing"
+  },
+  "WebHome.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 7200,
+   "page": "web",
+   "expand": "fill",
+   "title": "Home /"
+  },
+  "WebLandClearing.dc.html": {
+   "x": 1520,
+   "y": 0,
+   "w": 1440,
+   "h": 7200,
+   "page": "web",
+   "expand": "fill",
+   "title": "Land clearing /land-clearing/"
+  },
+  "WebHomeplace.dc.html": {
+   "x": 3040,
+   "y": 0,
+   "w": 1440,
+   "h": 6400,
+   "page": "web",
+   "expand": "fill",
+   "title": "The Homeplace Package /homeplace-package/"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "P02Record.dc.html",
+  "P03Context.dc.html",
+  "P04Audience.dc.html",
+  "P05Foundation.dc.html",
+  "P06Voice.dc.html",
+  "P07VoiceExamples.dc.html",
+  "P08Messaging.dc.html",
+  "P09Colour.dc.html",
+  "P10Contrast.dc.html",
+  "P11Type.dc.html",
+  "P12Shape.dc.html",
+  "P13Devices.dc.html",
+  "P14Logo.dc.html",
+  "P15LogoSizes.dc.html",
+  "P16LogoMissing.dc.html",
+  "P16bAvatar.dc.html",
+  "P17Photo.dc.html",
+  "P18Claims1.dc.html",
+  "P19Claims2.dc.html",
+  "P20Unconfirmed.dc.html",
+  "P21Components1.dc.html",
+  "P22Components2.dc.html",
+  "P23Social.dc.html",
+  "P24Slides.dc.html",
+  "P25Print1.dc.html",
+  "P26Print2.dc.html",
+  "P27Tokens.dc.html",
+  "P28Files.dc.html",
+  "P29Open.dc.html",
+  "P30Maintenance.dc.html",
+  "P31Closing.dc.html",
+  "WebHome.dc.html",
+  "WebLandClearing.dc.html",
+  "WebHomeplace.dc.html"
+ ],
+ "notes": {},
+ "designSystems": [
+  {
+   "title": "Wright Co.",
+   "namespace": "wrightco",
+   "artifact": "https://claude.ai/code/artifact/96bbbf9f-9404-41fe-913a-047624086c00",
+   "version": null,
+   "copiedAt": "2026-10-16T00:40:00Z"
+  }
+ ]
+}

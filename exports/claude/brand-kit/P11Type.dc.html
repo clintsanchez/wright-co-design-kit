@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>03 Typography</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;font-synthesis:none}
+.pg{width:816px;height:1056px;box-sizing:border-box;position:relative;overflow:hidden;background:#F9F7F4;color:#120C06;font-family:'Source Sans 3',system-ui,sans-serif;font-size:12.5px;line-height:1.45}
+.rh,.rf{position:absolute;left:72px;right:72px;display:flex;justify-content:space-between;font-size:12px;color:#5C5048}
+.rh{top:28px}.rf{bottom:24px;border-top:1px solid rgba(18,12,6,.12);padding-top:8px}
+.bd{position:absolute;left:72px;right:72px;top:64px;bottom:60px;display:flex;flex-direction:column;gap:9px}
+.h2{margin:0;font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;font-size:15px;line-height:1.15}
+p{margin:0}
+.G{font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;font-synthesis:none;text-transform:uppercase}
+.t{width:100%;border-collapse:collapse;font-size:12px;line-height:1.35}
+.t th{background:#120C06;color:#F9F7F4;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12px;text-align:left;padding:5px 8px}
+.t td{padding:3px 8px;border-bottom:1px solid rgba(18,12,6,.12);vertical-align:top}
+.nx{border-left:4px solid #D9534F;background:#ECE1D8;padding:8px 12px}
+</style>
+</helmet>
+<div class="pg">
+  <div class="rh"><span>Wright Co. · Comprehensive brand kit</span><span>03 Visual foundations</span></div>
+  <div class="bd">
+    <div class="h2">Typography <span style="font-family: 'Source Sans 3', sans-serif; font-size: 12px; text-transform: none; color: #5C5048">Agency proposal · W-26</span></div>
+    <div style="background: #120C06; color: #F9F7F4; border-radius: 4px; padding: 18px 22px; display: flex; flex-direction: column; gap: 10px">
+      <div class="G" style="font-size: 12px; letter-spacing: .08em; color: #C8783A">Eyebrow · Graduate 14 px · +0.08em</div>
+      <div class="G" style="font-size: 52px; line-height: 1.1">You bought the land.</div>
+      <div class="G" style="font-size: 40px; line-height: 1.1">Land clearing in Hammond</div>
+      <div class="G" style="font-size: 30px; line-height: 1.1; letter-spacing: .01em">What moves the price</div>
+      <div style="font-size: 24px; font-weight: 700; line-height: 1.25">The Homeplace Package</div>
+      <div style="font-size: 20px; line-height: 1.6; color: #BFA89B">We clear the trees and stumps, cut in your driveway and build your house pad.</div>
+      <div style="font-size: 18px; line-height: 1.6">When it’s too wet, we don’t run equipment. It ruts your lot and makes a worse pad.</div>
+      <div style="display: flex; gap: 24px; align-items: baseline"><span style="font-size: 16px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase">Book a Free Lot Walk</span><span style="font-size: 14px; color: #BFA89B">Free estimates · Clearing and excavating since 2022</span></div>
+    </div>
+    <table class="t">
+      <thead><tr><th style="width: 90px">Level</th><th style="width: 170px">Token</th><th style="width: 120px">Font</th><th style="width: 90px">Desk / mob</th><th style="width: 40px">LH</th><th>Use</th></tr></thead>
+      <tbody>
+        <tr><td>Display</td><td>--text-display</td><td>Graduate 400</td><td>52 / 32</td><td>1.1</td><td>Hero line only, upper</td></tr>
+        <tr><td>H1</td><td>--text-h1</td><td>Graduate 400</td><td>40 / 28</td><td>1.1</td><td>Page title, one per page</td></tr>
+        <tr><td>H2</td><td>--text-h2</td><td>Graduate 400</td><td>30 / 22</td><td>1.1</td><td>Section heads, rust rule beneath</td></tr>
+        <tr><td>Eyebrow</td><td>--text-eyebrow (add)</td><td>Graduate 400</td><td>14</td><td>1.3</td><td>Copper on dark, Earth Brown on Bone</td></tr>
+        <tr><td>Numeral</td><td>none</td><td>Graduate 400</td><td>2–4 × body</td><td>1</td><td>01 · 02 · 03 · 04</td></tr>
+        <tr><td>H3</td><td>--text-h3</td><td>Source Sans 3 700</td><td>24</td><td>1.25</td><td>Card titles, FAQ questions</td></tr>
+        <tr><td>Lead</td><td>--text-lead (add)</td><td>Source Sans 3 400</td><td>20</td><td>1.6</td><td>Intro under a heading</td></tr>
+        <tr><td>Body</td><td>--text-base</td><td>Source Sans 3 400</td><td>18</td><td>1.6</td><td>Paragraphs, 60–75 characters</td></tr>
+        <tr><td>Button, nav</td><td>--text-button (add)</td><td>Source Sans 3 700</td><td>16</td><td>1.2</td><td>Upper, +0.06em</td></tr>
+        <tr><td>Small</td><td>--text-small</td><td>Source Sans 3 400/600</td><td>14</td><td>1.5</td><td>Captions, hints, slot labels</td></tr>
+      </tbody>
+    </table>
+    <div class="nx"><b>Graduate ships in one weight.</b> Load <code>family=Graduate</code> only; every Graduate element sets <code>font-weight: 400</code> and <code>font-synthesis: none</code>. Uppercase, eight words and two lines at most. Never for H3, buttons, nav, labels or paragraphs. Never “WRIGHT CO” set in it as a logo.</div>
+    <p style="font-size: 12px"><b>Rules.</b> Sentence case in source; CSS uppercases display and buttons. Left aligned; centre only a short hero line or closing CTA. No italics for emphasis. Body 18 px; nothing on the web below 14 px. Tabular figures for phones and tables. Without the brand fonts: Rockwell Bold headings (Arial Black fallback), Arial body. <b>Avoid:</b> Oswald or any condensed grotesk, grunge or script faces, light weights, a third family.</p>
+    <p style="font-size: 12px"><b>Social, 1080 × 1350:</b> headline 72–96 px, support 40–44 px, label 28–30 px, numeral 160–240 px, smallest text 36 px, margins 80 px. <b>Slides, 1920 × 1080:</b> headings 64–80 px, body 28 px minimum, 30 words a slide. <b>Print:</b> headings 32–40 pt, body 10 pt minimum on paper, 18 pt on slides.</p>
+  </div>
+  <div class="rf"><span>Proposal v0.1 · Not yet approved by the owner</span><span>11</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":816,"height":1056}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

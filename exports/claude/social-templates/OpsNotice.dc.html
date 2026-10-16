@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Operations notice, square</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1080px; height: 1080px; box-sizing: border-box; position: relative; overflow: hidden; padding: 80px; background: #20150C; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+  <svg aria-hidden="true" width="1080" height="1080" style="position: absolute; left: 0; top: 0; opacity: 0.06; pointer-events: none"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="1080" height="1080" filter="url(#grain)"></rect></svg>
+  <div style="position: relative; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 28px; letter-spacing: 0.08em; color: #C8783A">{{ label }}</div>
+  <div style="position: relative; display: flex; flex-direction: column; gap: 32px; padding: 64px; background: #2E1D10; border: 1px solid rgba(212,184,160,0.16); border-radius: 4px">
+    <svg aria-hidden="true" width="64" height="64" viewBox="0 0 24 24"><path fill="#D4B8A0" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1 5h2v7h-2V7zm0 9h2v2h-2v-2z"></path></svg>
+    <p style="margin: 0; font-size: 48px; line-height: 1.35; color: #F9F7F4">{{ text }}</p>
+    <div style="align-self: flex-start; display: flex; align-items: center; gap: 12px; padding: 8px 16px; background: #20150C; border: 1px solid #E8A33D; border-radius: 2px; color: #E8A33D; font-weight: 700; font-size: 28px; letter-spacing: 0.04em; text-transform: uppercase"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24"><path fill="#E8A33D" d="M12 2 1 21h22L12 2zm-1 7h2v6h-2V9zm0 8h2v2h-2v-2z"></path></svg>Confirm before publishing: post only when true</div>
+  </div>
+  <div style="position: relative; font-size: 30px; color: #BFA89B">360-957-5865 · wrightco.llc</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"notice":{"editor":"enum","options":["Rained out","Holiday"],"default":"Rained out","section":"Content"},"$preview":{"width":1080,"height":1080}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const h = this.props.notice === 'Holiday';
+    return {
+      label: h ? 'Schedule' : 'Weather',
+      text: h ? 'Holiday: we’re off [day, date]. Back [day].' : 'Rained out today. Clay needs a couple of dry days before we pad. Back at it [day].'
+    };
+  }
+}
+</script>
+</body>
+</html>

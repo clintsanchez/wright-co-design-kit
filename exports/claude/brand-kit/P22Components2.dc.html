@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>08 Components, content and navigation</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;font-synthesis:none}
+.pg{width:816px;height:1056px;box-sizing:border-box;position:relative;overflow:hidden;background:#F9F7F4;color:#120C06;font-family:'Source Sans 3',system-ui,sans-serif;font-size:12px;line-height:1.4}
+.rh,.rf{position:absolute;left:72px;right:72px;display:flex;justify-content:space-between;font-size:12px;color:#5C5048}
+.rh{top:28px}.rf{bottom:24px;border-top:1px solid rgba(18,12,6,.12);padding-top:8px}
+.bd{position:absolute;left:72px;right:72px;top:58px;bottom:56px;display:flex;flex-direction:column;gap:8px}
+.h2{margin:0;font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;font-size:14px;line-height:1.15}
+.G{font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase}
+p{margin:0}
+.lbl{font-size:12px;color:#5C5048}
+.hdr{background:#120C06;border-bottom:1px solid rgba(212,184,160,.16);padding:10px 14px;display:flex;align-items:center;gap:14px;color:#F9F7F4}
+.nav{display:flex;gap:12px;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;flex:1}
+.b1{background:#A15C27;color:#F9F7F4;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:10px 12px;border-radius:2px;white-space:nowrap}
+.b2{box-shadow:inset 0 0 0 2px #C8783A;color:#F9F7F4;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:10px 12px;border-radius:2px;white-space:nowrap}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.card{background:#20150C;color:#F9F7F4;border:1px solid rgba(212,184,160,.16);padding:14px;display:flex;flex-direction:column;gap:6px}
+.slot{border:1px dashed rgba(212,184,160,.5);color:#BFA89B;font-size:12px;padding:6px 8px;line-height:1.2}
+</style>
+</helmet>
+<div class="pg">
+  <div class="rh"><span>Wright Co. · Comprehensive brand kit</span><span>08 Components</span></div>
+  <div class="bd">
+    <div class="h2">SiteHeader (desktop, scaled)</div>
+    <div class="hdr"><div class="slot" style="width: 120px">Wordmark (logo #3), not yet drawn · <span style="color: #E8A33D">Confirm</span></div><div class="nav"><span style="text-decoration: underline; text-decoration-color: #C8783A; text-decoration-thickness: 2px; text-underline-offset: 4px">Homeplace Package</span><span>Services ▾</span><span>Areas ▾</span><span>The Dirt Order</span><span>About</span></div><span class="b2">Call or Text</span><span class="b1">Book a Free Lot Walk</span></div>
+    <span class="lbl">Variant <b>slot</b> (default). Variant <b>emblem-240</b>: the emblem at 240 px and the header grows; then the hero carries no emblem. Services ordered by the sequence, never alphabetically. First focusable element: “Skip to content”. Nav labels are a proposal to confirm at build.</span>
+    <div class="h2" style="margin-top: 2px">Content blocks</div>
+    <div class="g3">
+      <div class="card" style="clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)"><span class="G" style="font-size: 36px; line-height: 1; color: #C8783A">03</span><b style="font-size: 15px">Pad</b><span style="color: #BFA89B">Your house pad, built up to the height on your survey.</span><span style="color: #C8783A; text-decoration: underline">House pads</span><span class="lbl" style="color: #BFA89B">SequenceCard · chamfered</span></div>
+      <div class="card" style="border-radius: 4px"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24"><path fill="#D4B8A0" d="M2 18c3-4 6-6 10-6s7 2 10 6v2H2v-2zm8-12a3 3 0 1 1 4 0v4h-4V6z"></path></svg><b style="font-size: 15px">Ponds &amp; Drainage</b><span style="color: #BFA89B">Pond digging and drainage for your land.</span><span style="color: #C8783A; text-decoration: underline">Ponds</span><span class="lbl" style="color: #BFA89B">ServiceCard · 4 px radius</span></div>
+      <div class="card" style="background: #2E1D10"><div style="display: flex; gap: 8px; align-items: center"><span style="height: 28px; width: 28px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #C8783A; color: #C8783A; font-weight: 700">−</span><b style="font-size: 15px">Do you set the pad height?</b></div><span style="color: #F9F7F4">No. Your surveyor and the parish set the height. We build to it.</span><span class="lbl" style="color: #BFA89B">FaqItem · keyboard operable</span></div>
+    </div>
+    <div style="background: #20150C; color: #F9F7F4; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+      <div style="align-self: flex-start; background: #6F482A; padding: 2px; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)"><div style="background: #2E1D10; padding: 4px; clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px)"><div class="G" style="border: 1.5px dashed #6F482A; padding: 6px 12px; font-size: 14px; letter-spacing: .08em; color: #C8783A">The Homeplace Package</div></div></div>
+      <b style="font-size: 15px">Clear · Driveway · House Pad. One crew, one scope, build-ready.</b>
+      <span style="color: #BFA89B">We clear it, cut in the driveway and build your pad, in that order. Ask what’s included for your lot.</span>
+      <span style="color: #C8783A; text-decoration: underline; font-weight: 700">Ask about the Homeplace Package</span>
+      <span class="lbl" style="color: #BFA89B">OfferBand · no price, no “from”, no tiers</span>
+    </div>
+    <div style="background: #F9F7F4; border: 1px solid rgba(18,12,6,.12); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px">
+      <div class="G" style="font-size: 20px">What moves the price</div><div style="width: 100px; height: 4px; background: #A15C27"></div>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px"><span><b>1</b> Acreage</span><span><b>2</b> How thick the trees are</span><span><b>3</b> Stumps</span><span><b>4</b> How far the fill hauls</span><span><b>5</b> How high the pad needs to be</span></div>
+      <span>We’ll walk it and put it in writing. <span style="color: #A15C27; text-decoration: underline">See what moves the price</span></span>
+      <span class="lbl">PriceDrivers · Bone · no figure, range, slider or calculator</span>
+    </div>
+    <div style="display: flex; gap: 14px; align-items: flex-end">
+      <div style="width: 300px; flex: none; background: #2E1D10; border-top: 1px solid #D4B8A0; padding: 12px; display: flex; gap: 8px"><span class="b1" style="flex: 1 1 0; text-align: center; font-size: 11.5px">Book a Free Lot Walk</span><span class="b2" style="flex: 1 1 0; text-align: center; font-size: 11.5px">Call or Text</span></div>
+      <span class="lbl">MobileCallBar at 360 px (scaled): fixed, Soil Elevated, Clay hairline, equal-width pair. Hides while the form is on screen; never covers a focused field.</span>
+    </div>
+    <div style="background: #120C06; color: #F9F7F4; border-top: 3px solid #A15C27; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; font-size: 12px">
+      <span>© 2026 Wright Co. · Land clearing, driveways &amp; house pads · Serving Hammond, Tangipahoa Parish &amp; the Northshore · 360-957-5865 · wrightco504@gmail.com</span>
+      <span style="color: #BFA89B">Clearing and excavating since 2022. · Facebook link: off until renamed and repointed (W-05)</span>
+    </div>
+    <span class="lbl">SiteFooter: the emblem at 240–320 px only if none is in view above. No address, no “LLC”, no hours, no seal row.</span>
+  </div>
+  <div class="rf"><span>Proposal v0.1 · Not yet approved by the owner</span><span>23</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":816,"height":1056}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

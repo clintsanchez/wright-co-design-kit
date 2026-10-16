@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Avatar system</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1440px; height: 760px; box-sizing: border-box; padding: 64px 80px; background: #20150C; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; gap: 40px">
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <div style="font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 16px; letter-spacing: 0.08em; color: #C8783A">Avatar system</div>
+    <div style="font-size: 20px; line-height: 1.5; color: #BFA89B">The supplied avatar, composited unaltered. The same file on every platform: 1024 master, 512 Google, 400, 320 Facebook, 180 touch icon.</div>
+  </div>
+  <div style="display: flex; align-items: flex-end; gap: 64px">
+    <div style="display: flex; flex-direction: column; gap: 12px"><img src="/_blob/dba774c7b9170c5b8ea16ac2d331dd2e" alt="Wright Co. avatar, square" style="width: 320px; height: 320px; display: block"><span style="font-size: 16px; color: #BFA89B">Square, 1024 master</span></div>
+    <div style="display: flex; flex-direction: column; gap: 12px"><img src="/_blob/dba774c7b9170c5b8ea16ac2d331dd2e" alt="Wright Co. avatar, circle crop" style="width: 320px; height: 320px; border-radius: 50%; display: block"><span style="font-size: 16px; color: #BFA89B">Circle crop</span></div>
+    <div style="display: flex; flex-direction: column; gap: 12px"><img src="/_blob/db3056139105793c0b251d4c8750fd55" alt="" style="width: 128px; height: 128px; border-radius: 50%; display: block"><span style="font-size: 16px; color: #BFA89B">128</span></div>
+    <div style="display: flex; flex-direction: column; gap: 12px"><img src="/_blob/db3056139105793c0b251d4c8750fd55" alt="" style="width: 64px; height: 64px; border-radius: 50%; display: block"><span style="font-size: 16px; color: #BFA89B">64</span></div>
+    <div style="display: flex; flex-direction: column; gap: 12px"><img src="/_blob/db3056139105793c0b251d4c8750fd55" alt="" style="width: 32px; height: 32px; border-radius: 50%; display: block"><span style="font-size: 16px; color: #BFA89B">32</span></div>
+  </div>
+  <div style="padding: 24px 32px; background: #2E1D10; border-radius: 4px; font-size: 18px; line-height: 1.6; color: #F9F7F4">Honest size report: at 180 px and below the phone number does not read. At 64 px and below only the bone lettering band registers. At 32 px it is a light band on dark. Interim until the drawn small mark (logo #4) exists; never replaced by the favicon crop.</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":760}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

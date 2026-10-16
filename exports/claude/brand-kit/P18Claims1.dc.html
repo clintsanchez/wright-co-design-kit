@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>07 Prohibited claims, part 1</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;font-synthesis:none}
+.pg{width:816px;height:1056px;box-sizing:border-box;position:relative;overflow:hidden;background:#F9F7F4;color:#120C06;font-family:'Source Sans 3',system-ui,sans-serif;font-size:12.5px;line-height:1.4}
+.rf{position:absolute;left:72px;right:72px;bottom:24px;display:flex;justify-content:space-between;font-size:12px;color:#5C5048;border-top:1px solid rgba(18,12,6,.12);padding-top:8px}
+.op{position:absolute;left:0;right:0;top:0;height:196px;box-sizing:border-box;background:#120C06;color:#F9F7F4;padding:52px 72px 0;display:flex;flex-direction:column;gap:10px}
+.bd{position:absolute;left:72px;right:72px;top:216px;bottom:58px;display:flex;flex-direction:column;gap:10px}
+.eb{font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:#C8783A}
+.ti{margin:0;font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;font-size:32px;line-height:1.1}
+p{margin:0}
+.t{width:100%;border-collapse:collapse;font-size:12px;line-height:1.35}
+.t th{background:#120C06;color:#F9F7F4;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12px;text-align:left;padding:5px 8px}
+.t td{padding:4px 8px;border-bottom:1px solid rgba(18,12,6,.12);vertical-align:top}
+.nx{border-left:4px solid #D9534F;background:#ECE1D8;padding:9px 12px}
+</style>
+</helmet>
+<div class="pg">
+  <div class="op">
+    <div class="eb">Section 07 · Brand law · Read first</div>
+    <h1 class="ti">Prohibited claims and unconfirmed facts</h1>
+    <p style="font-size: 14px; color: #F9F7F4; font-weight: 700">This section overrides everything else in this document.</p>
+  </div>
+  <div class="bd">
+    <div class="nx"><b>The rule.</b> A claim appears only if this kit gives it with its source. A fact that is not confirmed is a visible Confirm before publishing field that says what is needed. Never soften a prohibited claim into a near synonym, an icon, a badge, a number in a chart, an image, alt text or a hashtag. Several of these are live on the company’s own website and Facebook page today; that is not permission to repeat them.</div>
+    <table class="t">
+      <thead><tr><th style="width: 250px">Never</th><th style="width: 150px">Why</th><th>Say instead</th></tr></thead>
+      <tbody>
+        <sc-for list="{{ rows }}" as="r" hint-placeholder-count="14">
+          <tr><td style="font-weight: 600">{{ r.n }}</td><td style="color: #5C5048">{{ r.w }}</td><td>{{ r.s }}</td></tr>
+        </sc-for>
+      </tbody>
+    </table>
+    <p style="font-size: 12px; color: #5C5048">Continued on the next page.</p>
+  </div>
+  <div class="rf"><span>Proposal v0.1 · Not yet approved by the owner</span><span>19</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":816,"height":1056}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { rows: [
+      { n: '“LLC”, “Wright Co. LLC”, “WrightCo”, “Wright Company”', w: 'Not the public name', s: '“Wright Co.”' },
+      { n: 'Licensed, insured, bonded, any licence number, credential or badge implying one', w: 'Not verified', s: 'Nothing. On the phone: “Cody handles that.”' },
+      { n: 'Years in Hammond or Louisiana; “local since”; “established”; “Est. 2022”; “founded”; “since 2022” with a place', w: 'Not verifiable', s: '“Clearing and excavating since 2022”, no place' },
+      { n: '“Decades of combined experience”, any years-of-experience figure', w: 'Not confirmed', s: 'The one history line' },
+      { n: 'Star ratings, “5-star”, review counts, “top-rated”, review seals, counters', w: 'None exists', s: 'Nothing, until real Louisiana reviews exist' },
+      { n: 'Anything from the owner’s separate business in another state', w: 'A separate business', s: 'Nothing' },
+      { n: 'Persona names or “quotes” from research presented as customers', w: 'Illustrations', s: 'Nothing' },
+      { n: 'A street address; “based in Hammond”; a map pin on an address; a radius ring', w: 'No address is published', s: '“Serving Hammond, Tangipahoa Parish & the Northshore”' },
+      { n: 'Any price, range, per-acre rate, “from”, deposit, discount, promo, “affordable”, “no hidden fees”, “save”, “deal”, third-party cost figures', w: 'No prices are approved', s: '“Here’s what moves the price.” Then the Free Lot Walk' },
+      { n: '“#1”, “premier”, “best”, “leading”, “trusted”, “top-rated”, “state-of-the-art”', w: 'No ranking exists', s: 'A specific fact' },
+      { n: '“Quality” as a claim; “Built on Hard Work. Driven by Quality.”', w: 'Generic, and retired', s: 'Show the lot' },
+      { n: '“Solutions”, “comprehensive”, “full-service”, “no job too big or too small”, “we cover all your excavation needs”, “groundwork”', w: 'Category clichés', s: 'The thing itself: clearing, driveway, pad' },
+      { n: '“Standing pine”, “slab”, “every phase”, “one contractor”, “raw land to finished build”', w: 'Another company’s phrasing', s: '“build-ready”, “house pad”, “one crew”' },
+      { n: '“Start to finish” on its own; “raw land” in a tagline or headline', w: 'Echoes another company', s: '“start to finish, build-ready”, or the sequence' }
+    ] };
+  }
+}
+</script>
+</body>
+</html>

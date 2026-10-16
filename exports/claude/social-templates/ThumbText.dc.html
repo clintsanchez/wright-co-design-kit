@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>YouTube thumbnail, text</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1280px; height: 720px; box-sizing: border-box; position: relative; overflow: hidden; padding: 64px; background: #120C06; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; justify-content: center; gap: 32px">
+  <svg aria-hidden="true" width="1280" height="720" style="position: absolute; left: 0; top: 0; opacity: 0.06; pointer-events: none"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="1280" height="720" filter="url(#grain)"></rect></svg>
+  <div style="position: relative; align-self: flex-start; background: #6F482A; padding: 3px; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)">
+    <div style="background: #2E1D10; padding: 14px 28px; clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px); font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; font-size: 56px; line-height: 1; color: #C8783A">#3</div>
+  </div>
+  <h1 style="position: relative; margin: 0; max-width: 1000px; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 104px; line-height: 1.05; color: #F9F7F4">How high should my pad be?</h1>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":720}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

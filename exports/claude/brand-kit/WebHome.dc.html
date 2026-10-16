@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home, Wright Co.</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;font-synthesis:none;background:#120C06}
+.wc{background:#120C06;color:#F9F7F4;font-family:'Source Sans 3',system-ui,sans-serif;font-size:18px;line-height:1.6}
+.in{max-width:1200px;margin:0 auto;padding:0 16px;box-sizing:border-box}
+@media(min-width:640px){.in{padding:0 32px}}
+.sec{padding:64px 0;position:relative;overflow:hidden}
+@media(min-width:1024px){.sec{padding:96px 0}}
+.soil{background:#120C06}.surf{background:#20150C}.bone{background:#F9F7F4;color:#120C06}
+.G{font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;font-synthesis:none}
+.eb{font-size:14px;letter-spacing:.08em;line-height:1.3;color:#C8783A}
+.bone .eb{color:#6F482A}
+.disp{font-size:clamp(2rem,6vw,3.25rem);line-height:1.1;margin:0}
+.h2{font-size:clamp(1.375rem,3vw,1.875rem);line-height:1.1;letter-spacing:.01em;margin:0}
+.rule{width:96px;height:4px;background:#A15C27;margin:16px 0 24px}
+.lead{font-size:20px;color:#BFA89B;max-width:65ch;margin:0}
+.bone .lead,.bone .mut{color:#5C5048}
+.mut{color:#BFA89B}
+p{margin:0}
+.cta{display:flex;flex-direction:column;gap:16px;max-width:520px}
+@media(min-width:640px){.cta{flex-direction:row}.cta>*{flex:1 1 0}}
+.btn{min-height:52px;box-sizing:border-box;padding:16px 20px;border-radius:2px;font-weight:700;font-size:16px;line-height:1.2;letter-spacing:.06em;text-transform:uppercase;text-align:center;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;transition:background-color 150ms ease-out,color 150ms ease-out}
+.pri{background:#A15C27;color:#F9F7F4}.pri:hover{background:#6F482A}
+.ph{color:#F9F7F4;box-shadow:inset 0 0 0 2px #C8783A}.ph:hover{background:#C8783A;color:#120C06}
+.bone .ph{color:#120C06;box-shadow:inset 0 0 0 2px #120C06}
+a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid #C8783A;outline-offset:2px}
+a.tl{color:#C8783A;text-decoration:underline;font-weight:700}
+.bone a.tl{color:#A15C27}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:#20150C;border:1px solid rgba(212,184,160,.16);border-radius:4px;padding:32px;display:flex;flex-direction:column;gap:8px}
+.surf .card{background:#2E1D10}
+.chamf{border-radius:0;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%)}
+.h3{font-size:24px;font-weight:700;line-height:1.25;margin:0}
+.cb{display:inline-flex;align-items:center;gap:6px;background:#2E1D10;color:#E8A33D;border:1px solid #E8A33D;border-radius:2px;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;line-height:1.4}
+.slot{background:#20150C;border:1px solid rgba(212,184,160,.16);border-radius:8px;aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:center;gap:8px;padding:24px;box-sizing:border-box;font-size:14px}
+.ann{background:#ECE1D8;color:#120C06;font-size:14px;line-height:1.5;padding:12px 16px;border-bottom:1px solid rgba(18,12,6,.1)}
+.hdr{background:#120C06;border-bottom:1px solid rgba(212,184,160,.16)}
+.hdr .in{display:flex;align-items:center;gap:24px;min-height:72px;flex-wrap:wrap}
+.nav{display:none;gap:24px;font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;flex:1}
+.nav a{color:#F9F7F4;text-decoration:none}
+@media(min-width:1024px){.nav{display:flex}.hbtn{display:flex!important}.menu{display:none!important}}
+.hbtn{display:none;gap:12px}
+.menu{margin-left:auto;color:#F9F7F4;background:transparent;border:1px solid rgba(212,184,160,.4);border-radius:2px;min-height:44px;padding:0 16px;font:700 15px/1 'Source Sans 3',sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.lslot{width:140px;height:40px;box-sizing:border-box;border:1px dashed rgba(212,184,160,.5);color:#BFA89B;font-size:12px;line-height:1.2;display:flex;align-items:center;padding:0 8px}
+.skip{position:absolute;left:8px;top:-60px;background:#F9F7F4;color:#120C06;padding:8px 12px;z-index:5}
+.skip:focus{top:8px}
+.hero-row{display:flex;flex-wrap:wrap;gap:32px;align-items:center}
+.hero-txt{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.hero-em{flex:1 1 260px;display:flex;justify-content:center}
+.hero-em img{width:min(440px,100%);min-width:240px;height:auto}
+.strip{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:16px;letter-spacing:.04em}
+.strip .n{color:#C8783A}
+details{border-bottom:1px solid rgba(18,12,6,.12);padding:16px 0}
+summary{cursor:pointer;font-size:20px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:16px;min-height:44px;align-items:center}
+summary::-webkit-details-marker{display:none}
+.pm{color:#A15C27;font-size:24px;line-height:1}
+.callbar{display:flex;position:sticky;bottom:0;gap:8px;padding:16px;background:#2E1D10;border-top:1px solid #D4B8A0;z-index:4}
+.callbar .btn{flex:1 1 0;padding:12px 8px;font-size:14px}
+@media(min-width:640px){.callbar{display:none}}
+.grain{position:absolute;inset:0;width:100%;height:100%;opacity:.05;pointer-events:none}
+@media (prefers-reduced-motion: reduce){.btn{transition:none}}
+</style>
+</helmet>
+<div class="wc">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="ann"><b>SEO, not on the page.</b> Title: Dirt Work &amp; Home-Site Prep in Hammond, LA | Wright Co. · Meta: We clear wooded land, cut in driveways and build house pads around Hammond, Tangipahoa Parish and the Northshore. One crew, in order. 360-957-5865.</div>
+  <header class="hdr"><div class="in">
+    <div class="lslot">Wordmark (logo #3), not yet drawn</div>
+    <nav class="nav" aria-label="Main"><a href="#">Homeplace Package</a><a href="#">Services ▾</a><a href="#">Areas ▾</a><a href="#">The Dirt Order</a><a href="#">About</a></nav>
+    <div class="hbtn"><a class="btn ph" href="tel:+13609575865" aria-label="Call or Text 360-957-5865">Call or Text</a><a class="btn pri" href="#">Book a Free Lot Walk</a></div>
+    <button class="menu" type="button">Menu</button>
+  </div></header>
+  <main id="main">
+    <section class="sec soil" style="padding-top: 96px; padding-bottom: 96px">
+      <svg class="grain" aria-hidden="true"><filter id="gh"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="100%" height="100%" filter="url(#gh)"></rect></svg>
+      <svg aria-hidden="true" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none"><g fill="none" stroke="#D4B8A0" stroke-opacity="0.09" stroke-width="2"><path d="M0 470 C260 420 420 530 700 490 S1180 370 1440 420"></path><path d="M0 520 C280 470 440 580 720 540 S1200 420 1440 470"></path><path d="M0 570 C300 520 460 630 740 590 S1220 470 1440 520"></path></g></svg>
+      <div class="in hero-row" style="position: relative">
+        <div class="hero-txt">
+          <div class="G eb">Serving Hammond, Tangipahoa Parish &amp; the Northshore</div>
+          <h1 class="G disp">You bought the land. We’ll get it ready to build.</h1>
+          <p class="lead">We clear the trees and stumps, cut in your driveway and build your house pad. One crew, in order, from the first tree to a lot your builder can start on.</p>
+          <div class="cta"><a class="btn pri" href="#">Book a Free Lot Walk</a><a class="btn ph" href="tel:+13609575865"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h6l2 5-3 2a12 12 0 0 0 6 6l2-3 5 2v6h-3C9.7 21 3 14.3 3 6z"></path></svg>Call or Text 360-957-5865</a></div>
+          <p style="font-size: 14px" class="mut">Free estimates · Clearing and excavating since 2022</p>
+          <div class="G strip"><span><span class="n">01</span> Clear</span><span><span class="n">02</span> Driveway</span><span><span class="n">03</span> Pad</span><span><span class="n">04</span> Foundation dig</span></div>
+        </div>
+        <div class="hero-em"><img src="/_blob/29520cfad590205a95bc8aa6ee9c2651" alt="Wright Co."></div>
+      </div>
+    </section>
+    <section class="sec surf"><div class="in">
+      <h2 class="G h2">Dirt work and home-site prep around Hammond, LA</h2><div class="rule"></div>
+      <div class="grid">
+        <div class="card chamf"><span class="G" style="font-size: 56px; line-height: 1; color: #C8783A">01</span><h3 class="h3">Clear</h3><p class="mut">Trees and stumps out.</p><a class="tl" href="#">Land clearing</a></div>
+        <div class="card chamf"><span class="G" style="font-size: 56px; line-height: 1; color: #C8783A">02</span><h3 class="h3">Driveway</h3><p class="mut">Cut in so trucks can get to your home site.</p><a class="tl" href="#">Driveways &amp; culverts</a></div>
+        <div class="card chamf"><span class="G" style="font-size: 56px; line-height: 1; color: #C8783A">03</span><h3 class="h3">Pad</h3><p class="mut">Your house pad, built up to the height on your survey.</p><a class="tl" href="#">House pads</a></div>
+        <div class="card chamf"><span class="G" style="font-size: 56px; line-height: 1; color: #C8783A">04</span><h3 class="h3">Foundation dig</h3><p class="mut">Dug the way your builder specifies, then handed off.</p><a class="tl" href="#">House pads &amp; foundation digs</a></div>
+      </div>
+    </div></section>
+    <section class="sec soil"><div class="in">
+      <h2 class="G h2">One crew. Your land. In order.</h2><div class="rule"></div>
+      <p style="max-width: 65ch">Buy land to build on and the site work often lands on you. It can turn into three or four separate outfits: one to clear, one for stumps, one for the driveway, one for the pad. Each waits on the last. We do it as one job, with one crew, in the right order.</p>
+    </div></section>
+    <section class="sec surf"><div class="in" style="display: flex; flex-direction: column; gap: 16px">
+      <div style="align-self: flex-start; background: #6F482A; padding: 3px; clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)"><div style="background: #2E1D10; padding: 6px; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)"><div class="G" style="border: 2px dashed #6F482A; padding: 8px 16px; font-size: 16px; letter-spacing: .08em; color: #C8783A">The Homeplace Package</div></div></div>
+      <p style="font-size: 22px; font-weight: 700">Clear · Driveway · House Pad. One crew, one scope, build-ready.</p>
+      <p class="mut" style="max-width: 65ch">We clear it, cut in the driveway and build your pad, in that order. Ask what’s included for your lot.</p>
+      <a class="tl" href="#">Ask about the Homeplace Package</a>
+    </div></section>
+    <section class="sec bone"><div class="in" style="display: flex; flex-direction: column; gap: 16px">
+      <div><h2 class="G h2">What moves the price</h2><div class="rule"></div></div>
+      <ol style="margin: 0; padding-left: 24px; display: flex; flex-direction: column; gap: 8px; font-size: 20px"><li>Acreage</li><li>How thick the trees are</li><li>Stumps</li><li>How far the fill hauls</li><li>How high the pad needs to be</li></ol>
+      <p>We’ll walk it and put it in writing. <a class="tl" href="#">See what moves the price</a></p>
+      <div class="cta" style="margin-top: 16px"><a class="btn pri" href="#">Book a Free Lot Walk</a><a class="btn ph" href="tel:+13609575865">Call or Text 360-957-5865</a></div>
+      <p class="mut" style="font-size: 14px">Free estimates.</p>
+    </div></section>
+    <section class="sec soil"><div class="in" style="display: flex; flex-direction: column; gap: 16px">
+      <div class="G eb">The Dirt Order</div>
+      <div><h2 class="G h2">Just closed on land? Here’s what happens first.</h2><div class="rule"></div></div>
+      <p class="mut">Building on Raw Land in Tangipahoa, Step by Step.</p>
+      <ol style="margin: 0; padding-left: 24px; font-size: 20px; font-weight: 700"><li>Your 911 address</li><li>The culvert permit</li><li>Clearing</li></ol>
+      <p style="max-width: 65ch">In Tangipahoa, the parish won’t start the culvert process without a 911 address, and installation can take up to 30 days after notice.</p>
+      <p class="mut" style="font-size: 14px">Source: Tangipahoa Parish, [link and date last checked] <span class="cb">Confirm before publishing</span></p>
+      <a class="tl" href="#">Read The Dirt Order</a>
+    </div></section>
+    <section class="sec surf"><div class="in">
+      <div style="background: #F9F7F4; color: #120C06; border-radius: 4px; padding: 32px; display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+        <p style="font-size: 20px; font-weight: 700">We don’t set your pad height. Your surveyor and the parish do. We build to it.</p>
+        <p>We do the dirt side and only the dirt side. No concrete, fencing, decking or tree care. We stop where your builder starts.</p>
+      </div>
+    </div></section>
+    <section class="sec soil"><div class="in" style="display: flex; flex-direction: column; gap: 24px">
+      <div><h2 class="G h2">Proof, honestly</h2><div class="rule"></div></div>
+      <p style="font-size: 20px; max-width: 65ch">We’re new to the Hammond area, so we’re showing our work one lot at a time.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch">
+        <div class="slot" style="flex: 1 1 280px; max-width: 420px"><span>Real job photo: before, wooded lot, from the fixed spot (4:5)</span><span class="cb" style="align-self: flex-start">Confirm before publishing</span><span class="mut">Photograph needed from the first Louisiana job.</span></div>
+        <div style="flex: 0 0 4px; background: #A15C27"></div>
+        <div class="slot" style="flex: 1 1 280px; max-width: 420px"><span>Real job photo: after, pad built, same spot (4:5)</span><span class="cb" style="align-self: flex-start">Confirm before publishing</span><span class="mut">Slots collapse on the published page; the line stands alone.</span></div>
+      </div>
+    </div></section>
+    <section class="sec surf"><div class="in">
+      <h2 class="G h2">Also on your land</h2><div class="rule"></div>
+      <div class="grid">
+        <div class="card"><h3 class="h3">Ponds &amp; Drainage</h3><p class="mut">Pond digging and drainage for your land.</p><a class="tl" href="#">Ponds</a></div>
+        <div class="card" style="border-style: dashed"><h3 class="h3">Fill &amp; gravel delivery</h3><span class="cb" style="align-self: flex-start">Confirm before publishing · W-11</span><p class="mut">Shown only once hauling is confirmed.</p></div>
+      </div>
+    </div></section>
+    <section class="sec soil"><div class="in" style="display: flex; flex-direction: column; gap: 16px">
+      <div><h2 class="G h2">Where we work</h2><div class="rule"></div></div>
+      <p>Serving Hammond, Tangipahoa Parish &amp; the Northshore.</p>
+      <p style="display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center"><a class="tl" href="#">Hammond</a><a class="tl" href="#">Ponchatoula</a><span class="mut">Covington</span><span class="mut">Folsom</span><span class="cb">Confirm before publishing · W-07 radius</span></p>
+      <p class="mut">Not on the list? Call or text and ask.</p>
+    </div></section>
+    <section class="sec bone"><div class="in" style="max-width: 860px">
+      <h2 class="G h2">Questions</h2><div class="rule"></div>
+      <details open=""><summary>What comes first on raw land?<span class="pm" aria-hidden="true">−</span></summary><p style="padding-top: 8px">In Tangipahoa it’s your 911 address, then the culvert permit, then us: clear, driveway, pad. The Dirt Order walks it step by step.</p></details>
+      <details><summary>Do you do the whole thing or just clearing?<span class="pm" aria-hidden="true">+</span></summary><p style="padding-top: 8px">Either. Most folks want the whole dirt side: we clear it, cut in the driveway and build your pad, in that order. We can do one step if that’s all you need.</p></details>
+      <details><summary>Do you set the pad height?<span class="pm" aria-hidden="true">+</span></summary><p style="padding-top: 8px">No. Your surveyor and the parish set the height. We build to it, and we’ll show you where to look it up.</p></details>
+      <details><summary>How far do you travel?<span class="pm" aria-hidden="true">+</span></summary><p style="padding-top: 8px">Hammond, Tangipahoa Parish &amp; the Northshore. Call or text and ask about your spot. (Full radius: W-07.)</p></details>
+      <details><summary>Is the lot walk really free?<span class="pm" aria-hidden="true">+</span></summary><p style="padding-top: 8px">Yes. The first look at your land is free. (In person every time: W-07.)</p></details>
+    </div></section>
+    <section class="sec soil" style="padding-top: 128px; padding-bottom: 128px">
+      <svg class="grain" aria-hidden="true"><filter id="gc"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="100%" height="100%" filter="url(#gc)"></rect></svg>
+      <div class="in" style="position: relative; display: flex; flex-direction: column; gap: 24px">
+        <h2 class="G h2">You bought the land. We’ll get it ready to build.</h2>
+        <div class="cta"><a class="btn pri" href="#">Book a Free Lot Walk</a><a class="btn ph" href="tel:+13609575865">Call or Text 360-957-5865</a></div>
+        <p class="mut" style="font-size: 14px">Free estimates.</p>
+      </div>
+    </section>
+  </main>
+  <footer style="background: #120C06; border-top: 3px solid #A15C27"><div class="in" style="padding-top: 48px; padding-bottom: 48px; display: flex; flex-direction: column; gap: 16px">
+    <nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 16px"><a class="tl" href="#">Land Clearing</a><a class="tl" href="#">Driveways &amp; Culverts</a><a class="tl" href="#">House Pads</a><a class="tl" href="#">Ponds &amp; Drainage</a><a class="tl" href="#">The Dirt Order</a><a class="tl" href="#">What it costs to clear an acre</a><a class="tl" href="#">About</a><a class="tl" href="#">Privacy</a></nav>
+    <p style="font-size: 16px">© 2026 Wright Co. · Land clearing, driveways &amp; house pads · Serving Hammond, Tangipahoa Parish &amp; the Northshore · 360-957-5865 · wrightco504@gmail.com</p>
+    <p class="mut" style="font-size: 14px">Clearing and excavating since 2022.</p>
+    <p class="mut" style="font-size: 14px">Facebook link: off until the page is renamed and repointed <span class="cb">Confirm before publishing · W-05</span></p>
+  </div></footer>
+  <div class="callbar"><a class="btn pri" href="#">Book a Free Lot Walk</a><a class="btn ph" href="tel:+13609575865" aria-label="Call or Text 360-957-5865">Call or Text</a></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":7200}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

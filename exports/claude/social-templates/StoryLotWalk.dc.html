@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Story, Free Lot Walk</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1080px; height: 1920px; box-sizing: border-box; position: relative; overflow: hidden; padding: 330px 80px 420px; background: #120C06; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; justify-content: center; gap: 48px">
+  <svg aria-hidden="true" width="1080" height="1920" viewBox="0 0 1080 1350" preserveAspectRatio="xMidYMid slice" style="position: absolute; left: 0; top: 0; pointer-events: none"><g fill="none" stroke="#D4B8A0" stroke-opacity="0.09" stroke-width="2"><path d="M0 980 C180 930 300 1040 470 1000 S760 860 1080 900"></path><path d="M0 1040 C200 990 320 1110 500 1070 S780 930 1080 970"></path><path d="M0 1100 C220 1050 340 1180 530 1140 S800 1000 1080 1040"></path><path d="M0 1160 C240 1110 360 1250 560 1210 S820 1070 1080 1110"></path><path d="M760 140 C880 80 1040 120 1060 230 S960 400 830 370 S660 220 760 140Z"></path><path d="M720 100 C880 10 1100 70 1110 230 S980 460 800 420 S600 200 720 100Z"></path></g></svg>
+  <img src="/_blob/9ae9b7d04094c304378121fdcd1ac247" alt="Wright Co. emblem" style="position: relative; width: 480px; height: auto; display: block">
+  <div style="position: relative; align-self: flex-start; background: #6F482A; padding: 3px; clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)">
+    <div style="background: #2E1D10; padding: 6px; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)">
+      <div style="border: 2px dashed #6F482A; padding: 12px 24px; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 30px; letter-spacing: 0.08em; line-height: 1; color: #C8783A">The Free Lot Walk</div>
+    </div>
+  </div>
+  <h1 style="position: relative; margin: 0; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 88px; line-height: 1.1; color: #F9F7F4">Just closed on land?</h1>
+  <p style="position: relative; margin: 0; font-size: 44px; line-height: 1.4; color: #F9F7F4">Here’s what happens first. Book a free lot walk and we’ll look at yours.</p>
+  <p style="position: relative; margin: 0; font-size: 36px; line-height: 1.4; font-weight: 700; color: #C8783A">Book a Free Lot Walk · Call or Text 360-957-5865</p>
+  <sc-if value="{{ safe }}" hint-placeholder-val="{{ false }}">
+    <div style="position: absolute; left: 0; top: 0; width: 1080px; height: 250px; box-sizing: border-box; background: rgba(232,163,61,0.18); border-bottom: 2px dashed #E8A33D; padding: 24px 40px; font-size: 28px; font-weight: 700; color: #E8A33D">Platform chrome, top 250 px: keep clear</div>
+    <div style="position: absolute; left: 0; bottom: 0; width: 1080px; height: 340px; box-sizing: border-box; background: rgba(232,163,61,0.18); border-top: 2px dashed #E8A33D; padding: 24px 40px; font-size: 28px; font-weight: 700; color: #E8A33D">Captions and controls, bottom 340 px: keep clear</div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"safe":{"editor":"boolean","default":false,"section":"Guides"},"$preview":{"width":1080,"height":1920}}'>
+class Component extends DCLogic {
+  renderVals() { return { safe: this.props.safe ?? false }; }
+}
+</script>
+</body>
+</html>

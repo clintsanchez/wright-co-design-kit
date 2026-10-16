@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>03 Space, shape and motion</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;font-synthesis:none}
+.pg{width:816px;height:1056px;box-sizing:border-box;position:relative;overflow:hidden;background:#F9F7F4;color:#120C06;font-family:'Source Sans 3',system-ui,sans-serif;font-size:12.5px;line-height:1.45}
+.rh,.rf{position:absolute;left:72px;right:72px;display:flex;justify-content:space-between;font-size:12px;color:#5C5048}
+.rh{top:28px}.rf{bottom:24px;border-top:1px solid rgba(18,12,6,.12);padding-top:8px}
+.bd{position:absolute;left:72px;right:72px;top:64px;bottom:60px;display:flex;flex-direction:column;gap:9px}
+.h2{margin:0;font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;font-size:15px;line-height:1.15}
+p{margin:0}
+.lbl{font-size:12px;color:#5C5048}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.t{width:100%;border-collapse:collapse;font-size:12px;line-height:1.35}
+.t th{background:#120C06;color:#F9F7F4;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12px;text-align:left;padding:5px 8px}
+.t td{padding:3px 8px;border-bottom:1px solid rgba(18,12,6,.12);vertical-align:top}
+</style>
+</helmet>
+<div class="pg">
+  <div class="rh"><span>Wright Co. · Comprehensive brand kit</span><span>03 Visual foundations</span></div>
+  <div class="bd">
+    <div class="h2">Spacing: 8 px base, six steps, nothing between</div>
+    <div style="display: flex; align-items: flex-end; gap: 14px">
+      <div style="display: flex; flex-direction: column; gap: 4px"><div style="width: 8px; height: 8px; background: #A15C27"></div><span class="lbl">space-1 · 8</span></div>
+      <div style="display: flex; flex-direction: column; gap: 4px"><div style="width: 16px; height: 16px; background: #6F482A"></div><span class="lbl">space-2 · 16</span></div>
+      <div style="display: flex; flex-direction: column; gap: 4px"><div style="width: 32px; height: 32px; background: #6F482A"></div><span class="lbl">space-3 · 32</span></div>
+      <div style="display: flex; flex-direction: column; gap: 4px"><div style="width: 64px; height: 64px; background: #20150C"></div><span class="lbl">space-4 · 64</span></div>
+      <div style="display: flex; flex-direction: column; gap: 4px"><div style="width: 96px; height: 64px; background: #20150C"></div><span class="lbl">space-5 · 96</span></div>
+      <div style="display: flex; flex-direction: column; gap: 4px"><div style="width: 128px; height: 64px; background: #120C06"></div><span class="lbl">space-6 · 128, hero and closing band only</span></div>
+    </div>
+    <p class="lbl">8 between a label and its field · 16 between related items and between the two CTA buttons · 32 between groups and as card padding · section padding 64 mobile, 96 desktop, 128 hero and closing band. Container 1200 px, measure 60–75 characters.</p>
+    <div class="h2" style="margin-top: 4px">Radius and the chamfer: nothing rounder</div>
+    <div class="g4">
+      <div style="display: flex; flex-direction: column; gap: 4px"><div style="height: 52px; background: #A15C27; border-radius: 2px"></div><span class="lbl"><b>radius-sm 2</b> · buttons, inputs, badges</span></div>
+      <div style="display: flex; flex-direction: column; gap: 4px"><div style="height: 52px; background: #20150C; border-radius: 4px"></div><span class="lbl"><b>radius-md 4</b> · cards</span></div>
+      <div style="display: flex; flex-direction: column; gap: 4px"><div style="height: 52px; background: #20150C; border-radius: 8px"></div><span class="lbl"><b>radius-lg 8</b> · media, photo slots</span></div>
+      <div style="display: flex; flex-direction: column; gap: 4px"><div style="height: 52px; background: #20150C; clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)"></div><span class="lbl"><b>Chamfer 8–12 px, 45°</b> · badges, sequence cards</span></div>
+    </div>
+    <p class="lbl">No pills, no circles on buttons, no rounded buttons. Full-bleed images and the emblem’s Soil container are square.</p>
+    <div class="g2">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <div class="h2">Borders, no shadows</div>
+        <table class="t"><tbody>
+          <tr><td style="width: 110px"><div style="height: 14px; border-bottom: 1px solid rgba(212,184,160,.4); background: #120C06"></div></td><td>1 px Clay 16%: cards on dark</td></tr>
+          <tr><td><div style="height: 14px; border: 1px solid #5C5048; background: #F9F7F4"></div></td><td>1 px Dust Dark: form fields on Bone</td></tr>
+          <tr><td><div style="height: 14px; border: 2px solid #A15C27; background: #F9F7F4"></div></td><td>2 px Rust: focused field</td></tr>
+          <tr><td><div style="height: 4px; background: #A15C27"></div></td><td>3–4 px rust rule: under H2, footer, before/after</td></tr>
+          <tr><td><div style="height: 14px; background: #2E1D10; outline: 2px dashed #6F482A; outline-offset: -5px; border: 2px solid #6F482A"></div></td><td>Stitched patch: badges</td></tr>
+        </tbody></table>
+        <p class="lbl">No drop shadow, glow or lift anywhere. The phone ring may be an inset box-shadow, which renders as a border.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <div class="h2">Backgrounds</div>
+        <div style="display: flex; gap: 8px">
+          <div style="flex: 1; height: 88px; background: #120C06; position: relative; overflow: hidden"><svg aria-hidden="true" width="160" height="88" style="position: absolute; left: 0; top: 0; opacity: 0.06"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="160" height="88" filter="url(#n)"></rect></svg></div>
+          <div style="flex: 1; height: 88px; background: #120C06; position: relative; overflow: hidden"><svg aria-hidden="true" width="160" height="88" viewBox="0 0 160 88" style="position: absolute; left: 0; top: 0"><g fill="none" stroke="#D4B8A0" stroke-opacity="0.18" stroke-width="1.5"><path d="M0 60 C40 50 70 74 110 64 S150 50 160 54"></path><path d="M0 70 C44 60 74 84 114 74 S152 60 160 64"></path><path d="M90 20 C110 8 140 14 142 30 S124 52 104 46 S80 28 90 20Z"></path></g></svg></div>
+        </div>
+        <p class="lbl"><b>Soil grain</b> ≤6% on dark only · <b>contour lines</b> Clay 8–10% on dark, one per page (shown here darker for print). No other pattern or texture, never on Bone.</p>
+        <div class="h2" style="margin-top: 4px">Motion, focus, tap</div>
+        <p class="lbl">150 ms ease-out on hover and focus only: a fill or colour change. No scale, lift, bounce, parallax, reveal or autoplay; none under prefers-reduced-motion. Focus: 3 px Copper outline, 2 px offset, appears at once. Tap targets 44 × 44, buttons 52 tall.</p>
+      </div>
+    </div>
+    <div class="h2" style="margin-top: 2px">Grid and data palette</div>
+    <table class="t">
+      <thead><tr><th>Breakpoint</th><th>Columns</th><th>Gutter</th><th>Margin</th><th>Data token</th><th>On dark</th><th>On Bone</th></tr></thead>
+      <tbody>
+        <tr><td>Under 640</td><td>4</td><td>16</td><td>16</td><td>--data-1</td><td>Bone</td><td>Soil Black</td></tr>
+        <tr><td>640–1023</td><td>8</td><td>16</td><td>32</td><td>--data-2</td><td>Copper, hatch</td><td>Earth Brown</td></tr>
+        <tr><td>1024 and up</td><td>12</td><td>32</td><td>32, cap 1200</td><td>--data-3</td><td>Clay, dots</td><td>Dust Dark</td></tr>
+        <tr><td colspan="4" style="color: #5C5048">Every chart: “Sample data, not a published figure”</td><td>--data-4</td><td>Dust, cross-hatch</td><td>Cattail Rust</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="rf"><span>Proposal v0.1 · Not yet approved by the owner</span><span>12</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":816,"height":1056}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

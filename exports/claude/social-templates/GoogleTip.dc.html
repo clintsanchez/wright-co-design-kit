@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Google post, Dirt Order tip</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1200px; height: 900px; box-sizing: border-box; position: relative; overflow: hidden; padding: 80px; background: #20150C; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+  <svg aria-hidden="true" width="1200" height="900" style="position: absolute; left: 0; top: 0; opacity: 0.06; pointer-events: none"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="1200" height="900" filter="url(#grain)"></rect></svg>
+  <div style="position: relative; align-self: flex-start; background: #6F482A; padding: 3px; clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)">
+    <div style="background: #2E1D10; padding: 6px; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)">
+      <div style="border: 2px dashed #6F482A; padding: 12px 24px; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 28px; letter-spacing: 0.08em; line-height: 1; color: #C8783A">Dirt Order #{{ n }}</div>
+    </div>
+  </div>
+  <div style="position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; align-items: end">
+    <h1 style="margin: 0; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 64px; line-height: 1.1; color: #F9F7F4">{{ q }}</h1>
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <p style="margin: 0; font-size: 40px; line-height: 1.35; color: #F9F7F4">{{ a }}</p>
+      <sc-if value="{{ hasSource }}" hint-placeholder-val="{{ false }}">
+        <div style="font-size: 28px; line-height: 1.4; color: #BFA89B">Source: Tangipahoa Parish, [document], checked [date] · <span style="color: #E8A33D; font-weight: 700; text-transform: uppercase">Confirm before publishing</span></div>
+      </sc-if>
+    </div>
+  </div>
+  <div style="position: relative; font-size: 30px; color: #BFA89B">wrightco.llc</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"tip":{"editor":"enum","options":["1","2","3","4","5","6","7"],"default":"3","section":"Content"},"$preview":{"width":1200,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const tips = {
+      '1': ['What comes first?', 'In Tangipahoa it’s your 911 address, then the culvert permit, then us: clear, driveway, pad.'],
+      '2': ['Why does the culvert come first?', 'The parish won’t start the culvert process without a 911 address, and installation can take up to 30 days after notice.'],
+      '3': ['How high should my pad be?', 'Your surveyor and the parish set it. We build to it.'],
+      '4': ['Do I need a permit to clear?', 'It depends on how much you clear. We’ll tell you what applies. The application is yours to file.'],
+      '5': ['What moves the price?', 'Acreage, how thick the trees are, stumps, how far the fill hauls, and how high the pad needs to be.'],
+      '6': ['Why don’t you run on wet ground?', 'It ruts your lot and makes a worse pad. When it’s too wet, we wait.'],
+      '7': ['Mulching or clearing?', 'Mulching is fine for trails, pasture and views. A house pad needs the stumps and roots out.']
+    };
+    const n = tips[this.props.tip] ? this.props.tip : '3';
+    return { n, q: tips[n][0], a: tips[n][1], hasSource: n === '2' };
+  }
+}
+</script>
+</body>
+</html>

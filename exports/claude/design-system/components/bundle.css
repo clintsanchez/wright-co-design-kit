@@ -1,0 +1,11 @@
+/* Wright Co. buttons: copied from "3 - Visual Identity.md" §10 (wc- prefix is the source's suggestion). */
+.wc-cta { display:flex; flex-direction:column; align-items:stretch; gap:var(--space-2); max-width:520px; }
+@media (min-width:640px){ .wc-cta--row { flex-direction:row; } .wc-cta--row > * { flex:1 1 0; } }
+.wc-btn { min-height:52px; padding:16px 28px; border-radius:var(--radius-sm); font:700 1rem/1.2 var(--font-body);
+          text-transform:uppercase; letter-spacing:.06em; text-align:center; text-decoration:none; }
+.wc-btn--primary { background:var(--brand-primary); color:var(--bg-light); }
+.wc-btn--primary:hover { background:var(--brand-secondary); }
+.wc-btn--phone { background:transparent; color:var(--text-primary); box-shadow:inset 0 0 0 2px var(--brand-primary-bright); }
+.wc-btn--phone:hover { background:var(--brand-primary-bright); color:var(--bg-base); }
+.wc-section--light .wc-btn--phone { color:var(--text-on-light); box-shadow:inset 0 0 0 2px var(--text-on-light); }
+.wc-btn:focus-visible { outline:3px solid var(--brand-primary-bright); outline-offset:2px; }

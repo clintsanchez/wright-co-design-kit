@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>05 Clear space and minimum sizes</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;font-synthesis:none}
+.pg{width:816px;height:1056px;box-sizing:border-box;position:relative;overflow:hidden;background:#F9F7F4;color:#120C06;font-family:'Source Sans 3',system-ui,sans-serif;font-size:12.5px;line-height:1.4}
+.rh,.rf{position:absolute;left:72px;right:72px;display:flex;justify-content:space-between;font-size:12px;color:#5C5048}
+.rh{top:28px}.rf{bottom:24px;border-top:1px solid rgba(18,12,6,.12);padding-top:8px}
+.bd{position:absolute;left:72px;right:72px;top:58px;bottom:56px;display:flex;flex-direction:column;gap:8px}
+.h2{margin:0;font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;font-size:15px;line-height:1.15}
+p{margin:0}
+.lbl{font-size:12px;color:#5C5048}
+.x{position:absolute;left:0;top:0;pointer-events:none}
+</style>
+</helmet>
+<div class="pg">
+  <div class="rh"><span>Wright Co. · Comprehensive brand kit</span><span>05 Assets and logo rules</span></div>
+  <div class="bd">
+    <div class="h2">Clear space and minimum sizes, at true scale</div>
+    <div style="display: flex; gap: 16px; align-items: flex-start">
+      <div style="position: relative; width: 576px; height: 465px; flex: none; background: #120C06">
+        <svg aria-hidden="true" class="x" width="576" height="465"><defs><pattern id="h" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#D4B8A0" stroke-opacity="0.35" stroke-width="2"></line></pattern></defs><rect width="576" height="465" fill="url(#h)"></rect></svg>
+        <div style="position: absolute; left: 48px; top: 48px; width: 480px; height: 369px; background: #120C06"><img src="/_blob/29520cfad590205a95bc8aa6ee9c2651" alt="Wright Co." style="width: 480px; height: auto; display: block"></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px"><b>480 px</b><span class="lbl">Hatched: 48 px clear space, one tenth of the width, on every side. Hero and covers. Everything reads: lettering, distressing, cattails, the phone digits.</span></div>
+    </div>
+    <div style="display: flex; gap: 16px; align-items: flex-end">
+      <div style="background: #120C06; padding: 16px; flex: none"><img src="/_blob/29520cfad590205a95bc8aa6ee9c2651" alt="Wright Co." style="width: 320px; height: auto; display: block"></div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <div style="background: #120C06; padding: 16px; align-self: flex-start"><img src="/_blob/29520cfad590205a95bc8aa6ee9c2651" alt="Wright Co." style="width: 240px; height: auto; display: block"></div>
+        <span class="lbl"><b>320 px</b> (needs 32 px clear): footer, closing slides. <b>240 px</b> (needs 24 px clear): the minimum. Phone digits still read at 240.</span>
+      </div>
+    </div>
+    <div style="display: flex; gap: 16px; align-items: flex-end">
+      <div style="position: relative; background: #120C06; flex: none"><img src="/_blob/29520cfad590205a95bc8aa6ee9c2651" alt="" style="width: 200px; height: auto; display: block"><svg aria-hidden="true" class="x" width="200" height="154"><line x1="0" y1="0" x2="200" y2="154" stroke="#D9534F" stroke-width="3"></line><line x1="200" y1="0" x2="0" y2="154" stroke="#D9534F" stroke-width="3"></line></svg></div>
+      <div style="position: relative; background: #120C06; flex: none"><img src="/_blob/29520cfad590205a95bc8aa6ee9c2651" alt="" style="width: 160px; height: auto; display: block"><svg aria-hidden="true" class="x" width="160" height="123"><line x1="0" y1="0" x2="160" y2="123" stroke="#D9534F" stroke-width="3"></line><line x1="160" y1="0" x2="0" y2="123" stroke="#D9534F" stroke-width="3"></line></svg></div>
+      <span class="lbl"><b>200 and 160 px: not allowed.</b> The phone digits blur, the cattails and grass turn to noise and the distressing reads as dirt on the lettering. Below 240 px use the wordmark or small mark once drawn; until then, no logo. Print: 2 in minimum; above about 4 in wide needs the vector master (W-27).</span>
+    </div>
+  </div>
+  <div class="rf"><span>Proposal v0.1 · Not yet approved by the owner</span><span>15</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":816,"height":1056}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>13 File index</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;font-synthesis:none}
+.pg{width:816px;height:1056px;box-sizing:border-box;position:relative;overflow:hidden;background:#F9F7F4;color:#120C06;font-family:'Source Sans 3',system-ui,sans-serif;font-size:12px;line-height:1.4}
+.rf{position:absolute;left:72px;right:72px;bottom:24px;display:flex;justify-content:space-between;font-size:12px;color:#5C5048;border-top:1px solid rgba(18,12,6,.12);padding-top:8px}
+.op{position:absolute;left:0;right:0;top:0;height:150px;box-sizing:border-box;background:#120C06;color:#F9F7F4;padding:44px 72px 0;display:flex;flex-direction:column;gap:8px}
+.bd{position:absolute;left:72px;right:72px;top:166px;bottom:56px;display:flex;flex-direction:column;gap:9px}
+.eb{font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:#C8783A}
+.ti{margin:0;font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;font-size:32px;line-height:1.1}
+.h2{margin:0;font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;font-size:14px;line-height:1.15}
+p{margin:0}
+pre{margin:0;background:#120C06;color:#D4B8A0;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;line-height:1.3;padding:12px;border-radius:4px;white-space:pre-wrap}
+.t{width:100%;border-collapse:collapse;font-size:12px;line-height:1.3}
+.t th{background:#120C06;color:#F9F7F4;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12px;text-align:left;padding:4px 8px}
+.t td{padding:3px 8px;border-bottom:1px solid rgba(18,12,6,.12);vertical-align:top}
+</style>
+</helmet>
+<div class="pg">
+  <div class="op">
+    <div class="eb">Section 13 · Source</div>
+    <h1 class="ti">File index</h1>
+  </div>
+  <div class="bd">
+    <div class="h2">The design kit folder (source of truth)</div>
+<pre>0 - READ ME FIRST.md                   status, priority order, open decisions
+1 - MASTER PROMPT.md                   this kit's brief
+2 - Brand Guidelines.md                binding limits, position, values, do and do not
+3 - Visual Identity.md                 logo, colour, type, layout, components, photography
+4 - Brand Voice.md                     voice, tone, vocabulary, scripts
+5 - Messaging.md                       pitches, pillars, objections, calls to action
+6 - Brand Context and Prices.md        facts and the claims lists (override everything)
+7 - SOCIAL TEMPLATE SYSTEM PROMPT.md   the social library's brief
+8 - Asset Manifest and Production Rules.md
+assets/logos/                          emblem/ avatar/ favicon/ source/ README.md
+assets/photos/PHOTO-MANIFEST.md        zero photos
+tokens/css-tokens.css                  token values of record</pre>
+    <div class="h2" style="margin-top: 2px">Where everything lives in Claude</div>
+    <table class="t">
+      <thead><tr><th style="width: 220px">Artifact</th><th>What it holds</th></tr></thead>
+      <tbody>
+        <tr><td style="font-weight: 700">Wright Co. (design system)</td><td>tokens.json (18 colours, 10 type styles, spacing, radii, layout), the brand-book README, the Button component, the Logos asset group</td></tr>
+        <tr><td style="font-weight: 700">Wright Co. Brand Kit (this canvas)</td><td>32 kit pages for the PDF, 3 website page mockups</td></tr>
+        <tr><td style="font-weight: 700">Wright Co. Social Templates</td><td>43 templates: step cards, tips, Free Lot Walk, seasonal, service area, statements, notices, slots, Google posts, stories, carousels, covers, YouTube, platform table, open items</td></tr>
+      </tbody>
+    </table>
+    <div class="h2" style="margin-top: 2px">Specimen pages in this kit</div>
+    <table class="t">
+      <tbody>
+        <tr><td style="width: 60px">9–10</td><td>Colour swatches, approved and failing contrast pairs, usage ratio</td></tr>
+        <tr><td>11–12</td><td>Type scale at real size; spacing, radius, chamfer, borders, grain, contour lines</td></tr>
+        <tr><td>13</td><td>Sequence strip and cards, rust rule, stitched patch</td></tr>
+        <tr><td>14–17</td><td>Emblem on permitted grounds; clear space at 480/320/240; failures at 200/160; forbidden uses; link preview; avatar circle test; favicon at true size and 4×; LogoSlots</td></tr>
+        <tr><td>18</td><td>PhotoSlot on dark and on Bone</td></tr>
+        <tr><td>22–23</td><td>Buttons and states, CtaPair, badges, notice, field states, header, cards, offer band, price drivers, call bar, footer</td></tr>
+        <tr><td>24–27</td><td>One message in every format; slide masters; business card; yard sign; email signature; estimate header; one-sheet; vehicle placement panels</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="rf"><span>Proposal v0.1 · Not yet approved by the owner</span><span>29</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":816,"height":1056}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

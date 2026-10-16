@@ -1,0 +1,37 @@
+<!-- @dsCard group="Actions" height=300 subtitle="Static rendition of the source CSS" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+  body { margin:0; font-family:var(--font-body); }
+  .zone { padding:var(--space-3); }
+  .dark { background:var(--bg-base); }
+  .wc-section--light { background:var(--bg-light); }
+  .cap { font-size:14px; line-height:1.5; margin:0 0 var(--space-2); }
+  .dark .cap { color:var(--text-muted); }
+  .wc-section--light .cap { color:var(--text-muted-on-light); }
+  .wc-btn { box-sizing:border-box; display:flex; align-items:center; justify-content:center; gap:var(--space-1); }
+  .wc-btn svg { width:20px; height:20px; flex:none; fill:currentColor; }
+  .num { white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .wc-cta--row { flex-direction:row; } .wc-cta--row > * { flex:1 1 0; }
+</style>
+</head>
+<body>
+<div class="zone dark">
+  <p class="cap">On Soil Black</p>
+  <div class="wc-cta wc-cta--row">
+    <a class="wc-btn wc-btn--primary" href="#">Book a Free Lot Walk</a>
+    <a class="wc-btn wc-btn--phone" href="tel:+13609575865"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h6l2 5-3 2a12 12 0 0 0 6 6l2-3 5 2v6h-3C9.7 21 3 14.3 3 6z"/></svg>Call or Text <span class="num">360-957-5865</span></a>
+  </div>
+</div>
+<div class="zone wc-section--light">
+  <p class="cap">On Bone</p>
+  <div class="wc-cta wc-cta--row">
+    <a class="wc-btn wc-btn--primary" href="#">Book a Free Lot Walk</a>
+    <a class="wc-btn wc-btn--phone" href="tel:+13609575865">Call or Text <span class="num">360-957-5865</span></a>
+  </div>
+</div>
+</body>
+</html>

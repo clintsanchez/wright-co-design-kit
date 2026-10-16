@@ -1,0 +1,50 @@
+<!-- @dsCard height=320 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wright Co.</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap">
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--bg-base); color:var(--text-primary); font-family:var(--font-body); overflow:hidden; }
+  .cover { position:relative; height:320px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:320px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:320px; }
+  .earth { fill:var(--brand-secondary); }
+  .bone { fill:var(--bg-light); }
+  .clay { fill:var(--brand-accent); }
+  .rust { fill:var(--brand-primary); rx:var(--radius-sm); }
+  .contour { fill:none; stroke:var(--brand-accent); stroke-width:1.5; }
+  .words { position:absolute; left:var(--space-3); bottom:var(--space-3); max-width:440px; }
+  .name { margin:0; font-size:96px; line-height:.95; font-weight:700; letter-spacing:-.01em; color:var(--text-primary); }
+  .tag { margin:var(--space-2) 0 0 4px; font-size:14px; line-height:20px; color:var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 320" width="480" height="320">
+<!--
+  blocks      brand-secondary 176x264 slab bled off the top (Earth Brown, the soil the brand stands on) · bg-light 128x128 (Bone, the letter face) · brand-accent 64x224 bled off the right (Clay) · brand-primary 64x64 once (the one thing in rust) — about 30% of 960x320
+  arrangement one tall slab with satellites, bottoms on one line space-4 above the edge, space-2 gutters; the brand's 45-degree chamfer (12px) cut into the top-right of the slab and the Bone block
+  pattern     four topographic contour lines in brand-accent, from "Topographic contour lines: Clay, an occasional section background on dark" — the ground itself, crossing the slab and the gap
+  scales      sides in space-2 multiples; gutters space-2; baseline space-4; chamfer 12px; rust corner radius-sm
+-->
+<polygon class="earth" points="16,-8 180,-8 192,4 192,256 16,256"/>
+<polygon class="bone" points="208,128 324,128 336,140 336,256 208,256"/>
+<rect class="rust" x="352" y="192" width="64" height="64" rx="2"/>
+<rect class="clay" x="432" y="32" width="64" height="224"/>
+<path class="contour" d="M-4,52 C60,30 130,70 200,48 S330,20 420,44"/>
+<path class="contour" d="M-4,76 C70,56 140,96 214,72 S340,50 420,70"/>
+<path class="contour" d="M-4,100 C80,84 150,122 228,98 S350,80 420,98"/>
+<path class="contour" d="M-4,124 C90,112 160,146 200,128"/>
+</svg>
+</div>
+<div class="words">
+  <h1 class="name">Wright<br>Co.</h1>
+  <p class="tag">You bought the land. We'll get it ready to build.</p>
+</div>
+</div>
+</body>
+</html>

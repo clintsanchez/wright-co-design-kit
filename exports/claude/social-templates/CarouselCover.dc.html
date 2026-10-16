@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Carousel cover, the sequence</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; position: relative; overflow: hidden; padding: 80px; background: #120C06; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+  <svg aria-hidden="true" width="1080" height="1350" style="position: absolute; left: 0; top: 0; opacity: 0.06; pointer-events: none"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="1080" height="1350" filter="url(#grain)"></rect></svg>
+  <img src="/_blob/9ae9b7d04094c304378121fdcd1ac247" alt="Wright Co. emblem" style="position: relative; width: 480px; height: auto; display: block">
+  <div style="position: relative; display: flex; flex-direction: column; gap: 32px">
+    <h1 style="margin: 0; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 88px; line-height: 1.1; color: #F9F7F4">One crew. Your land. In order.</h1>
+    <p style="margin: 0; font-size: 40px; line-height: 1.4; color: #F9F7F4">First we clear it. Then we cut in the driveway. Then we build the pad.</p>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 32px; border-top: 1px solid rgba(212,184,160,0.16)">
+      <span style="font-size: 30px; color: #BFA89B">wrightco.llc · 1 / 6</span>
+      <svg role="img" aria-label="Swipe" width="56" height="56" viewBox="0 0 24 24"><path fill="#C8783A" d="M4 11h12.2l-5.6-5.6L12 4l8 8-8 8-1.4-1.4 5.6-5.6H4v-2z"></path></svg>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

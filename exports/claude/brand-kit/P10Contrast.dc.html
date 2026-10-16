@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>03 Contrast and colour rules</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;font-synthesis:none}
+.pg{width:816px;height:1056px;box-sizing:border-box;position:relative;overflow:hidden;background:#F9F7F4;color:#120C06;font-family:'Source Sans 3',system-ui,sans-serif;font-size:12.5px;line-height:1.45}
+.rh,.rf{position:absolute;left:72px;right:72px;display:flex;justify-content:space-between;font-size:12px;color:#5C5048}
+.rh{top:28px}.rf{bottom:24px;border-top:1px solid rgba(18,12,6,.12);padding-top:8px}
+.bd{position:absolute;left:72px;right:72px;top:64px;bottom:60px;display:flex;flex-direction:column;gap:9px}
+.h2{margin:0;font-family:Graduate,'Rockwell Extra Bold',Rockwell,serif;font-weight:400;text-transform:uppercase;font-size:15px;line-height:1.15}
+p{margin:0}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.cell{border-radius:4px;padding:6px 8px;border:1px solid rgba(18,12,6,.12);display:flex;flex-direction:column;gap:0;min-height:52px;box-sizing:border-box}
+.aa{font-size:18px;font-weight:700;line-height:1.1}
+.lb{font-size:12px;line-height:1.25}
+.t{width:100%;border-collapse:collapse;font-size:12px;line-height:1.35}
+.t th{background:#120C06;color:#F9F7F4;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12px;text-align:left;padding:5px 8px}
+.t td{padding:4px 8px;border-bottom:1px solid rgba(18,12,6,.12);vertical-align:top}
+ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:2px}
+</style>
+</helmet>
+<div class="pg">
+  <div class="rh"><span>Wright Co. · Comprehensive brand kit</span><span>03 Visual foundations</span></div>
+  <div class="bd">
+    <div class="h2">Approved pairs (WCAG 2.1, computed)</div>
+    <div class="g4">
+      <sc-for list="{{ ok }}" as="c" hint-placeholder-count="16">
+        <div class="cell" style="background: {{ c.bg }}; color: {{ c.fg }}"><span class="aa">Aa {{ c.r }}</span><span class="lb">{{ c.label }}</span></div>
+      </sc-for>
+    </div>
+    <p style="font-size: 12px; color: #5C5048">AA body text needs 4.5. Large text (24 px+, or 19 px+ bold), icons, field borders and focus rings need 3.0. A pair not on this page is computed and added before it is used.</p>
+    <div class="h2" style="margin-top: 4px">Pairs that fail and must not be used</div>
+    <table class="t">
+      <thead><tr><th style="width: 70px">Sample</th><th style="width: 220px">Pair</th><th style="width: 70px">Ratio</th><th>Rule</th></tr></thead>
+      <tbody>
+        <sc-for list="{{ bad }}" as="c" hint-placeholder-count="9">
+          <tr><td><span style="display: inline-block; padding: 1px 8px; background: {{ c.bg }}; color: {{ c.fg }}; font-weight: 700; text-decoration: line-through">Aa</span></td><td style="font-weight: 700">{{ c.pair }}</td><td>{{ c.r }}</td><td>{{ c.rule }}</td></tr>
+        </sc-for>
+      </tbody>
+    </table>
+    <div class="h2" style="margin-top: 4px">Usage ratio</div>
+    <div style="display: flex; height: 36px; border-radius: 2px; overflow: hidden; border: 1px solid rgba(18,12,6,.12)">
+      <div style="flex: 70; background: #120C06; color: #F9F7F4; display: flex; align-items: center; padding-left: 8px; font-size: 12px; font-weight: 700">Soil · 70%</div>
+      <div style="flex: 15; background: #ECE1D8; color: #120C06; display: flex; align-items: center; padding-left: 6px; font-size: 12px; font-weight: 700">Bone 15%</div>
+      <div style="flex: 10; background: #6F482A; color: #F9F7F4; display: flex; align-items: center; padding-left: 4px; font-size: 12px; font-weight: 700">10%</div>
+      <div style="flex: 5; background: #A15C27"></div>
+    </div>
+    <p style="font-size: 12px; color: #5C5048">Soil Black, Surface, Elevated · Bone and Bone Alt · Earth Brown and Clay · Cattail Rust and Copper (5%). With eyes half shut, a page reads as dark earth with bone type and one rust button.</p>
+    <div class="h2" style="margin-top: 4px">Colour rules</div>
+    <ul>
+      <li><b>One thing in rust.</b> The primary button is the rust thing on a screen. Copper numerals and one rust rule may sit with it; a second solid rust fill may not.</li>
+      <li>Never add green, safety yellow, royal blue or any cool accent as a brand colour. Status green is for form success only.</li>
+      <li>No gradients, rust to copper included. No shadows, no glows. Flat fills only.</li>
+      <li>Copper is for dark grounds. On Bone it is a focus ring or a numeral of 24 px or larger, never body text or a link.</li>
+      <li>Colour is never the only signal: links are underlined, errors have text and an icon, the current nav item is underlined.</li>
+      <li>No black, champagne, gold or hi-vis yellow fields. No photo tint except the Soil overlay at 60 to 75%.</li>
+    </ul>
+  </div>
+  <div class="rf"><span>Proposal v0.1 · Not yet approved by the owner</span><span>10</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":816,"height":1056}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      ok: [
+        { fg: '#F9F7F4', bg: '#120C06', r: '18.17', label: 'Bone on Soil Black · AAA' },
+        { fg: '#F9F7F4', bg: '#20150C', r: '16.73', label: 'Bone on Soil Surface · AAA' },
+        { fg: '#F9F7F4', bg: '#2E1D10', r: '15.11', label: 'Bone on Soil Elevated · AAA' },
+        { fg: '#BFA89B', bg: '#120C06', r: '8.59', label: 'Dust on Soil Black · body' },
+        { fg: '#D4B8A0', bg: '#120C06', r: '10.33', label: 'Clay on Soil Black · icons' },
+        { fg: '#C8783A', bg: '#120C06', r: '5.74', label: 'Copper on Soil Black · links' },
+        { fg: '#C8783A', bg: '#2E1D10', r: '4.77', label: 'Copper on Elevated · AA' },
+        { fg: '#F9F7F4', bg: '#A15C27', r: '4.82', label: 'Bone on Rust · button' },
+        { fg: '#F9F7F4', bg: '#6F482A', r: '7.45', label: 'Bone on Earth Brown · hover' },
+        { fg: '#120C06', bg: '#C8783A', r: '5.74', label: 'Soil on Copper · phone hover' },
+        { fg: '#120C06', bg: '#F9F7F4', r: '18.17', label: 'Soil Black on Bone · AAA' },
+        { fg: '#5C5048', bg: '#F9F7F4', r: '7.28', label: 'Dust Dark on Bone · AAA' },
+        { fg: '#6F482A', bg: '#F9F7F4', r: '7.45', label: 'Earth Brown on Bone · AAA' },
+        { fg: '#A15C27', bg: '#F9F7F4', r: '4.82', label: 'Rust on Bone · 16 px+ links' },
+        { fg: '#E8A33D', bg: '#120C06', r: '9.01', label: 'Warning on Soil · badge' },
+        { fg: '#D9534F', bg: '#120C06', r: '4.90', label: 'Error on Soil Black · AA' }
+      ],
+      bad: [
+        { fg: '#6F482A', bg: '#120C06', pair: 'Earth Brown on Soil Black', r: '2.44', rule: 'Never as text on dark' },
+        { fg: '#D4B8A0', bg: '#F9F7F4', pair: 'Clay on Bone', r: '1.76', rule: 'Never as text, line or icon on light' },
+        { fg: '#C8783A', bg: '#F9F7F4', pair: 'Copper on Bone', r: '3.17', rule: 'Not for text under 24 px' },
+        { fg: '#C8783A', bg: '#ECE1D8', pair: 'Copper on Bone Alt', r: '2.63', rule: 'Never as text' },
+        { fg: '#F9F7F4', bg: '#C8783A', pair: 'Bone or white on Copper', r: '3.39', rule: 'Never. Copper holds Soil Black text only' },
+        { fg: '#A15C27', bg: '#ECE1D8', pair: 'Rust text on Bone Alt', r: '4.01', rule: 'Links there are Soil Black with a Rust underline' },
+        { fg: '#E8A33D', bg: '#F9F7F4', pair: 'Error / Success / Warning on Bone', r: '3.71 / 3.11 / 2.02', rule: 'Never as text on light: 2 px Error border, icon, Soil Black message' },
+        { fg: '#D9534F', bg: '#2E1D10', pair: 'Error text on Soil Elevated', r: '4.08', rule: 'Not for text under 24 px' },
+        { fg: '#2E1D10', bg: '#120C06', pair: 'Surface or Elevated on Soil Black', r: '1.09 / 1.20', rule: 'A change of ground, never an edge: cards carry the Clay hairline' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

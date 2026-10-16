@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Google post, step</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1200px; height: 900px; box-sizing: border-box; position: relative; overflow: hidden; padding: 80px; background: #120C06; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+  <svg aria-hidden="true" width="1200" height="900" style="position: absolute; left: 0; top: 0; opacity: 0.06; pointer-events: none"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="1200" height="900" filter="url(#grain)"></rect></svg>
+  <div style="position: relative; display: flex; align-items: center; gap: 64px; flex: 1 1 auto">
+    <div style="flex: none; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; font-size: 240px; line-height: 1; color: #C8783A">{{ num }}</div>
+    <div style="display: flex; flex-direction: column; gap: 24px; min-width: 0">
+      <h1 style="margin: 0; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 80px; line-height: 1.1; color: #F9F7F4">{{ name }}</h1>
+      <p style="margin: 0; font-size: 44px; line-height: 1.35; color: #F9F7F4">{{ line }}</p>
+    </div>
+  </div>
+  <div style="position: relative; display: flex; justify-content: space-between; align-items: baseline; gap: 32px; padding-top: 24px; border-top: 1px solid rgba(212,184,160,0.16)">
+    <span style="font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 28px; letter-spacing: 0.08em; color: #BFA89B">Clear · Driveway · Pad · Foundation dig</span>
+    <span style="font-size: 30px; color: #BFA89B">wrightco.llc</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"step":{"editor":"enum","options":["01","02","03","04"],"default":"01","section":"Content"},"$preview":{"width":1200,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const data = {
+      '01': ['Clear', 'Trees and stumps out.'],
+      '02': ['Driveway', 'Cut in so trucks can get to your home site.'],
+      '03': ['Pad', 'Your house pad, built up to the height on your survey.'],
+      '04': ['Foundation dig', 'Dug the way your builder specifies, then handed off.']
+    };
+    const step = data[this.props.step] ? this.props.step : '01';
+    return { num: step, name: data[step][0], line: data[step][1] };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Statement, portrait</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; position: relative; overflow: hidden; padding: 80px; background: #120C06; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+  <svg aria-hidden="true" width="1080" height="1350" style="position: absolute; left: 0; top: 0; opacity: 0.06; pointer-events: none"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="1080" height="1350" filter="url(#grain)"></rect></svg>
+  <div style="position: relative; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 28px; letter-spacing: 0.08em; color: #C8783A">Serving Hammond, Tangipahoa Parish &amp; the Northshore</div>
+  <div style="position: relative; display: flex; flex-direction: column; gap: 32px">
+    <sc-if value="{{ emblem }}" hint-placeholder-val="{{ true }}">
+      <img src="/_blob/9ae9b7d04094c304378121fdcd1ac247" alt="Wright Co. emblem" style="width: 480px; height: auto; display: block; margin-bottom: 32px">
+    </sc-if>
+    <sc-if value="{{ offer }}" hint-placeholder-val="{{ false }}">
+      <div style="align-self: flex-start; background: #6F482A; padding: 3px; clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)">
+        <div style="background: #2E1D10; padding: 6px; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)">
+          <div style="border: 2px dashed #6F482A; padding: 12px 24px; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 28px; letter-spacing: 0.08em; line-height: 1; color: #C8783A">The Homeplace Package</div>
+        </div>
+      </div>
+    </sc-if>
+    <h1 style="margin: 0; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 96px; line-height: 1.05; color: #F9F7F4">{{ line }}</h1>
+    <sc-if value="{{ rule }}" hint-placeholder-val="{{ false }}">
+      <div style="width: 160px; height: 4px; background: #A15C27"></div>
+    </sc-if>
+    <sc-if value="{{ hasSupport }}" hint-placeholder-val="{{ false }}">
+      <p style="margin: 0; font-size: 44px; line-height: 1.4; color: #F9F7F4">{{ support }}</p>
+    </sc-if>
+    <sc-if value="{{ hasNote }}" hint-placeholder-val="{{ false }}">
+      <p style="margin: 0; font-size: 36px; line-height: 1.4; color: #BFA89B">{{ note }}</p>
+    </sc-if>
+    <sc-if value="{{ badged }}" hint-placeholder-val="{{ false }}">
+      <div style="align-self: flex-start; display: flex; align-items: center; gap: 12px; padding: 8px 16px; background: #2E1D10; border: 1px solid #E8A33D; border-radius: 2px; color: #E8A33D; font-weight: 700; font-size: 28px; letter-spacing: 0.04em; text-transform: uppercase"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24"><path fill="#E8A33D" d="M12 2 1 21h22L12 2zm-1 7h2v6h-2V9zm0 8h2v2h-2v-2z"></path></svg>Confirm before publishing · {{ w }}</div>
+    </sc-if>
+    <div style="padding-top: 32px; font-size: 30px; color: #BFA89B">wrightco.llc</div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"statement":{"editor":"enum","options":["Tagline","First tree","Stumps out","Builder starts","New to Hammond","Homeplace Package","Builder: one crew"],"default":"Tagline","section":"Content"},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const s = {
+      'Tagline': { line: 'You bought the land. We’ll get it ready to build.', emblem: true },
+      'First tree': { line: 'From the first tree to the house pad.', rule: true, support: 'We clear it, cut in your driveway and build your house pad.' },
+      'Stumps out': { line: 'Stumps out. Driveway in. Pad up.', rule: true },
+      'Builder starts': { line: 'We stop where your builder starts.', rule: true, support: 'No concrete, fencing, decking or tree care.' },
+      'New to Hammond': { line: 'We’re new to the Hammond area.', rule: true, support: 'So we’re showing our work one lot at a time.' },
+      'Homeplace Package': { line: 'Clear. Driveway. House pad.', offer: true, support: 'Clear · Driveway · House Pad. One crew, one scope, build-ready.', note: 'Ask what’s included for your lot.', badged: true, w: 'W-08 scope' },
+      'Builder: one crew': { line: 'One crew. Woods to build-ready.', rule: true, note: 'Text us the address and the survey.', badged: true, w: 'W-12' }
+    };
+    const v = s[this.props.statement] || s['Tagline'];
+    return {
+      line: v.line, emblem: !!v.emblem, rule: !!v.rule, offer: !!v.offer,
+      support: v.support || '', hasSupport: !!v.support, note: v.note || '', hasNote: !!v.note,
+      badged: !!v.badged, w: v.w || ''
+    };
+  }
+}
+</script>
+</body>
+</html>

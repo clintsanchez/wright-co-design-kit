@@ -1,0 +1,637 @@
+{
+ "v": 3,
+ "assetGroups": {
+  "Logos": {
+   "files": {
+    "favicon-16.png": {
+     "blob": "93f4f1cb958863a8272ad6f62a5bb827",
+     "name": "favicon-16.png",
+     "sha256": "542481e324f2a6e7590c00a2e716d6c680ca0bf2869e56319935d16c271fc99b",
+     "size": 672,
+     "type": "image/png"
+    },
+    "favicon-32.png": {
+     "blob": "3aeb63b4e0afc38b37d7ac50c1b90757",
+     "name": "favicon-32.png",
+     "sha256": "d2debb2533a85dad422b4b3794604e85597f02210ae5fcaa89bb19888d17fcae",
+     "size": 1860,
+     "type": "image/png"
+    },
+    "favicon-48.png": {
+     "blob": "4c742acfa56161513ec1f6560bd43639",
+     "name": "favicon-48.png",
+     "sha256": "4d9bbfd53f50108ed68a784a0df5e48d8ddf4077035e856483e0bb3304bc2792",
+     "size": 3723,
+     "type": "image/png"
+    },
+    "favicon-64.png": {
+     "blob": "d1db194158a49c84bf10ddd1365507ff",
+     "name": "favicon-64.png",
+     "sha256": "84a65fa51b1d18dba208e9768645e2d5a5b8fcc06b49f4f2255b637b6af614d6",
+     "size": 6156,
+     "type": "image/png"
+    },
+    "favicon-W-crop-master.png": {
+     "blob": "e6453a861d067d85eaf6564d1311563a",
+     "name": "favicon-W-crop-master.png",
+     "sha256": "1b6735aba0f1099a60ba87f75c866383a713f96692b5667dafbeb9f04a4245bd",
+     "size": 166408,
+     "type": "image/png"
+    },
+    "wright-co-avatar-emblem-on-soil-1024.png": {
+     "blob": "abf0de266fe13dfbce8d595d29798386",
+     "name": "wright-co-avatar-emblem-on-soil-1024.png",
+     "sha256": "d0035a8ebf0a099de5e6ab4a943f21a1890c3d0574ba390b7cf23fa0ff09bee6",
+     "size": 668636,
+     "type": "image/png"
+    },
+    "wright-co-avatar-emblem-on-soil-180.png": {
+     "blob": "dcd52d8ef2309e583aad705476343d84",
+     "name": "wright-co-avatar-emblem-on-soil-180.png",
+     "sha256": "f0def6229441431c838538efe330bb85e7dc2f337aa4ca9b0a8c0da4c754cb6a",
+     "size": 24689,
+     "type": "image/png"
+    },
+    "wright-co-avatar-emblem-on-soil-320.png": {
+     "blob": "b5b9a491166bfbf82c7ead7c36713f70",
+     "name": "wright-co-avatar-emblem-on-soil-320.png",
+     "sha256": "48d338cd1b76c943b5c5ea305d8570031f820d9c9bab1354c8874f2aac479aa1",
+     "size": 71451,
+     "type": "image/png"
+    },
+    "wright-co-avatar-emblem-on-soil-400.png": {
+     "blob": "09375cf76e829dee8800bc94da0ed569",
+     "name": "wright-co-avatar-emblem-on-soil-400.png",
+     "sha256": "0a79a91bddb2474a2fcf58b1e41e2f2f24da753167be481acc197a9bc76fe9ce",
+     "size": 109547,
+     "type": "image/png"
+    },
+    "wright-co-avatar-emblem-on-soil-512.png": {
+     "blob": "b05b71cd2af6d90e62e7ec33f5f3af38",
+     "name": "wright-co-avatar-emblem-on-soil-512.png",
+     "sha256": "050659e84e173ec3292f7cbb79a0b870c3bae17ee486b18656438b9b36eea2f2",
+     "size": 175615,
+     "type": "image/png"
+    },
+    "wright-co-emblem-on-soil-landscape-1200x628.png": {
+     "blob": "ee3142f24623d5f0e41ad12561973928",
+     "name": "wright-co-emblem-on-soil-landscape-1200x628.png",
+     "sha256": "0ba7305c7bba98d5207fa2a9a6fbb117bd601e2f4f1a95cdbd45bfac55ff0233",
+     "size": 563998,
+     "type": "image/png"
+    },
+    "wright-co-emblem-on-soil-landscape-2400x1257.png": {
+     "blob": "da3db627f4e9eef39c88d06e37ae2e7e",
+     "name": "wright-co-emblem-on-soil-landscape-2400x1257.png",
+     "sha256": "5630d0d2f59b7f2e760b376338e32036cdc7cbaaac97b4ce2de8f15d2d85b0a1",
+     "size": 2060262,
+     "type": "image/png"
+    },
+    "wright-co-emblem-on-soil-square-1200.png": {
+     "blob": "0973a50a47f8a677847211cd2770ea69",
+     "name": "wright-co-emblem-on-soil-square-1200.png",
+     "sha256": "bebb225ea590fd399b502253238eff3a8a4dd2cf540d1841adec0e1193fff202",
+     "size": 1256860,
+     "type": "image/png"
+    },
+    "wright-co-emblem-on-soil-square-2400.png": {
+     "blob": "a8ebd3819306247809326bcb3ebd195d",
+     "name": "wright-co-emblem-on-soil-square-2400.png",
+     "sha256": "18870e9562a80399ac1c2592b2137aa566e39a37955beebe59bd572b1479f64e",
+     "size": 4122430,
+     "type": "image/png"
+    },
+    "wright-co-emblem-transparent-1200w.png": {
+     "blob": "fd9a47c0562301486fd0977498d89b4c",
+     "name": "wright-co-emblem-transparent-1200w.png",
+     "sha256": "7940666507e07874922ef1771964412c304a21af8217f7c767815ff629884ccf",
+     "size": 2155146,
+     "type": "image/png"
+    },
+    "wright-co-emblem-transparent-2400w-upscaled.png": {
+     "blob": "c7e98cb9fed45518a98d8bc42ac01b61",
+     "name": "wright-co-emblem-transparent-2400w-upscaled.png",
+     "sha256": "fcadd968dd1cb06581a42fac8f608326d95044b792e0bf7724a01b021f3a1fd5",
+     "size": 6705552,
+     "type": "image/png"
+    },
+    "wright-co-emblem-transparent-native-1263w.png": {
+     "blob": "de81bfd5dc3ec5cccd2722ca20670668",
+     "name": "wright-co-emblem-transparent-native-1263w.png",
+     "sha256": "3739faf2e29f2be922715520fd348113f5657ad2326f4a20a978e321e5a8ec28",
+     "size": 2532617,
+     "type": "image/png"
+    },
+    "wright-co-llc-logo_on-transparent_1536x1024.png": {
+     "blob": "8da9bc39eb3dafa6ec093048518c4e3f",
+     "name": "wright-co-llc-logo_on-transparent_1536x1024.png",
+     "sha256": "0d7ae038e073e2a266c05a01a82f49161a0fa746fb43c94a4fef8a142e7ad255",
+     "size": 2869114,
+     "type": "image/png"
+    },
+    "wright-co-logo-white-bg_wrightco-llc-site_1536x1024.jpg": {
+     "blob": "a751e84bed016cf042d4f672aed12d10",
+     "name": "wright-co-logo-white-bg_wrightco-llc-site_1536x1024.jpg",
+     "sha256": "f5a4492430c91d644e92904fa9843c8d79a8dae9fe5f152396e3a389d2e8c063",
+     "size": 677787,
+     "type": "image/jpeg"
+    }
+   },
+   "name": "Logos",
+   "order": [],
+   "tile": "l"
+  },
+  "Photos": {
+   "files": {
+    "ai-culvert-3-pro-image-1.jpg": {
+     "blob": "8f9feeada5ea3f19c97cdca36e041a62",
+     "name": "ai-culvert-3-pro-image-1.jpg",
+     "sha256": "b2846c81d1c4973d186bda26488c60ccf52eb439c92e432a602000bd2ee1bbbe",
+     "size": 4570904,
+     "type": "image/jpeg"
+    },
+    "ai-culvert-3.1-flash-image-1.jpg": {
+     "blob": "a2a5e711052c0de1b13ac757a58aa178",
+     "name": "ai-culvert-3.1-flash-image-1.jpg",
+     "sha256": "9c095e4e85f5e48c74bf6ad5167dd06e22f3bf093f8198cc450801a84b7f8a04",
+     "size": 4812663,
+     "type": "image/jpeg"
+    },
+    "ai-drive-pines-3-pro-image-1.jpg": {
+     "blob": "6a1e7e8467ef253a78c8dcd555eb227b",
+     "name": "ai-drive-pines-3-pro-image-1.jpg",
+     "sha256": "a6cb1f3323a58206a4ecd060f846f1d7cfa4f7cc8dd0b6fac9f3033c854d34c8",
+     "size": 4179960,
+     "type": "image/jpeg"
+    },
+    "ai-drive-pines-3.1-flash-image-1.jpg": {
+     "blob": "6910cd5d0999b31a143d0b9c9c94fc15",
+     "name": "ai-drive-pines-3.1-flash-image-1.jpg",
+     "sha256": "1813a44c5b61dea125cb6abb2696fddfef6c3ed799592156ce319aa10f4201cc",
+     "size": 4799893,
+     "type": "image/jpeg"
+    },
+    "ai-mulcher-3-pro-image-1.jpg": {
+     "blob": "fa15a9d843d4237bb56b2db05f295d2d",
+     "name": "ai-mulcher-3-pro-image-1.jpg",
+     "sha256": "1d25f4a9f7d3d40f454ee077aa0e63d11d2ad409646e53eb13eaa7ba373c2f22",
+     "size": 4986358,
+     "type": "image/jpeg"
+    },
+    "ai-mulcher-3.1-flash-image-1.jpg": {
+     "blob": "a91c9b563874f82f13047f167168030d",
+     "name": "ai-mulcher-3.1-flash-image-1.jpg",
+     "sha256": "957e1f767ba2f2007f3c81aeaa624e3686b7a5e13ebc0da502b90f99310d915a",
+     "size": 4877420,
+     "type": "image/jpeg"
+    },
+    "ai-mulcher-wide-3-pro-image-1.jpg": {
+     "blob": "00f09c825a43aa2a6b4e3253f2685524",
+     "name": "ai-mulcher-wide-3-pro-image-1.jpg",
+     "sha256": "9150498940e5cc553c85039d9e11a8878e9c288785ba92e687b427b810ac132f",
+     "size": 4317735,
+     "type": "image/jpeg"
+    },
+    "ai-mulcher-wide-3.1-flash-image-1.jpg": {
+     "blob": "40aa7e9ccee44ac1f85ea0e241777795",
+     "name": "ai-mulcher-wide-3.1-flash-image-1.jpg",
+     "sha256": "e6164992fa533240ff45cc4f7ce63f204ed6c5a73b3c5ecbafe041bbf8ba1360",
+     "size": 4878606,
+     "type": "image/jpeg"
+    },
+    "ai-pond-3-pro-image-1.jpg": {
+     "blob": "e450f4682e0a5d9e3796a5824458febb",
+     "name": "ai-pond-3-pro-image-1.jpg",
+     "sha256": "bc10a05cf3aff5808402ac122622c6c6266c8485366b873682ea9a7cc0581e78",
+     "size": 3648775,
+     "type": "image/jpeg"
+    },
+    "ai-pond-3.1-flash-image-1.jpg": {
+     "blob": "450263c51a3e56ed11eecc52da9f875d",
+     "name": "ai-pond-3.1-flash-image-1.jpg",
+     "sha256": "8062f2c4f4d01e0d487931462e575ea270941d2b8b233cf1b2b5f0c4e8a0212d",
+     "size": 4365061,
+     "type": "image/jpeg"
+    },
+    "ai-stakes-3-pro-image-1.jpg": {
+     "blob": "5db093ec4291b3cce04ca238aea84d27",
+     "name": "ai-stakes-3-pro-image-1.jpg",
+     "sha256": "b57584130a676471b3735d88039899e7c726c8619b42c812e18c46e24cb803d2",
+     "size": 3893853,
+     "type": "image/jpeg"
+    },
+    "ai-stakes-3.1-flash-image-1.jpg": {
+     "blob": "5f762bbfc511ffcbb7fe4366dfcd1f65",
+     "name": "ai-stakes-3.1-flash-image-1.jpg",
+     "sha256": "84c1762429adbbe0fa0335e550fcd3c55a7af06a4ba802bcf787d7692c61b0c9",
+     "size": 3752884,
+     "type": "image/jpeg"
+    },
+    "stock-cleared-lot-bulldozer-ready-to-clear-the-land-for-construction-CF76EB78.jpg": {
+     "blob": "83985d25bda052904e1e26b7c9b609e0",
+     "name": "stock-cleared-lot-bulldozer-ready-to-clear-the-land-for-construction-CF76EB78.jpg",
+     "sha256": "afdbaf1769344df1331a5901c089e9504c9889048a31ee072bd741d84bdecd15",
+     "size": 16615685,
+     "type": "image/jpeg"
+    },
+    "stock-cleared-lot-tough-work-on-skid-steer-in-muddy-field-B84AD72F.jpg": {
+     "blob": "9c95e3f926a0789bde688d3a18fbb79a",
+     "name": "stock-cleared-lot-tough-work-on-skid-steer-in-muddy-field-B84AD72F.jpg",
+     "sha256": "a68759a025a44f910b6a00c16d49802f24c1601f18bdb6b6fcbe4a226a146bfb",
+     "size": 13832213,
+     "type": "image/jpeg"
+    },
+    "stock-cleared-lot-yellow-skid-steer-loader-in-a-wooded-area-FF58B76C.jpg": {
+     "blob": "2657e86af50dad17b9077c63815f1b4e",
+     "name": "stock-cleared-lot-yellow-skid-steer-loader-in-a-wooded-area-FF58B76C.jpg",
+     "sha256": "83e8e58c2b74446ea3d16ee0b796db8d12fc8f0d4a00990180772b69af18ce94",
+     "size": 12307852,
+     "type": "image/jpeg"
+    },
+    "stock-driveway-culvert-concrete-culvert-with-sandbag-retaining-walls-67385FC1.jpg": {
+     "blob": "7a3d4e3de1a23af258c72a81d3d55751",
+     "name": "stock-driveway-culvert-concrete-culvert-with-sandbag-retaining-walls-67385FC1.jpg",
+     "sha256": "8dafe99963a2658c2d1ef9c83bf3e97e43f27c67ec8b7685b7f99d76abe893c6",
+     "size": 10811022,
+     "type": "image/jpeg"
+    },
+    "stock-driveway-culvert-orange-skid-steer-loader-at-construction-site-F69C6E82.jpg": {
+     "blob": "0fddbdeb38e486fbb577ce85a2c33e51",
+     "name": "stock-driveway-culvert-orange-skid-steer-loader-at-construction-site-F69C6E82.jpg",
+     "sha256": "470bf9530f23f39478a131094576948633f5df207e2d487a8cae8d23f76b079d",
+     "size": 20295838,
+     "type": "image/jpeg"
+    },
+    "stock-driveway-culvert-rural-drainage-system-running-under-dirt-road-5ED24346.jpg": {
+     "blob": "8128479b70dd035bc00fb723d7abbd80",
+     "name": "stock-driveway-culvert-rural-drainage-system-running-under-dirt-road-5ED24346.jpg",
+     "sha256": "a9da62deb2c0bf32802252d4f50f74692888e55354a3a93455ba8a6ace6b6076",
+     "size": 9884539,
+     "type": "image/jpeg"
+    },
+    "stock-driveway-culvert-skid-steer-gravel-spreader-working-on-rural-road-C9795EEB.jpg": {
+     "blob": "00e5cdf6d9bfa4d6cf8972e6fe1bd589",
+     "name": "stock-driveway-culvert-skid-steer-gravel-spreader-working-on-rural-road-C9795EEB.jpg",
+     "sha256": "cad6ca924f6df9267c91dd84db06761dc8341e719054124f53961c23ad87e60b",
+     "size": 18104093,
+     "type": "image/jpeg"
+    },
+    "stock-foundation-construction-excavator-digging-a-foundation-for-a-building-DBC5A3F9.jpg": {
+     "blob": "9f2d9450f2e528b8bc37d0cc7fb48e92",
+     "name": "stock-foundation-construction-excavator-digging-a-foundation-for-a-building-DBC5A3F9.jpg",
+     "sha256": "57258563ba940b1b4f9cbe7c5231a95d5ad347941a2d5cb2774cecb0b2fce924",
+     "size": 12025758,
+     "type": "image/jpeg"
+    },
+    "stock-foundation-excavator-digging-into-dirt-hillside-on-sunny-day-1C5351F2.jpg": {
+     "blob": "6b6f718ea83a29348f90c25b73a621eb",
+     "name": "stock-foundation-excavator-digging-into-dirt-hillside-on-sunny-day-1C5351F2.jpg",
+     "sha256": "e1fd5b75114b624a76c1761a0c37fdc745726f81d4fb35fd824aafe8124aee6d",
+     "size": 8227965,
+     "type": "image/jpeg"
+    },
+    "stock-foundation-new-home-foundation-under-construction-in-rural-setting-C316B6D3.jpg": {
+     "blob": "c8da76ec0fbb86cba7fff7b9829abea5",
+     "name": "stock-foundation-new-home-foundation-under-construction-in-rural-setting-C316B6D3.jpg",
+     "sha256": "bc4c7a982d233eb903171ddfe3c5b51ef68650687c0dcb6ca5e8bbe0c58b2ac9",
+     "size": 10773964,
+     "type": "image/jpeg"
+    },
+    "stock-free-clearing-aerial-timber-clearing-log-deck-loader-skidder-unsplash-jD2JkHZiCLY.jpg": {
+     "blob": "adb9acb165f76ef6a61358fccc8f47ad",
+     "name": "stock-free-clearing-aerial-timber-clearing-log-deck-loader-skidder-unsplash-jD2JkHZiCLY.jpg",
+     "sha256": "127c1fe5971651635484fcd76de22181ef6a317e634e3c8ff5b817527494d24d",
+     "size": 3868081,
+     "type": "image/jpeg"
+    },
+    "stock-free-clearing-compact-track-loader-in-cut-brush-woods-edge-pexels-33941336.jpg": {
+     "blob": "96ad3fa3e08f143ae50bd93eb4df579c",
+     "name": "stock-free-clearing-compact-track-loader-in-cut-brush-woods-edge-pexels-33941336.jpg",
+     "sha256": "ec68ffc9ca9eafab0bc4faf21988c84bf6826ca2e23a582e2f67af858f89bf86",
+     "size": 3503414,
+     "type": "image/jpeg"
+    },
+    "stock-free-clearing-crawler-dozer-clearing-brush-pines-sandy-soil-unsplash-kj7IE88UQt4.jpg": {
+     "blob": "8dae84ff4a8dd8bbe59d5158b5177e82",
+     "name": "stock-free-clearing-crawler-dozer-clearing-brush-pines-sandy-soil-unsplash-kj7IE88UQt4.jpg",
+     "sha256": "fe2fdab2b76367bc743e31f0fddfa246f202a4042cd7a581f988ec4aa1c4f75e",
+     "size": 13073188,
+     "type": "image/jpeg"
+    },
+    "stock-free-clearing-excavator-beside-cleared-brush-piles-tree-line-unsplash-GX2T0ZM9LiQ.jpg": {
+     "blob": "48b296f6a928f38d3929d168d77b5aa4",
+     "name": "stock-free-clearing-excavator-beside-cleared-brush-piles-tree-line-unsplash-GX2T0ZM9LiQ.jpg",
+     "sha256": "a10aae80f618c446e547d106493b24359b445e682680018fee31fe80a42cb7e8",
+     "size": 1239636,
+     "type": "image/jpeg"
+    },
+    "stock-free-clearing-forestry-mulcher-drum-head-hardwoods-chips-flying-pixabay-1440558.jpg": {
+     "blob": "80de2dec076638570f3e8fd5366ad956",
+     "name": "stock-free-clearing-forestry-mulcher-drum-head-hardwoods-chips-flying-pixabay-1440558.jpg",
+     "sha256": "907459663438efd36c4c38210b23b60a9c1c338bd27a42a4be9017b91b910200",
+     "size": 1082708,
+     "type": "image/jpeg"
+    },
+    "stock-free-clearing-track-loader-dumping-soil-cleared-wooded-lot-unsplash-AB_TBnAjjTg.jpg": {
+     "blob": "02c126c5bfbe9847a101cc9ef77d9d52",
+     "name": "stock-free-clearing-track-loader-dumping-soil-cleared-wooded-lot-unsplash-AB_TBnAjjTg.jpg",
+     "sha256": "edd40cc8ab629a3b63bb279429be7461311d8dd28ce29dd447914de3cefff210",
+     "size": 6246398,
+     "type": "image/jpeg"
+    },
+    "stock-free-culvert-corrugated-culvert-outlet-ditch-bank-water-pexels-15954727.jpg": {
+     "blob": "416404992b025d9e889c9498001ce531",
+     "name": "stock-free-culvert-corrugated-culvert-outlet-ditch-bank-water-pexels-15954727.jpg",
+     "sha256": "182c0e981e9152e2577a15525c0c23f4229d1f2c6002f0666cf52cad2fb22d61",
+     "size": 5814590,
+     "type": "image/jpeg"
+    },
+    "stock-free-culvert-corrugated-culvert-under-rural-road-ditch-unsplash-fOXbIKNRmBU.jpg": {
+     "blob": "a5adf2484cabc9a9f6d30446e87a4dec",
+     "name": "stock-free-culvert-corrugated-culvert-under-rural-road-ditch-unsplash-fOXbIKNRmBU.jpg",
+     "sha256": "cd14923bd05e6473cf424e39bd6a03009bb4aff2cf071d2c854294b92edbdf0f",
+     "size": 12598240,
+     "type": "image/jpeg"
+    },
+    "stock-free-driveway-gravel-road-to-small-house-pine-woods-unsplash-SmCuHBcOy1Y.jpg": {
+     "blob": "54eeecdb9a93c62205648d025cba78a8",
+     "name": "stock-free-driveway-gravel-road-to-small-house-pine-woods-unsplash-SmCuHBcOy1Y.jpg",
+     "sha256": "1ee452f26cdbdf4b68d65b4b31d5beca83f474999c0c1d52f5d1186a24e671b8",
+     "size": 721477,
+     "type": "image/jpeg"
+    },
+    "stock-free-driveway-new-gravel-driveway-cut-through-woods-track-loader-unsplash-8EEH4AZ66AU.jpg": {
+     "blob": "df3dc19419a92fa0f8d3ed3818e2e463",
+     "name": "stock-free-driveway-new-gravel-driveway-cut-through-woods-track-loader-unsplash-8EEH4AZ66AU.jpg",
+     "sha256": "93ca30d2a99a68d268d82a5415b3c12130b90254899db05a58138dbec109d715",
+     "size": 6302651,
+     "type": "image/jpeg"
+    },
+    "stock-free-driveway-two-track-gravel-drive-to-white-house-lawn-unsplash-yH0Zq0_oiBE.jpg": {
+     "blob": "bc791215f1a42db45d34ac87ce1f3665",
+     "name": "stock-free-driveway-two-track-gravel-drive-to-white-house-lawn-unsplash-yH0Zq0_oiBE.jpg",
+     "sha256": "b860bf9ab025dd9711d4166ea9ddb6f70cca7b971edbc92edad635c097b1d3ab",
+     "size": 2880413,
+     "type": "image/jpeg"
+    },
+    "stock-free-pond-excavator-digging-new-water-hole-raw-ground-pexels-36553102.jpg": {
+     "blob": "8e80033985db06e7cab32d341d664c23",
+     "name": "stock-free-pond-excavator-digging-new-water-hole-raw-ground-pexels-36553102.jpg",
+     "sha256": "91e10319e625acbde9d01d78616bbeec1daeee49ea79aa57d2546824d9130d6f",
+     "size": 2770288,
+     "type": "image/jpeg"
+    },
+    "stock-free-pond-farm-pond-fresh-graded-banks-pump-unsplash-Noxef0JZK5A.jpg": {
+     "blob": "8f1eec71f670b2b953a1000113c6bdef",
+     "name": "stock-free-pond-farm-pond-fresh-graded-banks-pump-unsplash-Noxef0JZK5A.jpg",
+     "sha256": "2b4ad79227f8012003177c36f0b2ac32e53dfafc8350b6d9d0a1b4bf92fb6236",
+     "size": 3615183,
+     "type": "image/jpeg"
+    },
+    "stock-free-pond-new-pond-raw-dirt-banks-hardwoods-unsplash-qZa2I3i58jo.jpg": {
+     "blob": "98a29077e81e894bc432f52845026948",
+     "name": "stock-free-pond-new-pond-raw-dirt-banks-hardwoods-unsplash-qZa2I3i58jo.jpg",
+     "sha256": "f0f27f508f2fea4ae07e1bf3b252f7523fcd1fe97421b958415a19f8cacfebfe",
+     "size": 2809124,
+     "type": "image/jpeg"
+    },
+    "stock-free-survey-survey-lath-pink-flagging-surveyor-level-sandy-pad-pexels-5802821.jpg": {
+     "blob": "e291cbd8b7440ec33bb3b95b6ec2eee6",
+     "name": "stock-free-survey-survey-lath-pink-flagging-surveyor-level-sandy-pad-pexels-5802821.jpg",
+     "sha256": "2a598ab82fd8a4743863bce8279af71a96e7192bf79a9ba7c96ae92deb06c2c7",
+     "size": 2536099,
+     "type": "image/jpeg"
+    },
+    "stock-free-survey-wooden-stake-pink-flagging-tape-sunset-unsplash-tlt3zi3BygU.jpg": {
+     "blob": "054a46c14de3828eb309c382f7f2c5e3",
+     "name": "stock-free-survey-wooden-stake-pink-flagging-tape-sunset-unsplash-tlt3zi3BygU.jpg",
+     "sha256": "19b16a7d9c5de29d881706837eca036c3a63d0e03582409254f9b0e6639a3e02",
+     "size": 684157,
+     "type": "image/jpeg"
+    },
+    "stock-hauling-dump-truck-unloading-soil-at-construction-site-B2747ECB.jpg": {
+     "blob": "f61d4918287ef660f3b206bddc3b5fd1",
+     "name": "stock-hauling-dump-truck-unloading-soil-at-construction-site-B2747ECB.jpg",
+     "sha256": "b8b1ecb666eb8262dbdf91b2fef42c393a2c126b17fed5f29ffcfcd27b7ab148",
+     "size": 17781877,
+     "type": "image/jpeg"
+    },
+    "stock-hauling-heavy-machinery-moving-dirt-at-a-construction-site-D15BA862.jpg": {
+     "blob": "e952fb4a8af6542088a5f242f5c25cd0",
+     "name": "stock-hauling-heavy-machinery-moving-dirt-at-a-construction-site-D15BA862.jpg",
+     "sha256": "e788fac368ba5b937e4b0d1a53ed875d505c5de39596f9b90876d6f648a9f38a",
+     "size": 16118043,
+     "type": "image/jpeg"
+    },
+    "stock-hero-cleared-land-ready-for-development-in-the-country-399D8CB0.jpg": {
+     "blob": "f676573d01579773dd9c5d67b985a3fd",
+     "name": "stock-hero-cleared-land-ready-for-development-in-the-country-399D8CB0.jpg",
+     "sha256": "6eb354cafad32fda197443d8035af63e0e5c9b244629623b6567c1c0039918e7",
+     "size": 6603354,
+     "type": "image/jpeg"
+    },
+    "stock-hero-clearing-land-with-heavy-equipment-in-a-forest-99499325.jpg": {
+     "blob": "bb165ba310b5cfe80cb91f4fca1ee29e",
+     "name": "stock-hero-clearing-land-with-heavy-equipment-in-a-forest-99499325.jpg",
+     "sha256": "1ef06a30a9e93bd5b39c2e95c316631f36fd124e61bc4bd9518e5eab8620f6f6",
+     "size": 20592292,
+     "type": "image/jpeg"
+    },
+    "stock-hero-excavator-and-bulldozer-clearing-land-in-rural-area-27512A49.jpg": {
+     "blob": "84a1136eaccfb8c5232ae46d1c64ba8e",
+     "name": "stock-hero-excavator-and-bulldozer-clearing-land-in-rural-area-27512A49.jpg",
+     "sha256": "73726a0f93c0f62be30023f499c2acce5fec46c21af4c325448a4471a7094246",
+     "size": 15992233,
+     "type": "image/jpeg"
+    },
+    "stock-hero-forestry-equipment-removing-fallen-tree-in-woods-EE506F0E.jpg": {
+     "blob": "aade37bbb0e013c2757fb8cfd31bbc9d",
+     "name": "stock-hero-forestry-equipment-removing-fallen-tree-in-woods-EE506F0E.jpg",
+     "sha256": "bec2980a418f111693b2152c940e7d70167dd7b859ec03a25daace549f22677f",
+     "size": 17282503,
+     "type": "image/jpeg"
+    },
+    "stock-hero-heavy-equipment-moving-dirt-on-construction-site-835EDA9C.jpg": {
+     "blob": "9d47b7335f0722eeb73251644ec71526",
+     "name": "stock-hero-heavy-equipment-moving-dirt-on-construction-site-835EDA9C.jpg",
+     "sha256": "f9c80a2f82d5d1bdfe6f5eab5beb7920b147cd12f7c5e4c841ac43f28863ac40",
+     "size": 18170358,
+     "type": "image/jpeg"
+    },
+    "stock-hero-yellow-excavator-on-construction-site-under-blue-sky-DFF035A2.jpg": {
+     "blob": "80fa21528fcf3743d8e4dd972db2d926",
+     "name": "stock-hero-yellow-excavator-on-construction-site-under-blue-sky-DFF035A2.jpg",
+     "sha256": "083d1e7490e65a53e238c02f9e879aaad90b849741a7047b635c474d4a97e762",
+     "size": 16879292,
+     "type": "image/jpeg"
+    },
+    "stock-house-pad-construction-equipment-on-a-dirt-lot-under-blue-sky-ECDB3D25.jpg": {
+     "blob": "4fc0f449936e15a5f0be1b974a5be0c4",
+     "name": "stock-house-pad-construction-equipment-on-a-dirt-lot-under-blue-sky-ECDB3D25.jpg",
+     "sha256": "11358c89ea8ac2554e3b953b42e507ef6a8ead18918da622fa50ec99fc5dd702",
+     "size": 13254494,
+     "type": "image/jpeg"
+    },
+    "stock-house-pad-construction-site-with-heavy-equipment-and-building-material-A70C87DA.jpg": {
+     "blob": "ae90178b7f0b559568a3ea5c31e1fe73",
+     "name": "stock-house-pad-construction-site-with-heavy-equipment-and-building-material-A70C87DA.jpg",
+     "sha256": "0809cf98cffbd7638a79f9105934dcf2488344369d7da49d440f8b939a8ab9b1",
+     "size": 16041591,
+     "type": "image/jpeg"
+    },
+    "stock-house-pad-heavy-construction-equipment-on-a-forest-job-site-5023A824.jpg": {
+     "blob": "18498332b580784d940ade2f11239525",
+     "name": "stock-house-pad-heavy-construction-equipment-on-a-forest-job-site-5023A824.jpg",
+     "sha256": "99c0e36657cb8162a879490cb64523437d6a38dd30da9322c0055a13352cde7d",
+     "size": 17743034,
+     "type": "image/jpeg"
+    },
+    "stock-house-pad-heavy-yellow-roller-machine-on-a-red-earth-ground-93CC4541.jpg": {
+     "blob": "2e40177cc2f7e63926bccae28c51e53a",
+     "name": "stock-house-pad-heavy-yellow-roller-machine-on-a-red-earth-ground-93CC4541.jpg",
+     "sha256": "bee7d56750c7fa4538c7dae7ba818a2d5fb4272171ffd65ec9b747bc37768f25",
+     "size": 15903891,
+     "type": "image/jpeg"
+    },
+    "stock-house-pad-skid-steer-loader-moving-earth-in-a-rural-area-87A7B62C.jpg": {
+     "blob": "157bcf14ce8f52b51e1fefd0c16e62ee",
+     "name": "stock-house-pad-skid-steer-loader-moving-earth-in-a-rural-area-87A7B62C.jpg",
+     "sha256": "8a014f8c0abebd9021c719f3017df5caa1a2339d3f466ee6ce3f702d3bbabcc1",
+     "size": 14596234,
+     "type": "image/jpeg"
+    },
+    "stock-land-clearing-bulldozer-moving-dirt-in-rural-natural-environment-0CC8BECB.jpg": {
+     "blob": "cb8dce7d38bb0b6ee714539722fa7d86",
+     "name": "stock-land-clearing-bulldozer-moving-dirt-in-rural-natural-environment-0CC8BECB.jpg",
+     "sha256": "da1d7cba9a401a88cb77d0e3132dffe57f4a035156cd3b02425f86c04257c82e",
+     "size": 15630834,
+     "type": "image/jpeg"
+    },
+    "stock-land-clearing-bulldozer-moving-fallen-tree-in-forest-landscape-552BEE5B.jpg": {
+     "blob": "5dafe8b2d2d4e37d885989d6bc99b117",
+     "name": "stock-land-clearing-bulldozer-moving-fallen-tree-in-forest-landscape-552BEE5B.jpg",
+     "sha256": "a4d0422c1b7e2b2d906d8a904e94775a0471d93b9db7f42c0552c760e698401f",
+     "size": 17111223,
+     "type": "image/jpeg"
+    },
+    "stock-land-clearing-orange-construction-equipment-in-rural-forest-landscape-03369FB4.jpg": {
+     "blob": "92125e720d45fb70a7bb3ff524c864a5",
+     "name": "stock-land-clearing-orange-construction-equipment-in-rural-forest-landscape-03369FB4.jpg",
+     "sha256": "842a3b1ae1da167ac06feeac3ff02c4cca06278f11b91e7c0e498c9aa58da368",
+     "size": 18647293,
+     "type": "image/jpeg"
+    },
+    "stock-land-clearing-orange-tractor-removing-tree-after-clearing-woods-729180F5.jpg": {
+     "blob": "2f33db25118ddcf95d535c648a27af03",
+     "name": "stock-land-clearing-orange-tractor-removing-tree-after-clearing-woods-729180F5.jpg",
+     "sha256": "822c32dd285cbaa232997cbe89975328068633773406d87f7fcdc60c8a465e74",
+     "size": 17548330,
+     "type": "image/jpeg"
+    },
+    "stock-land-clearing-skid-steer-loader-on-forest-construction-site-97064146.jpg": {
+     "blob": "90c55b175b2f805932e5c5bc1e54bba9",
+     "name": "stock-land-clearing-skid-steer-loader-on-forest-construction-site-97064146.jpg",
+     "sha256": "84ffc5b3a0d544d67092b7130a82208e522ebce99c2e677c9ac445bfb42ac568",
+     "size": 18892753,
+     "type": "image/jpeg"
+    },
+    "stock-land-clearing-yellow-excavator-digging-fallen-tree-in-forest-D2B9F477.jpg": {
+     "blob": "53ebd9848bbed97090cd5074efb2225e",
+     "name": "stock-land-clearing-yellow-excavator-digging-fallen-tree-in-forest-D2B9F477.jpg",
+     "sha256": "a4ab3121fe7b1bac7ae625f2c22a85e7cb4072a617ec01c57de47057f11d86e2",
+     "size": 16804190,
+     "type": "image/jpeg"
+    },
+    "stock-land-water-flooded-meadow-with-trees-on-a-cloudy-day-0F3AB31D.jpg": {
+     "blob": "3b68cb78b5515b73ad0dee5bd6506085",
+     "name": "stock-land-water-flooded-meadow-with-trees-on-a-cloudy-day-0F3AB31D.jpg",
+     "sha256": "039fd9ef348d6d59910344dd5fbe1f512b36d3e5a5430f64b4c3bbf5052e0183",
+     "size": 6173499,
+     "type": "image/jpeg"
+    },
+    "stock-land-water-green-trees-dripping-with-spanish-moss-in-louisiana-7D066BF3.jpg": {
+     "blob": "63d4db02eb803d90c89842921ef27a25",
+     "name": "stock-land-water-green-trees-dripping-with-spanish-moss-in-louisiana-7D066BF3.jpg",
+     "sha256": "99717207a39a60c706f84af54e5bf9664ecf9a3f4313742432015da5321398c6",
+     "size": 14822484,
+     "type": "image/jpeg"
+    },
+    "stock-land-water-lush-green-forest-of-tall-straight-trees-77363410.jpg": {
+     "blob": "d072feb7a3e3b9ee11fc9fdc4fe6ce31",
+     "name": "stock-land-water-lush-green-forest-of-tall-straight-trees-77363410.jpg",
+     "sha256": "ae2c7a02064efda9b0b2169163a002092cf478697a128065bee8772aea3196b7",
+     "size": 17755218,
+     "type": "image/jpeg"
+    },
+    "stock-land-water-rural-barn-landscape-with-pond-on-farm-C05AF886.jpg": {
+     "blob": "9571f5f5b81f1bded41c5aab1f028e84",
+     "name": "stock-land-water-rural-barn-landscape-with-pond-on-farm-C05AF886.jpg",
+     "sha256": "085a0b63fba40c805903c35454e74b9cb0c01f067b0c5d3b5dc1c3693755f5e2",
+     "size": 5600500,
+     "type": "image/jpeg"
+    },
+    "stock-lot-walk-hiking-boot-on-trail-at-sunset-480E5A85.jpg": {
+     "blob": "afb0b2900d704b5fef6a2980a7220add",
+     "name": "stock-lot-walk-hiking-boot-on-trail-at-sunset-480E5A85.jpg",
+     "sha256": "1ac08ded913548585126f94ef2efbb06e437ad9e039d488776ff6262ec89f2da",
+     "size": 9554670,
+     "type": "image/jpeg"
+    },
+    "stock-lot-walk-leveling-a-post-for-construction-outdoors-in-nature-CC339D88.jpg": {
+     "blob": "7add9a876bcd602f86adfe47e2184eea",
+     "name": "stock-lot-walk-leveling-a-post-for-construction-outdoors-in-nature-CC339D88.jpg",
+     "sha256": "034613a50dbaa579dbf96f8d330b42585c50a67e17bb9729e171a3653877342c",
+     "size": 14927095,
+     "type": "image/jpeg"
+    },
+    "stock-lot-walk-walking-boots-on-muddy-path-in-overcast-conditions-E26193A8.jpg": {
+     "blob": "02c9ed220c9802de7bc1162cc63f16da",
+     "name": "stock-lot-walk-walking-boots-on-muddy-path-in-overcast-conditions-E26193A8.jpg",
+     "sha256": "02b82964003e6691f48b5399be0a01efa21a362114969d7cae9eb8c005c014f3",
+     "size": 10550882,
+     "type": "image/jpeg"
+    },
+    "stock-texture-tire-tracks-in-a-field-of-brown-soil-13D2B272.jpg": {
+     "blob": "3a2bbda0ec883a7b3707468c2708e853",
+     "name": "stock-texture-tire-tracks-in-a-field-of-brown-soil-13D2B272.jpg",
+     "sha256": "0b0b9b6cade0b298586e38effa09ef4c84ee8f384dfe402ecdd51a416c067206",
+     "size": 17310756,
+     "type": "image/jpeg"
+    },
+    "stock-texture-tire-tread-marks-on-soil-ground-texture-A809C9AB.jpg": {
+     "blob": "6b4f540fc51b1ee380bf82682fdfd47b",
+     "name": "stock-texture-tire-tread-marks-on-soil-ground-texture-A809C9AB.jpg",
+     "sha256": "d58d352688478957844a48374e0607ba7a41fdefe2aa89b6c19c84b73b61ccbb",
+     "size": 12636930,
+     "type": "image/jpeg"
+    }
+   },
+   "name": "Photos",
+   "order": [],
+   "tile": "m"
+  }
+ },
+ "blobs": {},
+ "createdOnFiles": {
+  "at": "2026-10-15T20:22:05.264Z",
+  "v": 1
+ },
+ "docs": {
+  "sections": []
+ },
+ "groups": [
+  "Logos",
+  "Photos"
+ ],
+ "layout": "files",
+ "libraries": [],
+ "sections": {},
+ "title": "Wright Co.",
+ "namespace": "WrightCo",
+ "lastChange": {
+  "by": "Clint Sanchez",
+  "at": "2026-10-15T20:47:00Z",
+  "via": "GitHub \u00b7 clintsanchez/wright-co-design-kit@561b18a",
+  "note": "First sync: 18 colors, 10 type styles, 6 spacing, 3 radii, layout, README, Button (hand-written), cover"
+ }
+}

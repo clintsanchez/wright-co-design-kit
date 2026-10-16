@@ -1,0 +1,92 @@
+{
+  "v": 3,
+  "createdOnFiles": {"v": 1, "at": "2026-10-15T21:50:00Z"},
+  "title": "Wright Co. Social Templates",
+  "launch": {"view": "canvas", "page": "system"},
+  "pages": [
+    {"id": "system", "name": "System"},
+    {"id": "feed", "name": "Feed posts"},
+    {"id": "google", "name": "Google posts"},
+    {"id": "stories", "name": "Stories & reels"},
+    {"id": "carousels", "name": "Carousels"},
+    {"id": "covers", "name": "Covers, links & video"}
+  ],
+  "boards": {
+    "Main.dc.html": {"x": 0, "y": 0, "w": 1440, "h": 1100, "page": "system", "title": "Library cover & the four rules"},
+    "Formats.dc.html": {"x": 1520, "y": 0, "w": 1600, "h": 1500, "page": "system", "title": "Platform specifications"},
+    "OpenItems.dc.html": {"x": 3200, "y": 0, "w": 1440, "h": 1300, "page": "system", "title": "Confirm before publishing"},
+    "Avatar.dc.html": {"x": 0, "y": 1220, "w": 1440, "h": 760, "page": "system", "title": "Avatar system"},
+
+    "Step01.dc.html": {"x": 0, "y": 0, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Step 01"},
+    "Step02.dc.html": {"x": 1160, "y": 0, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Step 02"},
+    "Step03.dc.html": {"x": 2320, "y": 0, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Step 03"},
+    "Step04.dc.html": {"x": 3480, "y": 0, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Step 04"},
+    "StepSquare.dc.html": {"x": 4640, "y": 0, "w": 1080, "h": 1080, "page": "feed", "title": "Feed / Square / Step"},
+
+    "TipPortrait.dc.html": {"x": 0, "y": 1770, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Dirt Order Tip"},
+    "TipSquare.dc.html": {"x": 1160, "y": 1770, "w": 1080, "h": 1080, "page": "feed", "title": "Feed / Square / Dirt Order Tip"},
+    "LotWalk.dc.html": {"x": 2320, "y": 1770, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Free Lot Walk"},
+    "Seasonal.dc.html": {"x": 3480, "y": 1770, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Seasonal"},
+    "ServiceArea.dc.html": {"x": 4640, "y": 1770, "w": 1080, "h": 1080, "page": "feed", "title": "Feed / Square / Service Area"},
+
+    "NowBooking.dc.html": {"x": 0, "y": 3540, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Now Booking"},
+    "StraightAnswer.dc.html": {"x": 1160, "y": 3540, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Straight Answer"},
+    "Statement.dc.html": {"x": 2320, "y": 3540, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Statement"},
+    "StatementSquare.dc.html": {"x": 3480, "y": 3540, "w": 1080, "h": 1080, "page": "feed", "title": "Feed / Square / Statement"},
+    "OpsNotice.dc.html": {"x": 4640, "y": 3540, "w": 1080, "h": 1080, "page": "feed", "title": "Feed / Square / Operations Notice"},
+
+    "DirtOrderTeaser.dc.html": {"x": 0, "y": 5310, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Dirt Order Teaser"},
+    "BeforeAfter.dc.html": {"x": 1160, "y": 5310, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Before After Slot"},
+    "JobPhoto.dc.html": {"x": 2320, "y": 5310, "w": 1080, "h": 1350, "page": "feed", "title": "Feed / Portrait / Job Photo Slot"},
+    "ReviewFuture.dc.html": {"x": 3480, "y": 5310, "w": 1080, "h": 1350, "page": "feed", "title": "Future / Review Quote (not for use)"},
+    "Infographic45.dc.html": {"x": 4640, "y": 5310, "w": 1080, "h": 1350, "page": "feed", "title": "Infographic / Portrait / What Comes First"},
+
+    "GoogleStep.dc.html": {"x": 0, "y": 0, "w": 1200, "h": 900, "page": "google", "title": "Google Post / Step"},
+    "GoogleTip.dc.html": {"x": 1280, "y": 0, "w": 1200, "h": 900, "page": "google", "title": "Google Post / Dirt Order Tip"},
+    "GoogleLine.dc.html": {"x": 2560, "y": 0, "w": 1200, "h": 900, "page": "google", "title": "Google Post / Tagline"},
+
+    "StoryStep.dc.html": {"x": 0, "y": 0, "w": 1080, "h": 1920, "page": "stories", "title": "Story / Step"},
+    "StoryTip.dc.html": {"x": 1160, "y": 0, "w": 1080, "h": 1920, "page": "stories", "title": "Story / Dirt Order Tip Cover"},
+    "StoryLotWalk.dc.html": {"x": 2320, "y": 0, "w": 1080, "h": 1920, "page": "stories", "title": "Story / Free Lot Walk"},
+    "ReelCover.dc.html": {"x": 3480, "y": 0, "w": 1080, "h": 1920, "page": "stories", "title": "Video / Vertical / Cover (slot)"},
+    "InfographicTall.dc.html": {"x": 4640, "y": 0, "w": 1080, "h": 1920, "page": "stories", "title": "Infographic / Tall / What Comes First"},
+
+    "CarouselCover.dc.html": {"x": 0, "y": 0, "w": 1080, "h": 1350, "page": "carousels", "title": "Carousel / Cover"},
+    "CarouselStep.dc.html": {"x": 1160, "y": 0, "w": 1080, "h": 1350, "page": "carousels", "title": "Carousel / Content / Step"},
+    "CarouselCulvert.dc.html": {"x": 2320, "y": 0, "w": 1080, "h": 1350, "page": "carousels", "title": "Carousel / Content / Seasonal Culvert"},
+    "CarouselCTA.dc.html": {"x": 3480, "y": 0, "w": 1080, "h": 1350, "page": "carousels", "title": "Carousel / Closing CTA"},
+
+    "FacebookCover.dc.html": {"x": 0, "y": 0, "w": 1640, "h": 924, "page": "covers", "title": "Banner / Facebook Page Cover"},
+    "GBPCover.dc.html": {"x": 1720, "y": 0, "w": 1080, "h": 608, "page": "covers", "title": "Banner / Google Business Profile Cover"},
+    "LinkPreview.dc.html": {"x": 2880, "y": 0, "w": 1200, "h": 630, "page": "covers", "title": "Link Preview / The Dirt Order"},
+    "ThumbText.dc.html": {"x": 0, "y": 1344, "w": 1280, "h": 720, "page": "covers", "title": "Video / Thumbnail / Text"},
+    "ThumbHowTo.dc.html": {"x": 1360, "y": 1344, "w": 1280, "h": 720, "page": "covers", "title": "Video / Thumbnail / How To"},
+    "EndCard.dc.html": {"x": 2720, "y": 1344, "w": 1920, "h": 1080, "page": "covers", "title": "Video / End Card"},
+    "YouTubeBanner.dc.html": {"x": 0, "y": 2844, "w": 2560, "h": 1440, "page": "covers", "title": "Banner / YouTube Channel"}
+  },
+  "order": [
+    "Main.dc.html", "Formats.dc.html", "OpenItems.dc.html", "Avatar.dc.html",
+    "Step01.dc.html", "Step02.dc.html", "Step03.dc.html", "Step04.dc.html", "StepSquare.dc.html",
+    "TipPortrait.dc.html", "TipSquare.dc.html", "LotWalk.dc.html", "Seasonal.dc.html", "ServiceArea.dc.html",
+    "NowBooking.dc.html", "StraightAnswer.dc.html", "Statement.dc.html", "StatementSquare.dc.html", "OpsNotice.dc.html",
+    "DirtOrderTeaser.dc.html", "BeforeAfter.dc.html", "JobPhoto.dc.html", "ReviewFuture.dc.html", "Infographic45.dc.html",
+    "GoogleStep.dc.html", "GoogleTip.dc.html", "GoogleLine.dc.html",
+    "StoryStep.dc.html", "StoryTip.dc.html", "StoryLotWalk.dc.html", "ReelCover.dc.html", "InfographicTall.dc.html",
+    "CarouselCover.dc.html", "CarouselStep.dc.html", "CarouselCulvert.dc.html", "CarouselCTA.dc.html",
+    "FacebookCover.dc.html", "GBPCover.dc.html", "LinkPreview.dc.html", "ThumbText.dc.html", "ThumbHowTo.dc.html", "EndCard.dc.html", "YouTubeBanner.dc.html"
+  ],
+  "notes": {
+    "feed1": {"x": 0, "y": -300, "text": "Step cards: 01 Clear · 02 Driveway · 03 Pad · 04 Foundation Dig", "kind": "title1", "page": "feed", "maxW": 5720},
+    "feed2": {"x": 0, "y": 1470, "text": "Dirt Order tips · Free Lot Walk · Seasonal · Service area", "kind": "title1", "page": "feed", "maxW": 5720},
+    "feed3": {"x": 0, "y": 3240, "text": "Now booking · Straight answers · Statements · Operations notice", "kind": "title1", "page": "feed", "maxW": 5720},
+    "feed4": {"x": 0, "y": 5010, "text": "Dirt Order teaser · Photo slots (never ship as slots) · Future review · Infographic", "kind": "title1", "page": "feed", "maxW": 5720},
+    "google1": {"x": 0, "y": -300, "text": "Google Business Profile posts, 1200 × 900 (profile to be created)", "kind": "title1", "page": "google", "maxW": 3760},
+    "stories1": {"x": 0, "y": -300, "text": "Stories, reel covers and the tall infographic, 1080 × 1920", "kind": "title1", "page": "stories", "maxW": 5720},
+    "car1": {"x": 0, "y": -300, "text": "Carousel slides, 1080 × 1350: cover, content, closing", "kind": "title1", "page": "carousels", "maxW": 4560},
+    "cov1": {"x": 0, "y": -300, "text": "Covers and link previews", "kind": "title1", "page": "covers", "maxW": 4080},
+    "cov2": {"x": 0, "y": 1044, "text": "YouTube (no account on file)", "kind": "title1", "page": "covers", "maxW": 4640}
+  },
+  "designSystems": [
+    {"title": "Wright Co.", "namespace": "wrightco", "artifact": "https://claude.ai/code/artifact/96bbbf9f-9404-41fe-913a-047624086c00", "version": null, "copiedAt": "2026-10-15T21:50:00Z"}
+  ]
+}

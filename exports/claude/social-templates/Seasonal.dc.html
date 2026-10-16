@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Seasonal, portrait</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; position: relative; overflow: hidden; padding: 80px; background: #120C06; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+  <svg aria-hidden="true" width="1080" height="1350" style="position: absolute; left: 0; top: 0; opacity: 0.06; pointer-events: none"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="1080" height="1350" filter="url(#grain)"></rect></svg>
+  <div style="position: relative; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 28px; letter-spacing: 0.08em; color: #C8783A">Serving Hammond, Tangipahoa Parish &amp; the Northshore</div>
+  <div style="position: relative; display: flex; flex-direction: column; gap: 32px">
+    <h1 style="margin: 0; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 80px; line-height: 1.1; color: #F9F7F4">Get your lot ready this winter. Build in spring.</h1>
+    <div style="width: 160px; height: 4px; background: #A15C27"></div>
+    <p style="margin: 0; font-size: 40px; line-height: 1.4; color: #F9F7F4">The slow parts are the 911 address, the culvert permit and the culvert install. Start the paperwork and the clearing now, and the pad is ready when your builder is.</p>
+    <sc-if value="{{ weather }}" hint-placeholder-val="{{ false }}">
+      <p style="margin: 0; font-size: 36px; line-height: 1.4; color: #BFA89B">When it’s too wet, we don’t run equipment. It ruts your lot and makes a worse pad.</p>
+    </sc-if>
+    <sc-if value="{{ booking }}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <p style="margin: 0; font-size: 36px; line-height: 1.4; color: #BFA89B">We’re booking winter lots now.</p>
+        <div style="align-self: flex-start; display: flex; align-items: center; gap: 12px; padding: 8px 16px; background: #2E1D10; border: 1px solid #E8A33D; border-radius: 2px; color: #E8A33D; font-weight: 700; font-size: 28px; letter-spacing: 0.04em; text-transform: uppercase"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24"><path fill="#E8A33D" d="M12 2 1 21h22L12 2zm-1 7h2v6h-2V9zm0 8h2v2h-2v-2z"></path></svg>Confirm before publishing: only when true</div>
+      </div>
+    </sc-if>
+    <p style="margin: 0; font-size: 36px; line-height: 1.4; font-weight: 700; color: #C8783A">Book a Free Lot Walk · Call or Text 360-957-5865</p>
+  </div>
+  <div style="position: relative; font-size: 30px; color: #BFA89B">wrightco.llc</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"weather":{"editor":"boolean","default":false,"section":"Copy"},"booking":{"editor":"boolean","default":false,"section":"Owner sign-off"},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { weather: this.props.weather ?? false, booking: this.props.booking ?? false };
+  }
+}
+</script>
+</body>
+</html>

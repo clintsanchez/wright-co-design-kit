@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Straight answer, portrait</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; position: relative; overflow: hidden; padding: 80px; background: #20150C; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+  <svg aria-hidden="true" width="1080" height="1350" style="position: absolute; left: 0; top: 0; opacity: 0.06; pointer-events: none"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="1080" height="1350" filter="url(#grain)"></rect></svg>
+  <div style="position: relative; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 28px; letter-spacing: 0.08em; color: #C8783A">Straight answer</div>
+  <div style="position: relative; display: flex; flex-direction: column; gap: 32px">
+    <h1 style="margin: 0; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 80px; line-height: 1.1; color: #F9F7F4">{{ q }}</h1>
+    <div style="width: 160px; height: 4px; background: #A15C27"></div>
+    <p style="margin: 0; font-size: 44px; line-height: 1.4; color: #F9F7F4">{{ a }}</p>
+  </div>
+  <div style="position: relative; font-size: 30px; color: #BFA89B">wrightco.llc</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"question":{"editor":"enum","options":["Whole thing or just clearing","Pad height","Cost to clear an acre","Tree trimming","Is the lot walk free","Builder says site work is on you"],"default":"Whole thing or just clearing","section":"Content"},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const qa = {
+      'Whole thing or just clearing': ['Do you do the whole thing or just clearing?', 'Either. Most folks want the whole dirt side: clear, driveway, pad, in that order.'],
+      'Pad height': ['Do you set the pad height?', 'No. Your surveyor and the parish do. We build to it.'],
+      'Cost to clear an acre': ['How much does it cost to clear an acre?', 'It comes down to how thick the trees are, the stumps, the debris, access and wet ground. We’ll walk it and put it in writing.'],
+      'Tree trimming': ['Do you do tree trimming?', 'That’s tree work, not dirt work, so we’re not the right crew.'],
+      'Is the lot walk free': ['Is the lot walk really free?', 'Yes. The first look at your land is free.'],
+      'Builder says site work is on you': ['Builder says the site work’s on you?', 'We do the dirt side: clear, driveway, pad.']
+    };
+    const t = qa[this.props.question] || qa['Whole thing or just clearing'];
+    return { q: t[0], a: t[1] };
+  }
+}
+</script>
+</body>
+</html>

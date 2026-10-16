@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Reel cover, video slot</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1080px; height: 1920px; box-sizing: border-box; position: relative; overflow: hidden; background: #20150C; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif">
+  <div style="position: absolute; left: 80px; right: 80px; top: 330px; display: flex; flex-direction: column; gap: 24px">
+    <svg aria-hidden="true" width="64" height="64" viewBox="0 0 24 24"><path fill="#D4B8A0" d="M3 5h12a1 1 0 0 1 1 1v3.5l5-3v11l-5-3V18a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"></path></svg>
+    <div style="font-size: 36px; line-height: 1.35; color: #F9F7F4">Real job vertical video: brush going down, 10 to 30 seconds</div>
+    <div style="font-size: 30px; color: #BFA89B">9:16 · keep the subject in the centre 1:1 · photograph needed from the first Louisiana job</div>
+  </div>
+  <div style="position: absolute; left: 0; top: 420px; width: 1080px; height: 1080px; box-sizing: border-box; border-top: 1px dashed rgba(212,184,160,0.4); border-bottom: 1px dashed rgba(212,184,160,0.4)"></div>
+  <div style="position: absolute; left: 0; right: 0; top: 760px; box-sizing: border-box; padding: 64px 80px; background: rgba(18,12,6,0.7); display: flex; flex-direction: column; gap: 24px">
+    <h1 style="margin: 0; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 88px; line-height: 1.1; color: #F9F7F4">Stumps out. Driveway in. Pad up.</h1>
+    <div style="align-self: flex-start; display: flex; align-items: center; gap: 12px; padding: 8px 16px; background: #2E1D10; border: 1px solid #E8A33D; border-radius: 2px; color: #E8A33D; font-weight: 700; font-size: 28px; letter-spacing: 0.04em; text-transform: uppercase"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24"><path fill="#E8A33D" d="M12 2 1 21h22L12 2zm-1 7h2v6h-2V9zm0 8h2v2h-2v-2z"></path></svg>Confirm before publishing: slot never ships</div>
+  </div>
+  <div style="position: absolute; left: 80px; bottom: 420px; font-size: 30px; color: #BFA89B">wrightco.llc</div>
+  <sc-if value="{{ safe }}" hint-placeholder-val="{{ false }}">
+    <div style="position: absolute; left: 0; top: 0; width: 1080px; height: 250px; box-sizing: border-box; background: rgba(232,163,61,0.18); border-bottom: 2px dashed #E8A33D; padding: 24px 40px; font-size: 28px; font-weight: 700; color: #E8A33D">Platform chrome, top 250 px: keep clear</div>
+    <div style="position: absolute; left: 0; bottom: 0; width: 1080px; height: 340px; box-sizing: border-box; background: rgba(232,163,61,0.18); border-top: 2px dashed #E8A33D; padding: 24px 40px; font-size: 28px; font-weight: 700; color: #E8A33D">Captions and controls, bottom 340 px: keep clear</div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"safe":{"editor":"boolean","default":false,"section":"Guides"},"$preview":{"width":1080,"height":1920}}'>
+class Component extends DCLogic {
+  renderVals() { return { safe: this.props.safe ?? false }; }
+}
+</script>
+</body>
+</html>

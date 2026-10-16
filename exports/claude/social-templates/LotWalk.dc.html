@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Free Lot Walk, portrait</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>body{margin:0;font-synthesis:none}</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; position: relative; overflow: hidden; padding: 80px; background: #120C06; color: #F9F7F4; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; gap: 32px">
+  <svg aria-hidden="true" width="1080" height="1350" viewBox="0 0 1080 1350" style="position: absolute; left: 0; top: 0; pointer-events: none"><g fill="none" stroke="#D4B8A0" stroke-opacity="0.09" stroke-width="2"><path d="M0 980 C180 930 300 1040 470 1000 S760 860 1080 900"></path><path d="M0 1040 C200 990 320 1110 500 1070 S780 930 1080 970"></path><path d="M0 1100 C220 1050 340 1180 530 1140 S800 1000 1080 1040"></path><path d="M0 1160 C240 1110 360 1250 560 1210 S820 1070 1080 1110"></path><path d="M0 1220 C260 1170 380 1320 590 1280 S840 1140 1080 1180"></path><path d="M0 1280 C280 1230 400 1390 620 1350 S860 1210 1080 1250"></path><path d="M760 140 C880 80 1040 120 1060 230 S960 400 830 370 S660 220 760 140Z"></path><path d="M720 100 C880 10 1100 70 1110 230 S980 460 800 420 S600 200 720 100Z"></path><path d="M800 180 C880 140 990 170 1000 240 S930 340 850 320 S740 240 800 180Z"></path></g></svg>
+  <div style="position: relative; align-self: flex-start; background: #6F482A; padding: 3px; clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)">
+    <div style="background: #2E1D10; padding: 6px; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)">
+      <div style="border: 2px dashed #6F482A; padding: 12px 24px; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 28px; letter-spacing: 0.08em; line-height: 1; color: #C8783A">The Free Lot Walk</div>
+    </div>
+  </div>
+  <div style="position: relative; display: flex; flex-direction: column; gap: 32px; padding-top: 32px">
+    <h1 style="margin: 0; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 88px; line-height: 1.1; color: #F9F7F4">{{ head }}</h1>
+    <p style="margin: 0; font-size: 44px; line-height: 1.4; color: #F9F7F4">{{ support }}</p>
+    <sc-if value="{{ badged }}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <p style="margin: 0; font-size: 36px; line-height: 1.4; color: #BFA89B">Cody walks your land with you and maps clearing → driveway → pad on one sheet. No charge, no pressure.</p>
+        <div style="align-self: flex-start; display: flex; align-items: center; gap: 12px; padding: 8px 16px; background: #2E1D10; border: 1px solid #E8A33D; border-radius: 2px; color: #E8A33D; font-weight: 700; font-size: 28px; letter-spacing: 0.04em; text-transform: uppercase"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24"><path fill="#E8A33D" d="M12 2 1 21h22L12 2zm-1 7h2v6h-2V9zm0 8h2v2h-2v-2z"></path></svg>Confirm before publishing · W-07</div>
+      </div>
+    </sc-if>
+    <p style="margin: 0; font-size: 36px; line-height: 1.4; font-weight: 700; color: #C8783A">Book a Free Lot Walk · Call or Text 360-957-5865</p>
+  </div>
+  <div style="position: relative; margin-top: auto; display: flex; align-items: flex-end; justify-content: space-between; gap: 32px">
+    <div style="font-size: 30px; line-height: 1.4; color: #BFA89B">360-957-5865<br>wrightco.llc</div>
+    <img src="/_blob/9ae9b7d04094c304378121fdcd1ac247" alt="Wright Co. emblem" style="width: 480px; height: auto; display: block">
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"variant":{"editor":"enum","options":["Book","Just closed"],"default":"Book","section":"Content"},"badged":{"editor":"boolean","default":false,"section":"Owner sign-off"},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const jc = this.props.variant === 'Just closed';
+    return {
+      head: jc ? 'Just closed on land?' : 'Book a free lot walk',
+      support: jc ? 'Here’s what happens first. Book a free lot walk and we’ll look at yours.' : 'Tell us where your land is and Cody will get back to you.',
+      badged: this.props.badged ?? false
+    };
+  }
+}
+</script>
+</body>
+</html>

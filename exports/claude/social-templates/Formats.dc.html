@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Platform specifications</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;font-synthesis:none}
+td,th{padding:12px 16px;text-align:left;vertical-align:top;border-bottom:1px solid rgba(18,12,6,0.10)}
+th{font-weight:700;font-size:16px;letter-spacing:0.04em;text-transform:uppercase;color:#5C5048}
+</style>
+</helmet>
+<div style="width: 1600px; height: 1500px; box-sizing: border-box; padding: 80px; background: #F9F7F4; color: #120C06; font-family: 'Source Sans 3', system-ui, sans-serif; display: flex; flex-direction: column; gap: 32px">
+  <div style="font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 16px; letter-spacing: 0.08em; color: #6F482A">Working values, dated 2026-10-15 · verify at production</div>
+  <h1 style="margin: 0; font-family: Graduate, 'Rockwell Extra Bold', Rockwell, serif; font-weight: 400; text-transform: uppercase; font-size: 48px; line-height: 1.1">Platform specifications</h1>
+  <table style="border-collapse: collapse; width: 100%; font-size: 18px; line-height: 1.4">
+    <thead><tr><th>Platform</th><th>Asset</th><th>Size</th><th>Safe zone</th><th>Status</th><th>Template</th></tr></thead>
+    <tbody>
+      <tr><td style="font-weight: 700">Facebook</td><td>Feed portrait / square</td><td>1080 × 1350 / 1080 × 1080</td><td>80 px margin</td><td>In use</td><td>Feed posts page</td></tr>
+      <tr><td style="font-weight: 700">Facebook</td><td>Story / reel cover</td><td>1080 × 1920</td><td>Clear top 250, bottom 340</td><td>In use</td><td>Stories page</td></tr>
+      <tr><td style="font-weight: 700">Facebook</td><td>Page cover</td><td>1640 × 924</td><td>Middle 1640 × 624</td><td>In use</td><td>Banner / Facebook</td></tr>
+      <tr><td style="font-weight: 700">Facebook</td><td>Link preview</td><td>1200 × 630</td><td>60 px margin</td><td>In use; no link to the page itself</td><td>Link Preview</td></tr>
+      <tr><td style="font-weight: 700">Facebook</td><td>Profile image</td><td>1024 master, 320 shown</td><td>Central 70%</td><td>In use</td><td>Avatar system</td></tr>
+      <tr><td style="font-weight: 700">Google Business Profile</td><td>Update post</td><td>1200 × 900</td><td>60 px margin; survive a small card</td><td>To be created</td><td>Google posts page</td></tr>
+      <tr><td style="font-weight: 700">Google Business Profile</td><td>Cover / logo</td><td>1080 × 608 / 512 × 512</td><td>Centre / central 70%</td><td>To be created</td><td>Banner / GBP cover · avatar 512</td></tr>
+      <tr><td style="font-weight: 700">Instagram</td><td>Feed, story, carousel</td><td>Shared 4:5, 1:1, 9:16 masters</td><td>As Facebook</td><td>No account on file</td><td>Shared masters only</td></tr>
+      <tr><td style="font-weight: 700">YouTube</td><td>Thumbnail</td><td>1280 × 720</td><td>60 px; lower right clear</td><td>No account on file</td><td>Video / Thumbnail</td></tr>
+      <tr><td style="font-weight: 700">YouTube</td><td>Channel banner</td><td>2560 × 1440</td><td>Centre 1546 × 423</td><td>No account on file</td><td>Banner / YouTube</td></tr>
+      <tr><td style="font-weight: 700">YouTube</td><td>End card</td><td>1920 × 1080</td><td>80 px margin</td><td>No account on file</td><td>Video / End Card</td></tr>
+      <tr><td style="font-weight: 700; color: #5C5048">LinkedIn, X, TikTok, Pinterest, Threads, Bluesky, Snapchat, Reddit, Mastodon</td><td style="color: #5C5048">Mapped only</td><td style="color: #5C5048">Per platform</td><td style="color: #5C5048">Per platform</td><td style="color: #5C5048">Not in use</td><td style="color: #5C5048">None built</td></tr>
+    </tbody>
+  </table>
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: auto">
+    <div style="padding: 32px; background: #ECE1D8; border-radius: 4px; display: flex; flex-direction: column; gap: 12px">
+      <div style="font-size: 24px; font-weight: 700">Adding a platform</div>
+      <div style="font-size: 18px; line-height: 1.6">1. Add the canvas to the format list. 2. Add its width, height and safe-zone values. 3. Add a row here with crop behaviour. 4. Recompose the existing families into the new ratio. No existing template is edited.</div>
+    </div>
+    <div style="padding: 32px; background: #ECE1D8; border-radius: 4px; display: flex; flex-direction: column; gap: 12px">
+      <div style="font-size: 24px; font-weight: 700">Social type scale (1080 px canvas)</div>
+      <div style="font-size: 18px; line-height: 1.6">Numeral 200–240 · Display 96 · Headline 72–88 · Story headline 88 · Thumbnail 104 · Subhead 40–44 · Body 36 (smallest running text) · Label 28–30 · Source 30 · CTA line 36 bold. Padding 80 on feed, 64 on landscape and banners.</div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1600,"height":1500}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
